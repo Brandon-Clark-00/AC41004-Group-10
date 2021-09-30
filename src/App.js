@@ -52,12 +52,7 @@ function App() {
       <ExamplePage/>
     </div>
     </Router>
-<<<<<<< HEAD
    
-=======
-
-
->>>>>>> DillonReact
   );
 }
 
