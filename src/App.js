@@ -11,6 +11,7 @@ import Landing from "./LandingPage/Login";
 
 import logo from './logo.svg';
 import './App.css';
+import {ExamplePage} from './Pages/ExamplePage'
 
 function App() {
 
@@ -48,6 +49,9 @@ function App() {
           </footer>
       </div>
     </Router>
+    <div className="App">
+      <ExamplePage/>
+    </div>
   );
 }
 
