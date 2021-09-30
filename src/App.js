@@ -48,10 +48,11 @@ function App() {
 
           </footer>
       </div>
-    </Router>
-    <div className="App">
+      <div className="App">
       <ExamplePage/>
     </div>
+    </Router>
+   
   );
 }
 
