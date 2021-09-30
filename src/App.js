@@ -1,7 +1,7 @@
 import React, { useState, withRouter } from "react";
 import Cookies from 'js-cookie'
 import {
-  BrowseRouter as Router,
+  BrowserRouter as Router,
   Switch,
   Route,
   Link
