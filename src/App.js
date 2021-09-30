@@ -8,10 +8,10 @@ import {
 } from "react-router-dom";
 
 import Landing from "./LandingPage/Login";
+import ExamplePage from "./Pages/ExamplePage";
 
 import logo from './logo.svg';
 import './App.css';
-import {ExamplePage} from './Pages/ExamplePage'
 
 function App() {
 
@@ -52,7 +52,12 @@ function App() {
       <ExamplePage/>
     </div>
     </Router>
+<<<<<<< HEAD
    
+=======
+
+
+>>>>>>> DillonReact
   );
 }
 
