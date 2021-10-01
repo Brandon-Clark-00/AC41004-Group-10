@@ -37,7 +37,6 @@ function App() {
     <Router>
       <div className = 'page-container'>
         <header id = "site-header" className="site-header">
-          
         </header>
         <div className="main">
           <Route exact path="/" component={LandingWrapper}/>
