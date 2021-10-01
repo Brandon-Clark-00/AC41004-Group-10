@@ -1,22 +1,54 @@
 import React, { Component } from 'react'
+import { Button, HelpBlock, FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import './Login.css'
 import sjcl from 'sjcl'
 import Cookies from 'js-cookie'
+
+function FieldGroup({ id, label, help, ...props}) {
+    return(
+        <FormGroup controlId={id}>
+            <FormLabel>{label}</FormLabel>
+            <FormControl {...props} />
+        </FormGroup>
+    );
+}
+
 export default class Login extends Component {
-    // constructor(props) {
-    //     super(props);
-        // this.history = props.history
-        // let params = new URLSearchParams(window.location.search)
-        // this.state = { email: '', password: '', user: props.user.user, id: props.user.id, redirect: params.get("redirect") };
-        // console.log("redirect?", this.state.redirect);
-        // this.userCallback = props.userCallback
-        // this.handleChange = this.handleChange.bind(this);
-        // this.handleSubmit = this.handleSubmit.bind(this);
+    constructor(props){
+        super(props);
+
+        this.state = {
+            username:"",
+            password:""
+        }
+    }
 
         render() {
             return (
                 <div className ="login-wrapper">
-                    <h1>login page</h1>
+                    <form className = "login-form">
+                        <FieldGroup 
+                            id="formControlsEmail"
+                            type="email"
+                            name="email"
+                            label="Email address"
+                            value={this.state.username}
+                            onChange={this.handleChange}
+                            placeHolder="Enter email"
+                        />
+                        <FieldGroup 
+                            id="formControlsPassword"
+                            type="password"
+                            name="password"
+                            label="password"
+                            value={this.state.username}
+                            onChange={this.handleChange}
+                            placeHolder="Enter Password"
+                        />
+
+                        <Button onClick={this.handleSignIn} className="login-button">Log In</Button>
+
+                    </form>
                 </div>
             )
         }

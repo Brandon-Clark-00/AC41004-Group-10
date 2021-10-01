@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+/*---- Header ----*/
+
+.header {
+  overflow: visible;
+  background-color:#4365e2;
+  padding: 20px 15%;
+  transition: background-color 0.2s linear;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.theohealthlogo {
+  float: left;
+  display: inline-block;
+  width: 120px;
+  transition: filter 0.2s linear;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*---- Body ----*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+
+    /*new*/
+    height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html {
+    height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.page-container {
+    overflow: auto;
+    min-height: 100%;
+    position: relative; 
+
+    /*new*/
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#root {
+    height:100%;
 }
+
+.main{
+  flex: 1;
+}
+
+
+/*---- Footer ----*/
