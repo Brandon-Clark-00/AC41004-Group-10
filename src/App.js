@@ -24,11 +24,11 @@ function App() {
   let userStateStart = ""
   let idStateStart = ""
   let positionStateStart = ""
-  // if (!!Cookies.get('access_token')) {
-  //   userStateStart = Cookies.get('access_token').split("#")[0]
-  //   idStateStart = Cookies.get('access_token').split("#")[1]
-  //   positionStateStart = Cookies.get('access_token').split("#")[2]
-  // }
+  if (!!Cookies.get('access_token')) {
+    userStateStart = Cookies.get('access_token').split("#")[0]
+    idStateStart = Cookies.get('access_token').split("#")[1]
+    positionStateStart = Cookies.get('access_token').split("#")[2]
+  }
 
   {/*test fetch data from flask
   const[getMessage, setGetMessage] = useState({})
