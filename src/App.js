@@ -106,7 +106,7 @@ function App() {
 
           </div>
           <footer className="site-footer">
-            <div>
+            <div className="social-media">
               <a href="https://twitter.com/theoHealth"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
               <a href="https://www.instagram.com/theo_health/"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
               <a href="https://www.linkedin.com/company/theo-health"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 

@@ -3,8 +3,13 @@
 }
 
 .login-wrapper{
-    min-height: 100%;
-    position: relative; 
+   /* Copywrite free image taken from  https://unsplash.com/photos/lrQPTQs7nQQ */
+    background-image: url('../Images/copyrightfreebackgroundlogin.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height:100%;
+    position: relative;
 
 }
 
@@ -23,5 +28,31 @@
 
 
 .login-button {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    
+    border: none;
+    background-color: #DB6E20;
+    font-family: 'Comfortaa', cursive;
+    outline: solid 0.1px white;
+    transition: outline 0.1s linear; 
+    transition: background-color 0.1 linear;
+    box-shadow: none;
+    color:white;
+}
 
+.login-button:hover {
+    outline: solid 2px #DB6E20;
+    background-color: white;
+    color: #DB6E20;
+}
+
+.form-control {
+  background-color: white;
+  padding:  10px;
+  font-family: 'Comfortaa', cursive;
+  margin: 10px 5px;
 }

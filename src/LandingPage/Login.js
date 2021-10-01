@@ -31,7 +31,7 @@ export default class Login extends Component {
                             id="formControlsEmail"
                             type="email"
                             name="email"
-                            label="Email address"
+                            /* label="Email address" */
                             value={this.state.username}
                             onChange={this.handleChange}
                             placeHolder="Enter email"
@@ -40,7 +40,7 @@ export default class Login extends Component {
                             id="formControlsPassword"
                             type="password"
                             name="password"
-                            label="password"
+                            /* label="password" */
                             value={this.state.username}
                             onChange={this.handleChange}
                             placeHolder="Enter Password"
