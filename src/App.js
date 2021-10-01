@@ -52,8 +52,7 @@ function App() {
       <ExamplePage/>
     </div>
     </Router>
-
-
+   
   );
 }
 
