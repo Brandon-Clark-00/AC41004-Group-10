@@ -1,4 +1,4 @@
-import React, { useState, withRouter, useEffect } from "react";
+import React, { useState, withRouter, useEffect, Component } from "react";
 import Axios from 'axios'
 import Cookies from 'js-cookie'
 import {
@@ -30,17 +30,15 @@ function App() {
     positionStateStart = Cookies.get('access_token').split("#")[2]
   }
 
-  {/*test fetch data from flask
   const[getMessage, setGetMessage] = useState({})
   useEffect(()=>{
-    Axios.get('http://localhost:5000/flask/hello').then(response => {
+    Axios.get('https://theobackend.herokuapp.com/users').then(response => {
       console.log("SUCCESS", response)
       setGetMessage(response)
     }).catch(error => {
       console.log(error)
     })
   }, [])
-*/}
   const [user, setUser] = useState({user: userStateStart, id: idStateStart, position: positionStateStart})
   console.log(user);
 
@@ -50,27 +48,15 @@ function App() {
       )
     }
 
-    let IndividualSessionWrapper = (props) => {
-      return( 
-        <IndividualSession></IndividualSession>
-      )
-    }
-
-    let ListOfSessionsWrapper = (props) => {
-      return( 
-        <ListOfSessions></ListOfSessions>
-      )
-    }
-
-    let SettingsWrapper = (props) => {
-      return( 
-        <Settings></Settings>
-      )
-    }
-
     let ViewClientPageWrapper = (props) => {
       return( 
         <ViewClientPage></ViewClientPage>
+      )
+    }
+
+    let Settings = (props) => {
+      return( 
+        <Settings></Settings>
       )
     }
 
@@ -83,23 +69,17 @@ function App() {
 
   return (
     <Router>
-      {/*test display data from flask
-      <div className = 'page-container'>
-        <header id = "site-header" className="site-header">
-          <div> {getMessage.status === 200 ?
+
+      <div className='page-container'>
+      <div> {getMessage.status === 200 ?
             <h3>{getMessage.data.message}</h3> :
             <h3>Loading</h3>}
-          </div>
-        </header>
-      */}
-      <div className='page-container'>
+            </div>
         <header id="site-header" className="site-header">
           <img className="theohealthlogo" src={theohealthlogo} />
           </header>
         <div className="main">
           <Route exact path="/" component={LandingWrapper}/>
-          <Route exact path="/settings" component={SettingsWrapper}/>
-          <Route exact path="/mysession" component={ListOfSessionsWrapper}/>
           <Route exact path="/clientlist" component={ViewListOfClientsWrapper}/>
           <Route exact path="/userpage" component={ViewClientPageWrapper}/>
 
