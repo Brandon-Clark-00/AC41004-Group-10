@@ -32,7 +32,7 @@ function App() {
 
   const[getMessage, setGetMessage] = useState({})
   useEffect(()=>{
-    Axios.get('http://localhost:5000/users').then(response => {
+    Axios.get('https://theobackend.herokuapp.com/users').then(response => {
       console.log("SUCCESS", response)
       setGetMessage(response)
     }).catch(error => {

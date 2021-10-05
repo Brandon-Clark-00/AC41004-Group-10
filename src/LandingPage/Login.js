@@ -42,7 +42,7 @@ export default class Login extends Component {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email: String(data.email), password: String(data.password) })
       };
-      fetch('http://localhost:5000/login', requestOptions)
+      fetch('https://theobackend.herokuapp.com/login', requestOptions)
           .then(response => response.json())
           .then(data => this.setState({ postId: data.id })); //not sure what this does
     }
