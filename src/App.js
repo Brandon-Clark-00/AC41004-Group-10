@@ -36,32 +36,32 @@ function App() {
       console.log("SUCCESS", response)
       setGetMessage(response)
     }).catch(error => {
-      console.log(error)
+      console.log("Something is wrong", error)
     })
   }, [])
   const [user, setUser] = useState({user: userStateStart, id: idStateStart, position: positionStateStart})
   console.log(user);
 
     let LandingWrapper = (props) => {
-      return( 
+      return(
         <Landing> history={props.history} user={user} userCallback={(a) => setUser(a)}</Landing>
       )
     }
 
     let ViewClientPageWrapper = (props) => {
-      return( 
+      return(
         <ViewClientPage></ViewClientPage>
       )
     }
 
     let Settings = (props) => {
-      return( 
+      return(
         <Settings></Settings>
       )
     }
 
     let ViewListOfClientsWrapper = (props) => {
-      return( 
+      return(
         <ViewListOfClients></ViewListOfClients>
       )
     }
@@ -87,16 +87,16 @@ function App() {
           </div>
           <footer className="site-footer">
             <div className="social-media">
-              <a href="https://twitter.com/theoHealth"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
-              <a href="https://www.instagram.com/theo_health/"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
-              <a href="https://www.linkedin.com/company/theo-health"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
-              <a href="mailto:jodie@theohealth.com"><i class="fa fa-envelope" aria-hidden="true"></i></a> 
+              <a href="https://twitter.com/theoHealth"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/theo_health/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/company/theo-health"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href="mailto:jodie@theohealth.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
             </div>
 
           </footer>
       </div>
     </Router>
-   
+
   );
 }
 
