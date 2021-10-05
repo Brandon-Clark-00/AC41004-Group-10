@@ -4,7 +4,22 @@ The project is a prototype of a web-based application designed to provide its us
 The prototype will show an image of the human body with a heatmap superimposed onto it. This heat map will show colours from green through to red as a way of representing low and high muscle load respectively as recorded with MyoWare muscle sensors. The data shown in these visual representations will be specific to individual sessions of squats carried out by the user and will be accessible both by the user themselves and their assigned physiotherapist.
 The user base of the project will be primarily recovering athletes and their physiotherapists. Athletes will have access to their own sessions and all stats related to said sessions whereas physiotherapists will have access to all data stored on their clients, of which each  physiotherapist will have multiple.
 
-# Connected repositories
+## Technologies used
+
+Deployment
+* Front end - [React] https://reactjs.org/
+* API - [Python Flask] https://flask.palletsprojects.com/en/2.0.x/
+* Database - [MySQL] https://www.mysql.com/
+* Webpage Deployment - [Heroku] https://dashboard.heroku.com/
+* Database Deployment - [Azure] https://azure.microsoft.com/
+
+Development tools
+* Wireframes - [Miro] https://miro.com/
+* Database design - [Draw.io] https://draw.io
+* Research and notetaking - [Google docs] https://docs.google.com/
+
+
+## Connected repositories
 
 https://github.com/Brandon-Clark-00/AC41004-API
 
