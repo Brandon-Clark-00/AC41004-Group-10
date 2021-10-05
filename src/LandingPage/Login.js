@@ -80,28 +80,3 @@ export default class Login extends Component {
         )
     }
     }
-//
-// export default const UserForm = props => {
-//   const [user, setUser] = useState(props.user)
-//   const form = useRef(null)
-//
-//   const submit = e => {
-//     e.preventDefault()
-//     const data = new FormData(form.current)
-//     fetch('http://localhost:5000/login', { method: 'POST', body: data })
-//       .then(res => res.json())
-//       .then(json => setUser(json.user))
-//   }
-//
-//   return (
-//     <form ref={form} onSubmit={submit}>
-//       <input type="text" name="user[name]" defaultValue={user.name} />
-//       {user.errors.name && <p>{user.errors.name}</p>}
-//
-//       <input type="email" name="user[email]" defaultValue={user.email} />
-//       {user.errors.email && <p>{user.errors.email}</p>}
-//
-//       <input type="submit" name="Sign Up" />
-//     </form>
-//   )
-// }
