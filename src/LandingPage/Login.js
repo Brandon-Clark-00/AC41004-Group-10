@@ -19,7 +19,7 @@ export default class Login extends Component {
         super(props);
         this.state = {
             email:"",
-            password:""
+            password:"",
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSignIn = this.handleSignIn.bind(this);
@@ -35,48 +35,61 @@ export default class Login extends Component {
     }
 
     handleSignIn = e =>{
-      //POSTING login request
-      let data = this.state;
-      const requestOptions = {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: String(data.email), password: String(data.password) })
-      };
-      fetch('https://theobackend.herokuapp.com/login', requestOptions)
-          .then(response => response.json())
-          .then(data => this.setState({ postId: data.id })); //not sure what this does
+        e.preventDefault();
+        //POSTING login request
+        let data = this.state;
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email: String(data.email), password: String(data.password) })
+        };
+        fetch('https://theobackend.herokuapp.com/login', requestOptions)
+                // JSON response is handled by a json() promises
+        .then((res) => { return res.json().
+        then((data) => {
+            localStorage.setItem('username', data.username);
+            localStorage.setItem('user_role', data.user_role);
+
+            if(localStorage.getItem('username') !==null && localStorage.getItem('username') !=="undefined"){
+                window.location.replace("/userpage")
+            }
+            else{
+                alert(data.error);
+            }
+        });
+        });
     }
 
     render() {
-        return (
-            <div className ="login-wrapper">
-                <Helmet>
-                    <title>Login</title>
-                </Helmet>
-                <form className = "login-form">
-                    <FieldGroup
-                        id="formControlsEmail"
-                        type="email"
-                        name="email"
-                        /* label="Email address" */
-                        value={this.state.email}
-                        onChange={this.handleChange}
-                        placeHolder="Enter email"
-                    />
-                    <FieldGroup
-                        id="formControlsPassword"
-                        type="password"
-                        name="password"
-                        /* label="password" */
-                        value={this.state.password}
-                        onChange={this.handleChange}
-                        placeHolder="Enter Password"
-                    />
+            return (
+                <div className ="login-wrapper">
+                    <Helmet>
+                        <title>Login</title>
+                    </Helmet>
+                    <form className = "login-form">
+                        <FieldGroup 
+                            id="formControlsEmail"
+                            type="email"
+                            name="email"
+                            /* label="Email address" */
+                            value={this.state.email}
+                            onChange={this.handleChange}
+                            placeHolder="Enter email"
+                        />
+                        <FieldGroup 
+                            id="formControlsPassword"
+                            type="password"
+                            name="password"
+                            /* label="password" */
+                            value={this.state.password}
+                            onChange={this.handleChange}
+                            placeHolder="Enter Password"
+                        />
 
-                    <Button onClick={this.handleSignIn} className="login-button">Log In</Button>
+                        <Button onClick={this.handleSignIn} className="login-button">Log In</Button>
 
                 </form>
             </div>
         )
     }
-    }
+}
