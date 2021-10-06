@@ -43,7 +43,7 @@ export default class Login extends Component {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: String(data.email), password: String(data.password) })
         };
-        fetch('http://localhost:5000/login', requestOptions)
+        fetch('https://theobackend.herokuapp.com/login', requestOptions)
                 // JSON response is handled by a json() promises
         .then((res) => { return res.json().
         then((data) => {
@@ -61,34 +61,6 @@ export default class Login extends Component {
     }
 
     render() {
-        return (
-            <div className ="login-wrapper">
-                <Helmet>
-                    <title>Login</title>
-                </Helmet>
-                <form className = "login-form">
-                    <FieldGroup
-                        id="formControlsEmail"
-                        type="email"
-                        name="email"
-                        /* label="Email address" */
-                        value={this.state.email}
-                        onChange={this.handleChange}
-                        placeHolder="Enter email"
-                    />
-                    <FieldGroup
-                        id="formControlsPassword"
-                        type="password"
-                        name="password"
-                        /* label="password" */
-                        value={this.state.password}
-                        onChange={this.handleChange}
-                        placeHolder="Enter Password"
-                    />
-
-    
-
-        render() {
             return (
                 <div className ="login-wrapper">
                     <Helmet>
@@ -120,4 +92,4 @@ export default class Login extends Component {
             </div>
         )
     }
-    }
+}
