@@ -17,7 +17,6 @@ function FieldGroup({ id, label, help, ...props}) {
 export default class Login extends Component {
     constructor(props){
         super(props);
-
         this.state = {
             email:"",
             password:"",
@@ -27,12 +26,12 @@ export default class Login extends Component {
     }
 
     handleChange=event=>{
-        const target = event.target;
-        const value = target.value; 
-        const name = target.name;
-        this.setState({
-            [name]: value
-        });
+      const target = event.target;
+      const value = target.value;
+      const name = target.name;
+      this.setState({
+        [name]: value
+      });
     }
 
     handleSignIn = e =>{
@@ -61,6 +60,31 @@ export default class Login extends Component {
         });
     }
 
+    render() {
+        return (
+            <div className ="login-wrapper">
+                <Helmet>
+                    <title>Login</title>
+                </Helmet>
+                <form className = "login-form">
+                    <FieldGroup
+                        id="formControlsEmail"
+                        type="email"
+                        name="email"
+                        /* label="Email address" */
+                        value={this.state.email}
+                        onChange={this.handleChange}
+                        placeHolder="Enter email"
+                    />
+                    <FieldGroup
+                        id="formControlsPassword"
+                        type="password"
+                        name="password"
+                        /* label="password" */
+                        value={this.state.password}
+                        onChange={this.handleChange}
+                        placeHolder="Enter Password"
+                    />
 
     
 
@@ -92,9 +116,8 @@ export default class Login extends Component {
 
                         <Button onClick={this.handleSignIn} className="login-button">Log In</Button>
 
-                    </form>
-                </div>
-            )
-        }
+                </form>
+            </div>
+        )
     }
-    
+    }

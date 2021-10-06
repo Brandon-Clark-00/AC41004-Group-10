@@ -37,7 +37,7 @@ function App() {
       console.log("SUCCESS", response)
       setGetMessage(response)
     }).catch(error => {
-      console.log(error)
+      console.log("Something is wrong", error)
     })
   }, [])
 */}
@@ -45,25 +45,25 @@ function App() {
   console.log(user);
 
     let LandingWrapper = (props) => {
-      return( 
+      return(
         <Landing> history={props.history} user={user} userCallback={(a) => setUser(a)}</Landing>
       )
     }
 
     let ViewClientPageWrapper = (props) => {
-      return( 
+      return(
         <ViewClientPage></ViewClientPage>
       )
     }
 
     let Settings = (props) => {
-      return( 
+      return(
         <Settings></Settings>
       )
     }
 
     let ViewListOfClientsWrapper = (props) => {
-      return( 
+      return(
         <ViewListOfClients></ViewListOfClients>
       )
     }
@@ -99,7 +99,7 @@ function App() {
             </footer>
       </div>
     </Router>
-   
+
   );
 }
 

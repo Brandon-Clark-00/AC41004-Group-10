@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Theo health web app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The project is a prototype of a web-based application designed to provide its users with an intuitive visual representation of their progress during their recovery from a physical injury. The mental toll that can be had by an athlete of any caliber suffering a serious injury can be immense, the lifestyle that these individuals live can be wholly turned on its head as an athlete goes from peak physical condition to being nearly unable to lift an arm. This sudden change can lead to tough mental battles and even depression. It is with this in mind that we are aiming to deliver a prototype of an application that can give easy to understand visual feedback to these individuals throughout their recovery process even when they may not be able to feel this progress physically.
 
-## Available Scripts
+The prototype will show an image of the human body with a heatmap superimposed onto it. This heat map will show colours from green through to red as a way of representing low and high muscle load respectively as recorded with MyoWare muscle sensors. The data shown in these visual representations will be specific to individual sessions of squats carried out by the user and will be accessible both by the user themselves and their assigned physiotherapist.
 
-In the project directory, you         can run:
+The user base of the project will be primarily recovering athletes and their physiotherapists. Athletes will have access to their own sessions and all stats related to said sessions whereas physiotherapists will have access to all data stored on their clients, of which each  physiotherapist will have multiple.
 
-### `yarn start`
+## Technologies used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Deployment
+* Front end - [React] https://reactjs.org/
+* API - [Python Flask] https://flask.palletsprojects.com/en/2.0.x/
+* Database - [MySQL] https://www.mysql.com/
+* Webpage Deployment - [Heroku] https://dashboard.heroku.com/
+* Database Deployment - [Azure] https://azure.microsoft.com/
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Development tools
+* Wireframes - [Miro] https://miro.com/
+* Database design - [Draw.io] https://draw.io
+* Versioning
+  * [Git CLI] https://git-scm.com/
+  * [Github desktop] https://desktop.github.com/
+  * [Git Kraken] https://www.gitkraken.com/ 
+* Development IDEs
+  * [Visual studio code] https://code.visualstudio.com/
+  * [Atom] https://atom.io/
+* API Testing - [Postman] https://www.postman.com/ 
+* Research and notetaking - [Google docs] https://docs.google.com/
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Connected repositories
 
-### `yarn build`
+https://github.com/Brandon-Clark-00/AC41004-API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
