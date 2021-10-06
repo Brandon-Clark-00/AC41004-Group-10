@@ -19,9 +19,11 @@ export default class Login extends Component {
         super(props);
 
         this.state = {
-            username:"",
-            password:""
+            email:"",
+            password:"",
         }
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSignIn = this.handleSignIn.bind(this);
     }
 
     handleChange=event=>{
@@ -33,6 +35,31 @@ export default class Login extends Component {
         });
     }
 
+    handleSignIn = e =>{
+        e.preventDefault();
+        //POSTING login request
+        let data = this.state;
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email: String(data.email), password: String(data.password) })
+        };
+        fetch('http://localhost:5000/login', requestOptions)
+                // JSON response is handled by a json() promises
+        .then((res) => { return res.json().
+        then((data) => {
+            localStorage.setItem('username', data.username);
+            localStorage.setItem('user_role', data.user_role);
+
+            if(localStorage.getItem('username') !==null && localStorage.getItem('username') !=="undefined"){
+                window.location.replace("/userpage")
+            }
+            else{
+                alert(data.error);
+            }
+        });
+        });
+    }
 
 
     
@@ -47,9 +74,9 @@ export default class Login extends Component {
                         <FieldGroup 
                             id="formControlsEmail"
                             type="email"
-                            name="username"
+                            name="email"
                             /* label="Email address" */
-                            value={this.state.username}
+                            value={this.state.email}
                             onChange={this.handleChange}
                             placeHolder="Enter email"
                         />

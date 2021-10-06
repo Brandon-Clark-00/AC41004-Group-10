@@ -18,7 +18,8 @@ let settings = (props) => {
   }
 
 export default class ViewClientPage extends Component{
-
+  constructor(props){
+    super(props);}
     settings = (props) => {
         return( 
           <Settings></Settings>

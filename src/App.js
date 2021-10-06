@@ -30,6 +30,7 @@ function App() {
     positionStateStart = Cookies.get('access_token').split("#")[2]
   }
 
+{/*
   const[getMessage, setGetMessage] = useState({})
   useEffect(()=>{
     Axios.get('https://theobackend.herokuapp.com/users').then(response => {
@@ -39,6 +40,7 @@ function App() {
       console.log(error)
     })
   }, [])
+*/}
   const [user, setUser] = useState({user: userStateStart, id: idStateStart, position: positionStateStart})
   console.log(user);
 
@@ -69,31 +71,32 @@ function App() {
 
   return (
     <Router>
-
+      
       <div className='page-container'>
-      <div> {getMessage.status === 200 ?
+        {/*
+        <div> {getMessage.status === 200 ?
             <h3>{getMessage.data.message}</h3> :
             <h3>Loading</h3>}
+        </div> */}
+          <header id="site-header" className="site-header">
+            <img className="theohealthlogo" src={theohealthlogo} />
+            </header>
+          <div className="main">
+            <Route exact path="/" component={LandingWrapper}/>
+            <Route exact path="/clientlist" component={ViewListOfClientsWrapper}/>
+            <Route exact path="/userpage" component={ViewClientPageWrapper}/>
+
+
             </div>
-        <header id="site-header" className="site-header">
-          <img className="theohealthlogo" src={theohealthlogo} />
-          </header>
-        <div className="main">
-          <Route exact path="/" component={LandingWrapper}/>
-          <Route exact path="/clientlist" component={ViewListOfClientsWrapper}/>
-          <Route exact path="/userpage" component={ViewClientPageWrapper}/>
+            <footer className="site-footer">
+              <div className="social-media">
+                <a href="https://twitter.com/theoHealth"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
+                <a href="https://www.instagram.com/theo_health/"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+                <a href="https://www.linkedin.com/company/theo-health"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
+                <a href="mailto:jodie@theohealth.com"><i class="fa fa-envelope" aria-hidden="true"></i></a> 
+              </div>
 
-
-          </div>
-          <footer className="site-footer">
-            <div className="social-media">
-              <a href="https://twitter.com/theoHealth"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
-              <a href="https://www.instagram.com/theo_health/"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
-              <a href="https://www.linkedin.com/company/theo-health"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
-              <a href="mailto:jodie@theohealth.com"><i class="fa fa-envelope" aria-hidden="true"></i></a> 
-            </div>
-
-          </footer>
+            </footer>
       </div>
     </Router>
    
