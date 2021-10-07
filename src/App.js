@@ -12,7 +12,7 @@ import Landing from "./LandingPage/Login.js";
 import IndividualSession from "./IndividualSession/IndividualSession.js";
 import ListOfSessions from "./ListOfSessions/SessionList.js";
 import Settings from "./Settings/Settings.js";
-import LiveHeatmap from "./LiveHeatmap/LiveHeatmap.js";
+import { Heatmap } from "./LiveHeatmap/LiveHeatmap.js";
 import ViewClientPage from "./ViewClientPage/ViewClientPage.js";
 import ViewListOfClients from "./ViewListOfClients/ViewClientsList.js";
 
@@ -69,11 +69,6 @@ function App() {
       )
     }
 
-    let LiveHeatmapWrapper = (props) => {
-      return(
-        <LiveHeatmap></LiveHeatmap>
-      )
-    }
 
   return (
     <Router>
@@ -91,7 +86,6 @@ function App() {
             <Route exact path="/" component={LandingWrapper}/>
             <Route exact path="/clientlist" component={ViewListOfClientsWrapper}/>
             <Route exact path="/userpage" component={ViewClientPageWrapper}/>
-            <Route exact path="/liveheatmap" component={LiveHeatmapWrapper}/>
 
 
             </div>

@@ -10,6 +10,7 @@ import {
   
 import './ViewClientPage.css';
 import Settings from "../Settings/Settings.js";
+import { Heatmap } from "../LiveHeatmap/LiveHeatmap.js";
 
 let settings = (props) => {
     return( 
@@ -25,6 +26,7 @@ export default class ViewClientPage extends Component{
           <Settings></Settings>
         )
       }
+      
 
     render() {
 
@@ -37,10 +39,12 @@ export default class ViewClientPage extends Component{
                             <title>Userpage</title>
                         </Helmet>
                         <Link to ="/userpage">My Home</Link>  
-                        <Link to ="/settings">Settings</Link>        
+                        <Link to ="/settings">Settings</Link>    
+                        <Link to ="/LiveHeatmap">Settings</Link>       
                        
                     </div>
                     <div className ="mypage-body">
+                        <Heatmap/>
                         <Route path = "/settings" component={settings} />
                     </div>
                 </div>

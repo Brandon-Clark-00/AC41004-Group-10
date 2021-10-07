@@ -60,7 +60,8 @@ export default class Login extends Component {
         .then((res) => { return res.json().
         then((data) => {
             localStorage.setItem('email', data.username);
-            localStorage.setItem('user_role', data.user_role);
+            localStorage.setItem('user_role', data.isPhysio);
+            localStorage.setItem('userID', data.userID)
 
             if(localStorage.getItem('email') !==null && localStorage.getItem('email') !=="undefined"){
                     window.location.replace("/")
