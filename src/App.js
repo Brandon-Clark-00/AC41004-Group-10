@@ -85,7 +85,7 @@ function App() {
             <h3>Loading</h3>}
         </div> */}
           <header id="site-header" className="site-header">
-            <img className="theohealthlogo" src={theohealthlogo} />
+            <img className="theohealthlogo" src={theohealthlogo} alt="Brand Logo"/>
             </header>
           <div className="main">
             <Route exact path="/" component={LandingWrapper}/>
