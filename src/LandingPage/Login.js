@@ -4,6 +4,7 @@ import './Login.css'
 import sjcl from 'sjcl'
 import Cookies from 'js-cookie'
 import Helmet from 'react-helmet';
+import {isLoggedIn, isPhysio} from '../SessionHandling/auth.js';
 
 function FieldGroup({ id, label, help, ...props}) {
     return(
@@ -23,6 +24,17 @@ export default class Login extends Component {
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSignIn = this.handleSignIn.bind(this);
+
+        
+
+    //     if(isLoggedIn()){
+    //         if(isPhysio){
+    //             window.location.replace("/userpage")
+    //         }
+    //         else{
+    //             window.location.replace("/clientlist")
+    //         }
+    //     }
     }
 
     handleChange=event=>{
@@ -47,11 +59,11 @@ export default class Login extends Component {
                 // JSON response is handled by a json() promises
         .then((res) => { return res.json().
         then((data) => {
-            localStorage.setItem('username', data.username);
+            localStorage.setItem('email', data.username);
             localStorage.setItem('user_role', data.user_role);
 
-            if(localStorage.getItem('username') !==null && localStorage.getItem('username') !=="undefined"){
-                window.location.replace("/userpage")
+            if(localStorage.getItem('email') !==null && localStorage.getItem('email') !=="undefined"){
+                    window.location.replace("/")
             }
             else{
                 alert(data.error);
