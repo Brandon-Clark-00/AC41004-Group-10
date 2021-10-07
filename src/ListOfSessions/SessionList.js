@@ -4,6 +4,9 @@ import './SessionList.css';
 export default class SessionList extends Component{
   constructor(props){
       super(props);
+      this.state = {
+            sessions: []
+        };
   }
   // comonentDidMount part of React lifecycle - runs automatically
   componentDidMount() {
@@ -17,7 +20,7 @@ export default class SessionList extends Component{
             // JSON response is handled by a json() promises
     .then((res) => { return res.json().
     then((data) => {
-        console.log(data)
+        this.setState({sessions: data});
     });
     });
   }
@@ -26,6 +29,7 @@ export default class SessionList extends Component{
       return (
           <div className = "sessionlist-wrapper" >
               <h1>List of Sessions</h1>
+              <p> {JSON.stringify(this.state.sessions)} </p>
           </div>
       )
   }
