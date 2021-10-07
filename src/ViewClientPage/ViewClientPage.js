@@ -37,7 +37,8 @@ export default class ViewClientPage extends Component{
                             <title>Userpage</title>
                         </Helmet>
                         <Link to ="/userpage">My Home</Link>  
-                        <Link to ="/settings">Settings</Link>                         
+                        <Link to ="/settings">Settings</Link>        
+                       
                     </div>
                     <div className ="mypage-body">
                         <Route path = "/settings" component={settings} />

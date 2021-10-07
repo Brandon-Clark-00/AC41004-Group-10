@@ -1,12 +1,17 @@
 //return null if no user is currently logged in otherwise return access_token for current logged in user
 export function isLoggedIn() {
-    return localStorage.getItem("access_token")!==null && localStorage.getItem("access_token")!=="undefined";
+    return localStorage.getItem("email")!==null && localStorage.getItem("email")!=="undefined";
 }
+
+export function isPhysio() {
+    return localStorage.getItem("user_role")!==null && localStorage.getItem("user_role")!=="undefined" && localStorage.getItem("user_role") == "0";
+}
+
 
 //delete token from local storage, used in sign out function
 export function deleteTokens(){
-    localStorage.removeItem("access_token");
-    localStorage.removeItem("username");
+    localStorage.removeItem("email");
+    localStorage.removeItem("user_role");
 }
 
 //if the user is not logged in redirect to pathname (app.js default routed to Login.js component)
