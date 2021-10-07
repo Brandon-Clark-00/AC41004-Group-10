@@ -1,6 +1,8 @@
 import { remove } from 'js-cookie';
 import React, { Component } from 'react'
 import Helmet from 'react-helmet';
+import SessionList from '../ListOfSessions/SessionList.js'
+
 import {
     BrowserRouter as Router,
     Switch,
@@ -44,6 +46,7 @@ export default class ViewClientPage extends Component{
                         <Route path = "/settings" component={settings} />
                     </div>
                 </div>
+                <SessionList></SessionList>
             </Router>
         )
     }
