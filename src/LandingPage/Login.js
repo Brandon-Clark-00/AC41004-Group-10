@@ -4,7 +4,6 @@ import './Login.css'
 import sjcl from 'sjcl'
 import Cookies from 'js-cookie'
 import Helmet from 'react-helmet';
-import {isLoggedIn, isPhysio} from '../SessionHandling/auth.js';
 
 function FieldGroup({ id, label, help, ...props}) {
     return(
@@ -59,12 +58,12 @@ export default class Login extends Component {
                 // JSON response is handled by a json() promises
         .then((res) => { return res.json().
         then((data) => {
-            localStorage.setItem('email', data.username);
-            localStorage.setItem('user_role', data.isPhysio);
-            localStorage.setItem('userID', data.userID)
+            localStorage.setItem('userID', data.userID);
+            localStorage.setItem('username', data.username);
+            localStorage.setItem('user_role', data.user_role);
 
-            if(localStorage.getItem('email') !==null && localStorage.getItem('email') !=="undefined"){
-                    window.location.replace("/")
+            if(localStorage.getItem('username') !==null && localStorage.getItem('username') !=="undefined"){
+                window.location.replace("/userpage")
             }
             else{
                 alert(data.error);
@@ -80,7 +79,7 @@ export default class Login extends Component {
                         <title>Login</title>
                     </Helmet>
                     <form className = "login-form">
-                        <FieldGroup 
+                        <FieldGroup
                             id="formControlsEmail"
                             type="email"
                             name="email"
@@ -89,7 +88,7 @@ export default class Login extends Component {
                             onChange={this.handleChange}
                             placeHolder="Enter email"
                         />
-                        <FieldGroup 
+                        <FieldGroup
                             id="formControlsPassword"
                             type="password"
                             name="password"

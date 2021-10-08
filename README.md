@@ -18,6 +18,7 @@ Deployment
 Development tools
 * Wireframes - [Miro] https://miro.com/
 * Database design - [Draw.io] https://draw.io
+* Colours - [Coolers] https://coolers.co
 * Versioning
   * [Git CLI] https://git-scm.com/
   * [Github desktop] https://desktop.github.com/

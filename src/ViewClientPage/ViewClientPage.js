@@ -3,19 +3,21 @@ import React, { Component } from 'react'
 import { Button } from 'react-bootstrap';
 import { deleteTokens } from '../SessionHandling/auth.js';
 import Helmet from 'react-helmet';
+import SessionList from '../ListOfSessions/SessionList.js'
+
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Link
   } from "react-router-dom";
-  
+
 import './ViewClientPage.css';
 import Settings from "../Settings/Settings.js";
 import { Heatmap } from "../LiveHeatmap/LiveHeatmap.js";
 
 let settings = (props) => {
-    return( 
+    return(
       <Settings></Settings>
     )
   }
@@ -24,7 +26,7 @@ export default class ViewClientPage extends Component{
   constructor(props){
     super(props);}
     settings = (props) => {
-        return( 
+        return(
           <Settings></Settings>
         )
       }
@@ -56,6 +58,7 @@ export default class ViewClientPage extends Component{
                         </div>
                     </div>
                 </div>
+                <SessionList></SessionList>
             </Router>
         )
     }
