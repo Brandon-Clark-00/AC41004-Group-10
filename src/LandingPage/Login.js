@@ -27,15 +27,15 @@ export default class Login extends Component {
 
         
 
-    //     if(isLoggedIn()){
-    //         if(isPhysio){
-    //             window.location.replace("/userpage")
-    //         }
-    //         else{
-    //             window.location.replace("/clientlist")
-    //         }
-    //     }
+    if(localStorage.getItem('email') !==null && localStorage.getItem('email') !=="undefined"){
+        if(localStorage.getItem('user_role') == 0){
+            window.location.replace("/userpage")
+        }
+        else{
+            window.location.replace("/clientlist")
+        }
     }
+}
 
     handleChange=event=>{
       const target = event.target;
@@ -55,7 +55,7 @@ export default class Login extends Component {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: String(data.email), password: String(data.password) })
         };
-        fetch('https://theobackend.herokuapp.com/login', requestOptions)
+        fetch('http://localhost:5000/login', requestOptions)
                 // JSON response is handled by a json() promises
         .then((res) => { return res.json().
         then((data) => {

@@ -12,6 +12,7 @@ export function isPhysio() {
 export function deleteTokens(){
     localStorage.removeItem("email");
     localStorage.removeItem("user_role");
+    localStorage.removeItem("userID");
 }
 
 //if the user is not logged in redirect to pathname (app.js default routed to Login.js component)

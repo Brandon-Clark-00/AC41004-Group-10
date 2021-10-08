@@ -1,5 +1,7 @@
 import { remove } from 'js-cookie';
 import React, { Component } from 'react'
+import { Button } from 'react-bootstrap';
+import { deleteTokens } from '../SessionHandling/auth.js';
 import Helmet from 'react-helmet';
 import {
     BrowserRouter as Router,
@@ -41,6 +43,10 @@ export default class ViewClientPage extends Component{
                         <Link to ="/userpage">My Home</Link>  
                         <Link to ="/settings">Settings</Link>    
                         <Link to ="/LiveHeatmap">Settings</Link>
+                        <Button onClick={() => { deleteTokens();
+                        window.location.replace("/") }}>
+                        Sign out
+                    </Button>
                     </div>
                     <div className ="mypage-body">
                       
