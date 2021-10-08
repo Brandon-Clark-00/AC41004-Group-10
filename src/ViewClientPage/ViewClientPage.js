@@ -39,6 +39,7 @@ let index = 0;
 export default class ViewClientPage extends Component{
   constructor(props){
     super(props);
+  }
 
     settings = (props) => {
         return(
@@ -155,26 +156,27 @@ export default class ViewClientPage extends Component{
       // Front left
       let c = p5.color(this.calculateValue(this.p5,this.parent,1));
       p5.fill(c)
-      p5.ellipse(110, this.frontY, this.frontCircleW, this.frontCircleH)
+      p5.ellipse(110, this.frontY, this.frontCircleW, this.frontCircleH);
 
       // Front right
-      c = this.calculateValue(this.p5,this.parent,2);
+      c = p5.color(this.calculateValue(this.p5,this.parent,2));
       p5.fill(c)
-      p5.ellipse(175, this.frontY, this.frontCircleW, this.frontCircleH)
+      p5.ellipse(175, this.frontY, this.frontCircleW, this.frontCircleH);
 
 
       // Back left
-      c = this.calculateValue(this.p5,this.parent,3);
+      c = p5.color(this.calculateValue(this.p5,this.parent,3));
       p5.fill(c)
-      p5.ellipse(425, this.backY, this.backCircleW, this.backCircleH)
+      p5.ellipse(425, this.backY, this.backCircleW, this.backCircleH);
 
       // Back right
-      c = this.calculateValue(this.p5,this.parent,4);
+      c = p5.color(this.calculateValue(this.p5,this.parent,4));
       p5.fill(c)
-      p5.ellipse(490, this.backY, this.backCircleW, this.backCircleH)
+      p5.ellipse(490, this.backY, this.backCircleW, this.backCircleH);
       index = index+1;
-  }
-
+  };
+  
+  
     render() {
 
         return (
@@ -192,16 +194,12 @@ export default class ViewClientPage extends Component{
                     <div className ="mypage-body">
                       
                         <Route path = "/settings" component={settings} />
-                        {/* /* <div className = "heatmapContainer">*/ }
-                        {/* /* /*<Heatmap/> */}
-                        {/* /* /*</div> */}
-                        <div className="heatmapContainer">                          
+                        <div className="heatmapContainer">
                           <Sketch setup={this.setup} draw ={this.draw} />
                         </div>
 
                     </div>
                 </div>
-              </div>
               <SessionList></SessionList>
           </Router>
         )
