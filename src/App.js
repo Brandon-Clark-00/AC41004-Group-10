@@ -77,7 +77,12 @@ function App() {
 
   return (
     <Router>
-      
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+      />
       <div className='page-container'>
         {/*
         <div> {getMessage.status === 200 ?
@@ -97,10 +102,10 @@ function App() {
             </div>
             <footer className="site-footer">
               <div className="social-media">
-                <a href="https://twitter.com/theoHealth"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
-                <a href="https://www.instagram.com/theo_health/"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
-                <a href="https://www.linkedin.com/company/theo-health"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
-                <a href="mailto:jodie@theohealth.com"><i class="fa fa-envelope" aria-hidden="true"></i></a> 
+                <a href="https://twitter.com/theoHealth"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/theo_health/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/company/theo-health"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="mailto:jodie@theohealth.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
               </div>
 
             </footer>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './SessionList.css';
+import { Container, Row, ListGroup, Button } from "react-bootstrap";
 
 export default class SessionList extends Component{
   constructor(props){
@@ -30,6 +31,19 @@ export default class SessionList extends Component{
           <div className = "sessionlist-wrapper" >
               <h1>List of Sessions</h1>
               <p> {JSON.stringify(this.state.sessions)} </p>
+              <ListGroup defaultActiveKey="#link1">
+                <ListGroup.Item action href="#link1">
+                  Link 1
+                </ListGroup.Item>
+                <ListGroup.Item action href="#link2" disabled>
+                  Link 2
+                </ListGroup.Item>
+                <ListGroup.Item action>
+                  This one is a button
+                </ListGroup.Item>
+              </ListGroup>
+
+              <Button variant="primary">Button #1</Button>
           </div>
       )
   }
