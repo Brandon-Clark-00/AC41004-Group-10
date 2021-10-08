@@ -91,15 +91,16 @@ function App() {
             <Route exact path="/" component={LandingWrapper}/>
             <Route exact path="/clientlist" component={ViewListOfClientsWrapper}/>
             <Route exact path="/userpage" component={ViewClientPageWrapper}/>
+            <Route exact path="/session" component={IndividualSession}/>
 
 
             </div>
             <footer className="site-footer">
               <div className="social-media">
-                <a href="https://twitter.com/theoHealth"><i class="fa fa-twitter" title = "Theo Health Twitter"></i></a> 
-                <a href="https://www.instagram.com/theo_health/"><i class="fa fa-instagram" title = "Theo Health Instagram"></i></a> 
-                <a href="https://www.linkedin.com/company/theo-health"><i class="fa fa-linkedin" title = "Theo Health LinkedIn"></i></a> 
-                <a href="mailto:jodie@theohealth.com"><i class="fa fa-envelope" title = "Theo Health Email"></i></a> 
+                <a href="https://twitter.com/theoHealth"><i class="fa fa-twitter" title = "Theo Health Twitter"></i></a>
+                <a href="https://www.instagram.com/theo_health/"><i class="fa fa-instagram" title = "Theo Health Instagram"></i></a>
+                <a href="https://www.linkedin.com/company/theo-health"><i class="fa fa-linkedin" title = "Theo Health LinkedIn"></i></a>
+                <a href="mailto:jodie@theohealth.com"><i class="fa fa-envelope" title = "Theo Health Email"></i></a>
               </div>
 
             </footer>
