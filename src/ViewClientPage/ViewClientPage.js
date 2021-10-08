@@ -36,15 +36,6 @@ export default class ViewClientPage extends Component{
           }
       }
     
-
-      // if(localStorage.getItem('email') !==null && localStorage.getItem('email') !=="undefined"){
-      //   if(localStorage.getItem('user_role') == 1){
-      //       window.location.replace("/clientlist")
-      //   }
-      // }
-      // else if(localStorage.getItem('email') == null || localStorage.getItem('email') == "undefined"){
-      //   window.location.replace("/")
-      // }
     }
     render() {
       return (
