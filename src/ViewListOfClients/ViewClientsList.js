@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './ViewClientsList.css';
+import { Container, Row, ListGroup, Button } from "react-bootstrap";
 
 export default class ViewClientList extends Component{
   constructor(props){
