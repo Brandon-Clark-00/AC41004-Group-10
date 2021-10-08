@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './SessionList.css';
-import { Container, Row, ListGroup, Button } from "react-bootstrap";
+import {  ListGroup } from "react-bootstrap";
 
 export default class SessionList extends Component{
   constructor(props){
