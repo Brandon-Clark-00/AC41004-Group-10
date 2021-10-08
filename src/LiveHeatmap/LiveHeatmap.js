@@ -1,6 +1,6 @@
 import React, { Component, useEffect } from 'react';
 import ReactDOM from "react-dom";
-import h337 from "heatmap.js"
+//import h337 from "heatmap.js"
 import './LiveHeatmap.css';
 
 export var Heatmap = function() {
