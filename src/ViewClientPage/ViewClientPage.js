@@ -40,12 +40,14 @@ export default class ViewClientPage extends Component{
                         </Helmet>
                         <Link to ="/userpage">My Home</Link>  
                         <Link to ="/settings">Settings</Link>    
-                        <Link to ="/LiveHeatmap">Settings</Link>       
-                       
+                        <Link to ="/LiveHeatmap">Settings</Link>
                     </div>
                     <div className ="mypage-body">
-                        <Heatmap/>
+                      
                         <Route path = "/settings" component={settings} />
+                        <div className = "heatmapContainer">
+                            <Heatmap/>
+                        </div>
                     </div>
                 </div>
             </Router>
