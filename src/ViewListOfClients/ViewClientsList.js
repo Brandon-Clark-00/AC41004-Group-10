@@ -25,10 +25,13 @@ export default class ViewClientList extends Component{
               <Settings></Settings>
             )
           }
-            if(localStorage.getItem('email') !== null & localStorage.getItem('email') !== undefined){
+            if(localStorage.getItem('email') !== null && localStorage.getItem('email') !== undefined){
                 if(localStorage.getItem('user_role') !== '1'){
                     redirectUser();
                 }
+            }
+            if(localStorage.getItem('email') == null || localStorage.getItem('email') == undefined){
+                redirectUser();
             }
         }
   // comonentDidMount part of React lifecycle - runs automatically
