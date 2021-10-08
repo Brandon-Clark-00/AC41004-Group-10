@@ -32,10 +32,12 @@ export default class ViewClientPage extends Component{
         }
         if(localStorage.getItem('email') !== null & localStorage.getItem('email') !== undefined){
           if(localStorage.getItem('user_role') !== '0'){
-          redirectUser();
+            redirectUser();
           }
-      }
-    
+        }
+        if(localStorage.getItem('email') == null || localStorage.getItem('email') == undefined){
+          redirectUser();
+        }
     }
     render() {
       return (
