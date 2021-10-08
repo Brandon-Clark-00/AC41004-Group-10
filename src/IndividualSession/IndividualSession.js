@@ -20,16 +20,17 @@ export default class IndividualSession extends Component{
             // JSON response is handled by a json() promises
     .then((res) => { return res.json().
     then((data) => {
-        console.log(data)
+        this.setState({sensors: data});
     });
     });
   }
 
     render() {
+        console.log(this.state.sensors)
         return (
-            <div className = "indivsession-wrapper">
-                <h1>Your Session</h1>
-
+            <div className = "indivsession-wrapper m-5">
+                <h1>Session</h1>
+                <p style={{fontSize:"0.5em"}}> {JSON.stringify(this.state.sensors[0])} </p>
             </div>
         )
     }
