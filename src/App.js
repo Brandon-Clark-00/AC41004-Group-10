@@ -8,7 +8,7 @@ import {
 import Landing from "./LandingPage/Login.js";
 import ViewClientPage from "./ViewClientPage/ViewClientPage.js";
 import ViewListOfClients from "./ViewListOfClients/ViewClientsList.js";
-
+import IndividualSession from "./IndividualSession/IndividualSession";
 import 'font-awesome/css/font-awesome.min.css';
 import theohealthlogo from './Images/whiteLogo.png';
 import './App.css';
@@ -47,6 +47,12 @@ function App() {
     let ViewClientPageWrapper = (props) => {
       return(
         <ViewClientPage></ViewClientPage>
+      )
+    }
+
+    let IndividualSessionWrapper = (props) => {
+      return(
+        <IndividualSession></IndividualSession>
       )
     }
 

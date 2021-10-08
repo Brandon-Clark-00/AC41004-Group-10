@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Button } from 'react-bootstrap';
 import Helmet from 'react-helmet';
 import {
     BrowserRouter as Router,
@@ -27,9 +26,11 @@ export default class ViewClientList extends Component{
             )
           }
             if(localStorage.getItem('email') !== null & localStorage.getItem('email') !== undefined){
-            if(localStorage.getItem('user_role') !== '1'){
-            redirectUser();
-  }
+                if(localStorage.getItem('user_role') !== '1'){
+                    redirectUser();
+                }
+            }
+        }
   // comonentDidMount part of React lifecycle - runs automatically
   componentDidMount() {
     //POSTING request with userID
