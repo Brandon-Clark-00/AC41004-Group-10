@@ -17,7 +17,7 @@ import ViewClientPage from "./ViewClientPage/ViewClientPage.js";
 import ViewListOfClients from "./ViewListOfClients/ViewClientsList.js";
 
 import 'font-awesome/css/font-awesome.min.css';
-import theohealthlogo from './Images/theohealthlogo.png';
+import theohealthlogo from './Images/whiteLogo.png';
 import './App.css';
 
 function App() {
