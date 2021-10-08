@@ -13,7 +13,7 @@ import Settings from "../Settings/Settings.js";
 import { Heatmap } from "../LiveHeatmap/LiveHeatmap.js";
 import Sketch from "react-p5";
 import testImg from "../Images/human_body.jpg";
-import sessionData from "../Squat Data/SensorTest-full.json";
+import sessionData from "../Squat_Data/SensorTest-full.json";
 let settings = (props) => {
     return( 
       <Settings></Settings>
@@ -30,9 +30,9 @@ let settings = (props) => {
     }
   }
   
-  let data = {};
-  let sessionInfo = [];
-
+let data = {};
+let sessionInfo = [];
+let index = 0;
 
 export default class ViewClientPage extends Component{
   constructor(props){
@@ -54,35 +54,72 @@ export default class ViewClientPage extends Component{
     backCircleW = 35;
     backCircleH = 60;
     
-    index = 0
-
-
-
-     preload = (p5, parent) => {
-      this.data = p5.loadJSON(sessionData);
-    }
+    
 
     loadData = (p5,parent) => {
     
-      data = p5.loadJSON(sessionData);
-      let sessionTemp = data['data'];
-      console.log(data);
+      
+      let sessionTemp = sessionData['data'];
+      console.log("THis is the data");
+      // console.log(sessionTemp);
 
-      for (let i = 0; i < 387; i++) {
+      for (let i = 0; i < 386; i++) {
         
-        let sessionIndex = sessionTemp[i];
-        let currTime = sessionIndex['time'];
-        let currsOne = sessionIndex['Sensor one'];
-        let currsTwo = sessionIndex['Sensor two'];
-        let currsThree = sessionIndex['Sensor three'];
-        let currsFour = sessionIndex['Sensor four']
+        
+        let currTime = sessionTemp[i].time
+        let currsOne = sessionTemp[i]['Sensor 1'];
+        let currsTwo = sessionTemp[i]['Sensor 2'];
+        let currsThree = sessionTemp[i]['Sensor 3'];
+        let currsFour = sessionTemp[i]['Sensor 4'];
+        
 
         sessionInfo.push(new Session(currTime,currsOne,currsTwo,currsThree,currsFour));
       }
+      console.log(sessionInfo);
     }
 
-    calculateValue = (p5,parent) => {
-      return 1;
+    calculateValue = (p5,parent, sensor) => {
+     let value = 0;
+
+     switch (sensor) {
+       case 1:
+         value = sessionInfo[index].sOne;
+        //  console.log("uno");
+         break;
+        case 2:
+          value = sessionInfo[index].sTwo;
+          // console.log("dos");
+          break;
+        case 3:
+          value = sessionInfo[index].sThree;
+          // console.log("tres");
+          break;
+        case 4:
+          value = sessionInfo[index].sFour;
+          // console.log("quattro");
+          break;
+       default:
+         break;
+     }
+    
+     if (value < 100) {
+
+      return 'Green';
+
+    }
+    else if (value <200) {
+
+      return 'Yellow';
+
+    } else if (value < 400){
+
+      return "Orange";
+    }
+    else{
+
+      return "Red";
+
+    }
     }
 
 
@@ -91,7 +128,7 @@ export default class ViewClientPage extends Component{
       
      
       p5.createCanvas(600, 510).parent(parent)
-      p5.frameRate(1);
+      p5.frameRate(2);
       this.loadData();
     
       
@@ -107,36 +144,33 @@ export default class ViewClientPage extends Component{
         console.log(event);
       });
 
-      
+
     }
 
     draw = p5 => {
-      
-      let colorChart = [p5.color(255,0,0), p5.color(255,170,0), p5.color(255,255,0),p5.color(0,255,0)];
-      
+      console.log(index);
       // Front left
-      let c = colorChart[this.calculateValue()]
+      let c = p5.color(this.calculateValue(this.p5,this.parent,1));
       p5.fill(c)
       p5.ellipse(110, this.frontY, this.frontCircleW, this.frontCircleH)
 
       // Front right
-      c = colorChart[Math.floor(Math.random(4)*4)]
+      c = this.calculateValue(this.p5,this.parent,2);
       p5.fill(c)
       p5.ellipse(175, this.frontY, this.frontCircleW, this.frontCircleH)
 
 
       // Back left
-      c = colorChart[Math.floor(Math.random(4)*4)]
+      c = this.calculateValue(this.p5,this.parent,3);
       p5.fill(c)
       p5.ellipse(425, this.backY, this.backCircleW, this.backCircleH)
 
       // Back right
-      c = colorChart[Math.floor(Math.random(4)*4)]
+      c = this.calculateValue(this.p5,this.parent,4);
       p5.fill(c)
       p5.ellipse(490, this.backY, this.backCircleW, this.backCircleH)
-    
+      index = index+1;
   }
-      
 
     render() {
 
