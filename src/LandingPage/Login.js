@@ -43,7 +43,7 @@ export default class Login extends Component {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: String(data.email), password: String(data.password) })
         };
-        fetch('http://localhost:5000/login', requestOptions)
+        fetch('https://theobackend.herokuapp.com/login', requestOptions)
                 // JSON response is handled by a json() promises
         .then((res) => { return res.json().
         then((data) => {
