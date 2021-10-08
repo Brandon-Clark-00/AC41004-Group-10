@@ -17,7 +17,7 @@ export default class SessionList extends Component{
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ userID: String(localStorage.getItem('userID'))})
     };
-    fetch('https://theobackend.herokuapp.com/sessions', requestOptions)
+    fetch('http://localhost:5000/sessions', requestOptions)
             // JSON response is handled by a json() promises
     .then((res) => { return res.json().
     then((data) => {
@@ -28,22 +28,17 @@ export default class SessionList extends Component{
 
   render() {
       return (
-          <div className = "sessionlist-wrapper" >
-              <h1>List of Sessions</h1>
-              <p> {JSON.stringify(this.state.sessions)} </p>
-              <ListGroup defaultActiveKey="#link1">
-                <ListGroup.Item action href="#link1">
-                  Link 1
-                </ListGroup.Item>
-                <ListGroup.Item action href="#link2" disabled>
-                  Link 2
-                </ListGroup.Item>
-                <ListGroup.Item action>
-                  This one is a button
-                </ListGroup.Item>
-              </ListGroup>
 
-              <Button variant="primary">Button #1</Button>
+          <div className = "sessionlist-wrapper p-5">
+              <h1>Your Sessions</h1>
+                <ListGroup className="mt-5">
+                  <ListGroup.Item action href="#link1">
+                  {JSON.stringify(this.state.sessions[0])}
+                  </ListGroup.Item>
+                  <ListGroup.Item action href="#link2">
+                  {JSON.stringify(this.state.sessions[0])}
+                  </ListGroup.Item>
+                </ListGroup>
           </div>
       )
   }
