@@ -1,18 +1,11 @@
 import React, { useState, withRouter, useEffect, Component } from "react";
-import Axios from 'axios'
 import Cookies from 'js-cookie'
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 import Landing from "./LandingPage/Login.js";
-import IndividualSession from "./IndividualSession/IndividualSession.js";
-import ListOfSessions from "./ListOfSessions/SessionList.js";
-import Settings from "./Settings/Settings.js";
-import { Heatmap } from "./LiveHeatmap/LiveHeatmap.js";
 import ViewClientPage from "./ViewClientPage/ViewClientPage.js";
 import ViewListOfClients from "./ViewListOfClients/ViewClientsList.js";
 
@@ -57,6 +50,8 @@ function App() {
       )
     }
 
+
+
     let Settings = (props) => {
       return(
         <Settings></Settings>
@@ -92,7 +87,9 @@ function App() {
             <Route exact path="/clientlist" component={ViewListOfClientsWrapper}/>
             <Route exact path="/userpage" component={ViewClientPageWrapper}/>
 
-
+            {/* <h1>You've stumbled onto an empty page </h1>
+            <h2>Follow the link to get back to your home page</h2>
+            <Link to ="/">Home</Link>   */}
             </div>
             <footer className="site-footer">
               <div className="social-media">

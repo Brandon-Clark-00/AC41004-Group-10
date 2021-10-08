@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import { Button, HelpBlock, FormGroup, FormControl, FormLabel } from "react-bootstrap";
+import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import './Login.css'
-import sjcl from 'sjcl'
-import Cookies from 'js-cookie'
 import Helmet from 'react-helmet';
+import { redirectUser } from '../SessionHandling/auth';
 
 function FieldGroup({ id, label, help, ...props}) {
     return(
@@ -23,18 +22,12 @@ export default class Login extends Component {
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSignIn = this.handleSignIn.bind(this);
-
+        if(localStorage.getItem('email') !== null & localStorage.getItem('email') !== undefined){
+            redirectUser();
+        }
         
 
-    if(localStorage.getItem('email') !==null && localStorage.getItem('email') !=="undefined"){
-        if(localStorage.getItem('user_role') == 0){
-            window.location.replace("/userpage")
-        }
-        else{
-            window.location.replace("/clientlist")
-        }
     }
-}
 
     handleChange=event=>{
       const target = event.target;
@@ -59,11 +52,11 @@ export default class Login extends Component {
         .then((res) => { return res.json().
         then((data) => {
             localStorage.setItem('userID', data.userID);
-            localStorage.setItem('username', data.username);
-            localStorage.setItem('user_role', data.user_role);
+            localStorage.setItem('email', data.username);
+            localStorage.setItem('user_role', data.isPhysio);
 
-            if(localStorage.getItem('username') !==null && localStorage.getItem('username') !=="undefined"){
-                window.location.replace("/userpage")
+            if(localStorage.getItem('email') !==null && localStorage.getItem('email') !=="undefined"){
+                redirectUser();
             }
             else{
                 alert(data.error);

@@ -3,24 +3,33 @@ import { Button } from 'react-bootstrap';
 import Helmet from 'react-helmet';
 import {
     BrowserRouter as Router,
-    Switch,
-    Route,
     Link
   } from "react-router-dom";
-import { deleteTokens } from '../SessionHandling/auth.js';
+import { deleteTokens, redirectUser } from '../SessionHandling/auth.js';
 import Settings from "../Settings/Settings.js";
 import './ViewClientsList.css';
 
 let settings = (props) => {
-    return( 
+    return(
       <Settings></Settings>
     )
-  }
-
+    }  
 export default class ViewClientList extends Component{
     constructor(props){
-        super(props);}
+        super(props);
+        settings = (props) => {
+            return( 
+              <Settings></Settings>
+            )
+          }
+          if(localStorage.getItem('email') !== null & localStorage.getItem('email') !== undefined){
+            if(localStorage.getItem('user_role') !== '1'){
+            redirectUser();
+            }
+        }
+        }  
     render() {
+
         return (
             <Router>
                 <div className = "clientlist-wrapper">
