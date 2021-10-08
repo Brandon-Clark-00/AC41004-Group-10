@@ -12,12 +12,12 @@ import Landing from "./LandingPage/Login.js";
 import IndividualSession from "./IndividualSession/IndividualSession.js";
 import ListOfSessions from "./ListOfSessions/SessionList.js";
 import Settings from "./Settings/Settings.js";
-import LiveHeatmap from "./LiveHeatmap/LiveHeatmap.js";
+import { Heatmap } from "./LiveHeatmap/LiveHeatmap.js";
 import ViewClientPage from "./ViewClientPage/ViewClientPage.js";
 import ViewListOfClients from "./ViewListOfClients/ViewClientsList.js";
 
 import 'font-awesome/css/font-awesome.min.css';
-import theohealthlogo from './Images/theohealthlogo.png';
+import theohealthlogo from './Images/whiteLogo.png';
 import './App.css';
 
 function App() {
@@ -69,11 +69,6 @@ function App() {
       )
     }
 
-    let LiveHeatmapWrapper = (props) => {
-      return(
-        <LiveHeatmap></LiveHeatmap>
-      )
-    }
 
   return (
     <Router>
@@ -90,22 +85,21 @@ function App() {
             <h3>Loading</h3>}
         </div> */}
           <header id="site-header" className="site-header">
-            <img className="theohealthlogo" src={theohealthlogo} />
+            <img className="theohealthlogo" src={theohealthlogo} alt="Brand Logo"/>
             </header>
           <div className="main">
             <Route exact path="/" component={LandingWrapper}/>
             <Route exact path="/clientlist" component={ViewListOfClientsWrapper}/>
             <Route exact path="/userpage" component={ViewClientPageWrapper}/>
-            <Route exact path="/liveheatmap" component={LiveHeatmapWrapper}/>
 
 
             </div>
             <footer className="site-footer">
               <div className="social-media">
-                <a href="https://twitter.com/theoHealth"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/theo_health/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/company/theo-health"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="mailto:jodie@theohealth.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/theoHealth"><i class="fa fa-twitter" title = "Theo Health Twitter"></i></a> 
+                <a href="https://www.instagram.com/theo_health/"><i class="fa fa-instagram" title = "Theo Health Instagram"></i></a> 
+                <a href="https://www.linkedin.com/company/theo-health"><i class="fa fa-linkedin" title = "Theo Health LinkedIn"></i></a> 
+                <a href="mailto:jodie@theohealth.com"><i class="fa fa-envelope" title = "Theo Health Email"></i></a> 
               </div>
 
             </footer>

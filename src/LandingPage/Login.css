@@ -35,7 +35,7 @@
     padding: 10px 20px;
     
     border: none;
-    background-color: #DB6E20;
+    background-color: #C74F0A;
     font-family: 'Comfortaa', cursive;
     outline: solid 0.1px white;
     transition: outline 0.1s linear; 
@@ -45,9 +45,9 @@
 }
 
 .login-button:hover {
-    outline: solid 2px #DB6E20;
+    outline: solid 2px #C74F0A;
     background-color: white;
-    color: #DB6E20;
+    color: #F36D21;
 }
 
 .form-control {
