@@ -29,10 +29,10 @@ export function redirectUser(){
     if(localStorage.getItem('email') !== null && localStorage.getItem('email') !== undefined)
     {
         if(localStorage.getItem('user_role') !== '0'){
-            window.location.replace("/clientlist")
+            window.location.replace("/physio/clientlist")
         }
         else{
-            window.location.replace("/userpage")
+            window.location.replace("/user/home")
         }
     }
     else{

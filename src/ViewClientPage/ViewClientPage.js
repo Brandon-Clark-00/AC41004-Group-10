@@ -1,21 +1,18 @@
 import React, { Component } from 'react'
-import { Button } from 'react-bootstrap';
 import Helmet from 'react-helmet';
-import SessionList from '../ListOfSessions/SessionList.js'
 import { deleteTokens, redirectUser } from '../SessionHandling/auth.js';
 
 import {
     BrowserRouter as Router,
     Route,
-    Link
+    NavLink
   } from "react-router-dom";
 
 import './ViewClientPage.css';
 import Settings from "../Settings/Settings.js";
 import LiveHeatmap from "../LiveHeatmap/LiveHeatmap.js";
-import Sketch from "react-p5";
-import testImg from "../Images/human_body.jpg";
-import sessionData from "../Squat_Data/SensorTest-full.json";
+import Home from './Home.js'
+
 let settings = (props) => {
     return(
       <Settings></Settings>
@@ -26,13 +23,16 @@ let heatmap = (props) => {
       <LiveHeatmap></LiveHeatmap>
     )
 }  
+ let home = (props) => {
+  return(
+    <Home></Home>
+  )
+}
 
-  
 export default class ViewClientPage extends Component{
   constructor(props){
     super(props);
-  }
-
+ 
     settings = (props) => {
         return(
           <Settings></Settings>
@@ -43,26 +43,54 @@ export default class ViewClientPage extends Component{
           <LiveHeatmap></LiveHeatmap>
         )
       }
+      home = (props) => {
+        return(
+          <Home></Home>
+        )
+      }
+      if(localStorage.getItem('email') !== null && localStorage.getItem('email') !== undefined){
+        if(localStorage.getItem('user_role') !== '0'){
+            redirectUser();
+        }
+    }
+    if(localStorage.getItem('email') == null || localStorage.getItem('email') == undefined){
+        redirectUser();
+    }
+
+    const onClick = () =>{
+      deleteTokens(); 
+      window.location.replace("/")
+    }
+  }
     render() {
 
         return (
             <Router>
                 <div className = "mypage-wrapper">
-                    <div className = "mypage-header">
-                        <Helmet>
-
-                            <title>Userpage</title>
-                        </Helmet>
-                        <Link to ="/userpage"> My Home </Link>  
-                        <Link to ="/settings"> Settings </Link>    
-                        <Link to ="/heatmap"> Heatmap </Link>
-                    </div>
-                    <div className ="mypage-body">
-                        <Route path = "/settings" component={Settings} />
-                        <Route path = "/heatmap" component={LiveHeatmap} />
-                    </div>
+                  <Helmet>
+                    <title>Userpage</title>
+                  </Helmet>
+                  <div className = "mypage-header">
+                    <NavLink to ="/user/home" activeClassName="current" exact>
+                      <li>My Home</li>
+                    </NavLink>  
+                    <NavLink to ="/user/heatmap" activeClassName="current" exact>
+                      <li>Heatmap</li>
+                    </NavLink>
+                    <NavLink to ="/user/settings" activeClassName="current" exact>
+                      <li>Settings</li>
+                    </NavLink>    
+                    <NavLink to = "/" onClick={() => {  deleteTokens(); window.location.replace("/")}} exact>
+                      <li>Sign out</li>
+                    </NavLink>
+                  </div>
+                  <div className ="mypage-body">
+                    <Route path = "/user/home" component={Home} />
+                    <Route path = "/user/settings" component={Settings} />
+                    <Route path = "/user/heatmap" component={LiveHeatmap} />
+                  </div>
                 </div>
-              <SessionList></SessionList>
+
           </Router>
         )
     }

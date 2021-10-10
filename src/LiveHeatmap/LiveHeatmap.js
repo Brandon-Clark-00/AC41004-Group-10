@@ -1,10 +1,10 @@
-import React, { Component, useEffect } from 'react';
-import ReactDOM from "react-dom";
-import h337 from "heatmap.js"
+import React, { Component } from 'react';
+import Helmet from 'react-helmet';
 import './LiveHeatmap.css';
 import Sketch from "react-p5";
 import testImg from "../Images/human_body.jpg";
 import sessionData from "../Squat_Data/SensorTest-full.json";
+import { redirectUser } from '../SessionHandling/auth.js';
 
 class Session {
   constructor(timeStamp,sOne,sTwo,sThree,sFour){
@@ -24,6 +24,15 @@ let index = 0;
 export default class LiveHeatmap extends Component {
   constructor(props){
     super(props);
+    
+    if(localStorage.getItem('email') !== null && localStorage.getItem('email') !== undefined){
+      if(localStorage.getItem('user_role') !== '0'){
+          redirectUser();
+      }
+    }
+    if(localStorage.getItem('email') == null || localStorage.getItem('email') == undefined){
+      redirectUser();
+    }
   }
 
   frontX = 50;
@@ -206,6 +215,9 @@ export default class LiveHeatmap extends Component {
 render(){
   return(
     <div className="heatmapContainer">
+      <Helmet>
+        <title>Heatmap</title>
+      </Helmet>
       <Sketch setup={this.setup} draw ={this.draw} />
     </div>
   )
