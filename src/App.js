@@ -1,8 +1,10 @@
-import React, { useState, withRouter, useEffect, Component } from "react";
+import React, { useState } from "react";
 import Cookies from 'js-cookie'
 import {
   BrowserRouter as Router,
   Route,
+  Redirect,
+  Switch
 } from "react-router-dom";
 
 import Landing from "./LandingPage/Login.js";
@@ -56,8 +58,6 @@ function App() {
       )
     }
 
-
-
     let Settings = (props) => {
       return(
         <Settings></Settings>
@@ -89,11 +89,13 @@ function App() {
             <img className="theohealthlogo" src={theohealthlogo} alt="Brand Logo"/>
             </header>
           <div className="main">
-            <Route exact path="/" component={LandingWrapper}/>
-            <Route exact path="/clientlist" component={ViewListOfClientsWrapper}/>
-            <Route exact path="/userpage" component={ViewClientPageWrapper}/>
-            <Route exact path="/session" component={IndividualSession}/>
-
+            <Switch>
+              <Route exact path="/" component={LandingWrapper}/>
+              <Route exact path="/physio/clientlist" component={ViewListOfClientsWrapper}/>
+              <Route exact path="/user/home" component={ViewClientPageWrapper}/>
+              <Route exact path="/session" component={IndividualSession}/>
+              <Redirect to ="/"></Redirect>
+            </Switch>
             {/* <h1>You've stumbled onto an empty page </h1>
             <h2>Follow the link to get back to your home page</h2>
             <Link to ="/">Home</Link>   */}
