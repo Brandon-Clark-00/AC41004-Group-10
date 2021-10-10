@@ -108,6 +108,23 @@ export default class LiveHeatmap extends Component {
   resetTime = (p5, parent) => {
     index = 0;
   }
+  getAverage = (p5,parent, field) => {
+    let average;
+    let total=0;
+    for (let index = 0; index < sessionInfo.length; index++) {
+      total += sessionInfo[index].field;
+    }
+    console.log(total);
+    
+  }
+
+  saveSession = (p5, parent) => {
+    let tempUserID = "temp";
+    let sessionDate = sessionInfo[0].timeStamp.split('T')[0];
+    let sensor1Av = this.getAverage(this.p5,this.parent,'sOne')
+    console.log(sensor1Av);
+
+  }
 
   setup = (p5, parent) => {
     
@@ -135,8 +152,7 @@ export default class LiveHeatmap extends Component {
     // this.timeSlider.position(200,300);
 
     // this.resetButton = p5.createButton("Reset");
-    // this.resetButton.position(2000,2000);
-    // this.resetButton.mousePressed(this.resetTime);
+    // this.resetButton.mousePressed(this.saveSession);
     
     // this.timeSlider.input(index = this.timeSlider.value());
 
@@ -147,7 +163,7 @@ export default class LiveHeatmap extends Component {
 
     // this.timeSlider.position(20,300);
     // this.timeSlider.value(index)
-    // this.resetButton.position(500,200);
+    // this.resetButton.position(1500,200);
 
 
     p5.fill(255);
@@ -158,7 +174,7 @@ export default class LiveHeatmap extends Component {
     let timer = "Time: " + sessionInfo[index].timeStamp;
     p5.text(timer, 180,40)
 
-    console.log(index);
+    // console.log(index);
     // Front left
     let c = p5.color(this.calculateValue(this.p5,this.parent,1));
     p5.fill(c)
