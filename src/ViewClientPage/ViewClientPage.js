@@ -12,57 +12,56 @@ import {
 
 import './ViewClientPage.css';
 import Settings from "../Settings/Settings.js";
-import { Heatmap } from "../LiveHeatmap/LiveHeatmap.js";
-
+import LiveHeatmap from "../LiveHeatmap/LiveHeatmap.js";
+import Sketch from "react-p5";
+import testImg from "../Images/human_body.jpg";
+import sessionData from "../Squat_Data/SensorTest-full.json";
 let settings = (props) => {
     return(
       <Settings></Settings>
     )
-    }  
+}  
+let heatmap = (props) => {
+    return(
+      <LiveHeatmap></LiveHeatmap>
+    )
+}  
 
-
+  
 export default class ViewClientPage extends Component{
   constructor(props){
     super(props);
+  }
 
     settings = (props) => {
         return(
           <Settings></Settings>
         )
-        }
-        if(localStorage.getItem('email') !== null & localStorage.getItem('email') !== undefined){
-          if(localStorage.getItem('user_role') !== '0'){
-            redirectUser();
-          }
-        }
-        if(localStorage.getItem('email') == null || localStorage.getItem('email') == undefined){
-          redirectUser();
-        }
-    }
+      }
+      heatmap = (props) => {
+        return(
+          <LiveHeatmap></LiveHeatmap>
+        )
+      }
     render() {
-      return (
-        
-          <Router>
-              <div className = "mypage-wrapper">
-                  <div className = "mypage-header">
-                      <Helmet>
-                          <title>Userpage</title>
-                      </Helmet>
-                      <Link to ="/userpage">My Home</Link>  
-                      <Link to ="/settings">Settings</Link>    
-                      <Link to ="/LiveHeatmap">LiveHeatmap</Link>
-                      <Button onClick={() => { deleteTokens();
-                        window.location.replace("/") }}>
-                        Sign out
-                      </Button>
-                  </div>
-                <div className ="mypage-body">
-                  <Route path = "/settings" component={settings} />
-                  <div className = "heatmapContainer">
-                  <Heatmap/>
-                  </div>
+
+        return (
+            <Router>
+                <div className = "mypage-wrapper">
+                    <div className = "mypage-header">
+                        <Helmet>
+
+                            <title>Userpage</title>
+                        </Helmet>
+                        <Link to ="/userpage"> My Home </Link>  
+                        <Link to ="/settings"> Settings </Link>    
+                        <Link to ="/heatmap"> Heatmap </Link>
+                    </div>
+                    <div className ="mypage-body">
+                        <Route path = "/settings" component={Settings} />
+                        <Route path = "/heatmap" component={LiveHeatmap} />
+                    </div>
                 </div>
-              </div>
               <SessionList></SessionList>
           </Router>
         )

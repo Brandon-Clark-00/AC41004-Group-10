@@ -1,7 +1,7 @@
 .heatmapContainer{
     position: sticky; 
-    border-style: dotted;
-    border-color: red;
+    /* border-style: dotted;
+    border-color: red; */
     width: 50%;
     display:flex;
     justify-content: center;
