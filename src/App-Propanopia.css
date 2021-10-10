@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+/*---- Header ----*/
+
+.site-header {
+  overflow: visible;
+  background-color:#B8B733;
+  padding: 20px 5%;
+  transition: background-color 0.2s linear;
+}
+
+.theohealthlogo {
+  float: left;
+  display: inline-block;
+  width: 240px;
+  padding: 10px 10px 10px 10px;
+  background-color: #B8B733;
+  ;
+
+}
+
+/*---- Body ----*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    
+    /*new*/
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.page-container {
+    overflow: auto;
+    min-height: 100%;
+    position: relative; 
+    color: #42439F;
+    /*new*/
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+
+}
+
+#root {
+    height:100%;
+}
+
+.main{
+  flex: 1;
+}
+
+
+/*---- Footer ----*/
+.site-footer{
+padding: 20px 5%;
+background-color: #B8B733;
+
+text-transform: capitalize;
+color: #B8B733;
+
+
+display: flex;
+left: 0;
+bottom: 0;
+right: 0;
+}
+
+.social-media{
+  margin-left: auto; 
+  margin-right: 0;  
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+
+}
+
+/*twitter*/
+.social-media a:nth-child(1) i{
+  font-size: 40px;
+  color: white;
+  /*
+  color:rgb(29,161,242)
+  */
+}
+
+/*instagram*/
+.social-media a:nth-child(2) i{
+  font-size: 40px;
+  color: white;
+  /* Gradient copied from https://stackoverflow.com/questions/48719337/how-to-give-gradient-color-to-icon/48719471 
+  background:-moz-linear-gradient(top, #e72c83 0%, #a742c6 100%); 
+  background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%); 
+  background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color:transparent;
+  */
+}
+
+/*linkdin*/
+.social-media a:nth-child(3) i{
+  font-size: 40px;
+  color: white;
+  /*
+  color: #0e76a8;
+  */
+}
+
+/*email*/
+.social-media a:nth-child(4) i{
+  font-size: 40px;
+  color: white;
+  /*
+  color: #00a2ed;
+  */
+}
+
+.social-media a{
+  text-decoration: none;
+  margin-left: 40px;
+  color: black;
+}
