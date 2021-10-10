@@ -151,8 +151,8 @@ export default class LiveHeatmap extends Component {
     // this.timeSlider = p5.createSlider(0,386,0);
     // this.timeSlider.position(200,300);
 
-    this.resetButton = p5.createButton("Reset");
-    this.resetButton.mousePressed(this.saveSession);
+    // this.resetButton = p5.createButton("Reset");
+    // this.resetButton.mousePressed(this.saveSession);
     
     // this.timeSlider.input(index = this.timeSlider.value());
 
@@ -163,7 +163,7 @@ export default class LiveHeatmap extends Component {
 
     // this.timeSlider.position(20,300);
     // this.timeSlider.value(index)
-    this.resetButton.position(1500,200);
+    // this.resetButton.position(1500,200);
 
 
     p5.fill(255);
