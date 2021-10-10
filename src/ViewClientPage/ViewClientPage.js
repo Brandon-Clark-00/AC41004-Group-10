@@ -57,7 +57,8 @@ export default class ViewClientPage extends Component{
     frontCircleH = 70;
     backCircleW = 35;
     backCircleH = 60;
-    
+    timeSlider;
+    resetButton;
     
 
     loadData = (p5,parent) => {
@@ -126,13 +127,15 @@ export default class ViewClientPage extends Component{
     }
     }
 
-
+    resetTime = (p5, parent) => {
+      index = 0;
+    }
 
     setup = (p5, parent) => {
       
      
-      p5.createCanvas(600, 510).parent(parent)
-      p5.frameRate(2);
+      let currCanvas = p5.createCanvas(600, 510).parent(parent)
+      p5.frameRate(6);
       this.loadData();
     
       
@@ -149,9 +152,34 @@ export default class ViewClientPage extends Component{
       });
 
 
+
+      // this.timeSlider = p5.createSlider(0,386,0);
+      // this.timeSlider.position(200,300);
+
+      // this.resetButton = p5.createButton("Reset");
+      // this.resetButton.position(2000,2000);
+      // this.resetButton.mousePressed(this.resetTime);
+      
+      // this.timeSlider.input(index = this.timeSlider.value());
+
     }
 
     draw = p5 => {
+
+
+      // this.timeSlider.position(20,300);
+      // this.timeSlider.value(index)
+      // this.resetButton.position(500,200);
+
+
+      p5.fill(255);
+      p5.rect(180,20,225,30);
+
+      p5.textSize(15);
+      p5.fill(p5.color(0));
+      let timer = "Time: " + sessionInfo[index].timeStamp;
+      p5.text(timer, 180,40)
+
       console.log(index);
       // Front left
       let c = p5.color(this.calculateValue(this.p5,this.parent,1));
@@ -173,7 +201,12 @@ export default class ViewClientPage extends Component{
       c = p5.color(this.calculateValue(this.p5,this.parent,4));
       p5.fill(c)
       p5.ellipse(490, this.backY, this.backCircleW, this.backCircleH);
-      index = index+1;
+      if (index == 385) {
+        index = 0;
+      }else{
+        index = index+1;
+      }
+      
   };
   
   
