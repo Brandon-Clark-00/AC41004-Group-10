@@ -21,6 +21,8 @@ let sessionInfo = [];
 let index = 0;
 let paused = false;
 let thisCanvas;
+let scale = 1;
+let divBox;
 
 export default class LiveHeatmap extends Component {
   constructor(props){
@@ -169,8 +171,9 @@ export default class LiveHeatmap extends Component {
 
   setup = (p5, parent) => {
 
+    divBox= parent;
     // Creating canvas
-    thisCanvas = p5.createCanvas(600, 510).parent(parent)
+    thisCanvas = p5.createCanvas(600 * scale, 510 * scale).parent(parent)
     p5.frameRate(6);
 
     // Loading workout data
@@ -181,7 +184,7 @@ export default class LiveHeatmap extends Component {
     p5.loadImage(testImg, img => {
       this.img = img;
       // imgTest = this.img;
-      p5.image(img,0,0,600,510)
+      p5.image(img,0,0,600 * scale, 510 * scale)
     },
     (event) => {
       p5.fill("red")
@@ -203,47 +206,49 @@ export default class LiveHeatmap extends Component {
   }
 
   draw = p5 => {
-    this.pauseButton.position(thisCanvas.position(),600);
+    this.pauseButton.position(-600 * scale, 0 * scale, "relative").parent(divBox);
+    this.timeSlider.position(150 * scale, -55 * scale, "relative").parent(divBox);
+    this.timeSlider.addClass("slider")
+    this.timeSlider.value(index)
     if (!paused)
     {
-    this.timeSlider.position(20,300);
-    this.timeSlider.value(index)
+    
     
     
 
 
     // Timer ellipse and text
     p5.fill(255);
-    p5.ellipse(285,30,190,40);
-    p5.textSize(25);
+    p5.ellipse(285 * scale, 30 * scale, 190 * scale, 40 * scale);
+    p5.textSize(25 * scale);
     p5.fill(p5.color(0));
     let timer = "Time: " + sessionInfo[index].timeStamp.split('T')[1].substring(0,sessionInfo[index].timeStamp.split('T')[1].length-5);
-    p5.text(timer, 200,40)
+    p5.text(timer, 200 * scale, 40 * scale)
 
     //Legs
 
     // Front left
     let c = p5.color(this.calculateValue(this.p5,this.parent,1));
     p5.fill(c)
-    p5.ellipse(110, this.frontY, this.frontCircleW, this.frontCircleH);
+    p5.ellipse(110 * scale, this.frontY * scale, this.frontCircleW * scale, this.frontCircleH * scale);
 
 
     // Front right
     c = p5.color(this.calculateValue(this.p5,this.parent,2));
     p5.fill(c)
-    p5.ellipse(175, this.frontY, this.frontCircleW, this.frontCircleH);
+    p5.ellipse(175 * scale, this.frontY * scale, this.frontCircleW * scale, this.frontCircleH * scale);
 
 
     // Back left
     c = p5.color(this.calculateValue(this.p5,this.parent,3));
     p5.fill(c)
-    p5.ellipse(425, this.backY, this.backCircleW, this.backCircleH);
+    p5.ellipse(425 * scale, this.backY * scale, this.backCircleW * scale, this.backCircleH * scale);
 
 
     // Back right
     c = p5.color(this.calculateValue(this.p5,this.parent,4));
     p5.fill(c)
-    p5.ellipse(490, this.backY, this.backCircleW, this.backCircleH);
+    p5.ellipse(490 * scale, this.backY * scale, this.backCircleW * scale, this.backCircleH * scale);
 
 
     // Index update
