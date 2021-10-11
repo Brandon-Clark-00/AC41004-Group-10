@@ -21,13 +21,12 @@ export default class SessionList extends Component{
             // JSON response is handled by a json() promises
     .then((res) => { return res.json().
       then((data) => {
-        //turn the object recieved into an array
+        //turn the object recieved into a big array
         var arrayofSessions = []
         data.forEach((sesh) => {
           var objectArray = Object.entries(sesh);
           arrayofSessions.push(objectArray);
         });
-        console.log(arrayofSessions)
         this.setState({sessions: arrayofSessions});
       });
     });
@@ -39,7 +38,7 @@ export default class SessionList extends Component{
               <h1>Your Sessions</h1>
                 <ListGroup className="mt-5">
                     {this.state.sessions.map(function(value, index){
-                        return <ListGroup.Item action href="#link1" key={ index }>{value[2][1]}  </ListGroup.Item>;
+                        return <ListGroup.Item action href="#link1" key={ index }>{value[0][1]}  </ListGroup.Item>;
                       })}
                 </ListGroup>
           </div>
