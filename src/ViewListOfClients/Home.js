@@ -26,7 +26,7 @@ export default class ViewClientPage extends Component{
           headers: { 'Content-Type': 'text/html' },
           body: JSON.stringify({ userID: String(localStorage.getItem('userID'))})
       };
-      fetch('http://localhost:5000/clients', requestOptions)
+      fetch('https://theobackend.herokuapp.com/clients', requestOptions)
               // JSON response is handled by a json() promises
       .then((res) => { return res.json().
         then((data) => {
