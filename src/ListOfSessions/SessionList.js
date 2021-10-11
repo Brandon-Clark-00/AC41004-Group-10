@@ -14,15 +14,21 @@ export default class SessionList extends Component{
     //POSTING request with userID
     const requestOptions = {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'text/html' },
         body: JSON.stringify({ userID: String(localStorage.getItem('userID'))})
     };
     fetch('https://theobackend.herokuapp.com/sessions', requestOptions)
             // JSON response is handled by a json() promises
     .then((res) => { return res.json().
-    then((data) => {
-        this.setState({sessions: data});
-    });
+      then((data) => {
+        //turn the object recieved into a big array
+        var arrayofSessions = []
+        data.forEach((sesh) => {
+          var objectArray = Object.entries(sesh);
+          arrayofSessions.push(objectArray);
+        });
+        this.setState({sessions: arrayofSessions});
+      });
     });
   }
 
@@ -31,12 +37,9 @@ export default class SessionList extends Component{
           <div className = "sessionlist-wrapper p-5">
               <h1>Your Sessions</h1>
                 <ListGroup className="mt-5">
-                  <ListGroup.Item action href="#link1">
-                  {JSON.stringify(this.state.sessions[0])}
-                  </ListGroup.Item>
-                  <ListGroup.Item action href="#link2">
-                  {JSON.stringify(this.state.sessions[0])}
-                  </ListGroup.Item>
+                    {this.state.sessions.map(function(value, index){
+                        return <ListGroup.Item action href="#link1" key={ index }>{value[0][1]}</ListGroup.Item>;
+                      })}
                 </ListGroup>
           </div>
       )
