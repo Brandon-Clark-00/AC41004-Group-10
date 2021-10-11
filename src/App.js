@@ -14,6 +14,7 @@ import IndividualSession from "./IndividualSession/IndividualSession";
 import 'font-awesome/css/font-awesome.min.css';
 import theohealthlogo from './Images/whiteLogo.png';
 import './App.css';
+// import './App-Propanopia.css';
 
 function App() {
 

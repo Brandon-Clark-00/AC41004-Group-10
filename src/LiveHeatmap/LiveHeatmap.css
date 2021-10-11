@@ -18,10 +18,21 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../Images/legs3-0.png");
+    /* background-image: url("../Images/legs3-0.png"); */
 
     
  }
+ .heatmapContainer{
+    position: sticky; 
+    /* border-style: dotted;
+    border-color: red; */
+    padding-top: 5%;
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    left: 25%;
+    right: 50%;
+}
  
  canvas{
     width: 100%;

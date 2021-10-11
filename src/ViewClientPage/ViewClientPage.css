@@ -1,13 +1,3 @@
-.heatmapContainer{
-    position: sticky; 
-    /* border-style: dotted;
-    border-color: red; */
-    width: 50%;
-    display:flex;
-    justify-content: center;
-    left: 25%;
-    right: 50%;
-}
 
 .mypage-header{
     padding-top: 10px;
