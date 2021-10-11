@@ -15,7 +15,7 @@ let settings = (props) => {
     return(
       <Settings></Settings>
     )
-    }  
+    }
 let home = (props) => {
       return(
         <Home></Home>
@@ -28,7 +28,7 @@ export default class ViewClientList extends Component{
             clients: []
         };
           settings = (props) => {
-            return( 
+            return(
               <Settings></Settings>
             )
           }
@@ -57,10 +57,10 @@ export default class ViewClientList extends Component{
             <div className ="physio-header">
               <NavLink to ="/physio/clientlist" activeClassName="current" exact>
                 <li>My Home</li>
-              </NavLink>  
+              </NavLink>
               <NavLink to ="/physio/settings" activeClassName="current" exact>
                 <li>Settings</li>
-              </NavLink>    
+              </NavLink>
               <NavLink to = "/" onClick={() => {  deleteTokens(); window.location.replace("/")}} exact>
                 <li>Sign out</li>
               </NavLink>

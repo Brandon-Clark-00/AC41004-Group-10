@@ -38,7 +38,7 @@ export default class SessionList extends Component{
               <h1>Your Sessions</h1>
                 <ListGroup className="mt-5">
                     {this.state.sessions.map(function(value, index){
-                        return <ListGroup.Item action href="#link1" key={ index }>{value[0][1]}  </ListGroup.Item>;
+                        return <ListGroup.Item action href="#link1" key={ index }>{value[0][1]}</ListGroup.Item>;
                       })}
                 </ListGroup>
           </div>
