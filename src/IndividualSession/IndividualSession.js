@@ -18,7 +18,7 @@ export default class IndividualSession extends Component{
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ sessionID: 1}) //get ID from localhost here
     };
-    fetch('http://localhost:5000/sensors', requestOptions)
+    fetch('https://theobackend.herokuapp.com/sensors', requestOptions)
             // JSON response is handled by a json() promises
     .then((res) => { return res.json().
     then((data) => {
