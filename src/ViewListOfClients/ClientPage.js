@@ -5,7 +5,7 @@ import IndividualSession from '../IndividualSession/IndividualSession.js';
 import {  ListGroup } from "react-bootstrap";
 import '../../node_modules/react-vis/dist/style.css';
 import { ChartLabel, HorizontalGridLines, LineSeries, VerticalGridLines, XAxis, XYPlot, YAxis } from 'react-vis';
-import './ViewClientPage.css';
+import './ViewClientsList.css';
 
 
 const data =[
@@ -21,7 +21,7 @@ const data =[
    }
   }
 
-export default class ViewClientPage extends Component{
+export default class ClientPage extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -34,9 +34,9 @@ export default class ViewClientPage extends Component{
           const requestOptions = {
               method: 'POST',
               headers: { 'Content-Type': 'text/html' },
-              body: JSON.stringify({ userID: String(localStorage.getItem('userID'))})
+              body: JSON.stringify({ clientID: String(localStorage.getItem('clientID'))})
           };
-          fetch('https://theobackend.herokuapp.com/sessions', requestOptions)
+          fetch('https://theobackend.herokuapp.com/clientSessions', requestOptions)
                   // JSON response is handled by a json() promises
           .then((res) => { return res.json().
             then((data) => {
@@ -85,7 +85,7 @@ export default class ViewClientPage extends Component{
                     <LineSeries data={data} curve={'curveMonotoneX'}/>
                   </XYPlot>
                 <div className = "sessionlist-wrapper p-5">
-              <h1>Your Sessions</h1>
+              <h1>Clients Sessions</h1>
               <ListGroup className="mt-5">
                   {this.state.sessions.map(function(value, index){
                       return <ListGroup.Item action key={ index } onClick={updateLocalhost(value[2][1])}><a style={{color: 'black', textDecoration: 'none'}}href="/user/session">{value[0][1]}</a></ListGroup.Item>;

@@ -2,10 +2,14 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet';
 import { Route } from 'react-router';
 import './ViewClientsList.css';
-import IndividualSession from '../IndividualSession/IndividualSession.js';
 import { ListGroup } from "react-bootstrap";
 import { redirectUser } from '../SessionHandling/auth.js';
 
+function updateLocalhost(clientID){
+  return function () {
+   localStorage.setItem("clientID", clientID)
+ }
+}
 
 export default class ViewClientPage extends Component{
     constructor(props){
@@ -37,16 +41,14 @@ export default class ViewClientPage extends Component{
       .then((res) => { return res.json().
         then((data) => {
           //turn the object recieved into a big array
-          var arrayofSessions = []
+          var arrayofClients = []
           data.forEach((sesh) => {
             var objectArray = Object.entries(sesh);
-            arrayofSessions.push(objectArray);
+            arrayofClients.push(objectArray);
           });
-          console.log(arrayofSessions)
-          this.setState({clients: arrayofSessions});
+          this.setState({clients: arrayofClients});
         });
       });
-
     }
 
 
@@ -60,11 +62,13 @@ export default class ViewClientPage extends Component{
                     <h1>Your Clients</h1>
                     <ListGroup className="mt-5">
                         {this.state.clients.map(function(value, index){
-                            return <ListGroup.Item action href="/user/session" key={ index }>{value[6][1]}</ListGroup.Item>;
+                            return <ListGroup.Item action key={ index } onClick={updateLocalhost(value[10][1])}><a style={{color: 'black', textDecoration: 'none'}}href="/physio/client">{value[6][1]}</a></ListGroup.Item>;
                           })}
                     </ListGroup>
                 </div>
+
             </div>
+
 
         )
     }
