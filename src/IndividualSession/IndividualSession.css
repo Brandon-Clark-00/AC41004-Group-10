@@ -1,0 +1,22 @@
+.session-header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex
+
+}
+
+.session-header a{
+   text-decoration: none;
+}
+
+li {
+    color: #0297a2;
+    margin: 0 0.8rem;
+    font-size: 1.5rem;
+    position: relative;
+    list-style: none;
+}
+
+.sessionlink li {
+      border-bottom: 2px solid #0297a2;
+  }

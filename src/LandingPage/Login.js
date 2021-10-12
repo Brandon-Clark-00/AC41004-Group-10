@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
-import { Button, HelpBlock, FormGroup, FormControl, FormLabel } from "react-bootstrap";
+import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import './Login.css'
-import sjcl from 'sjcl'
-import Cookies from 'js-cookie'
 import Helmet from 'react-helmet';
-import {isLoggedIn, isPhysio} from '../SessionHandling/auth.js';
+import { redirectUser } from '../SessionHandling/auth';
 
 function FieldGroup({ id, label, help, ...props}) {
     return(
@@ -24,17 +22,11 @@ export default class Login extends Component {
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSignIn = this.handleSignIn.bind(this);
-
+        if(localStorage.getItem('email') !== null & localStorage.getItem('email') !== undefined){
+            redirectUser();
+        }
         
 
-    //     if(isLoggedIn()){
-    //         if(isPhysio){
-    //             window.location.replace("/userpage")
-    //         }
-    //         else{
-    //             window.location.replace("/clientlist")
-    //         }
-    //     }
     }
 
     handleChange=event=>{
@@ -59,11 +51,12 @@ export default class Login extends Component {
                 // JSON response is handled by a json() promises
         .then((res) => { return res.json().
         then((data) => {
+            localStorage.setItem('userID', data.userID);
             localStorage.setItem('email', data.username);
-            localStorage.setItem('user_role', data.user_role);
+            localStorage.setItem('user_role', data.isPhysio);
 
             if(localStorage.getItem('email') !==null && localStorage.getItem('email') !=="undefined"){
-                    window.location.replace("/")
+                redirectUser();
             }
             else{
                 alert(data.error);
@@ -79,7 +72,7 @@ export default class Login extends Component {
                         <title>Login</title>
                     </Helmet>
                     <form className = "login-form">
-                        <FieldGroup 
+                        <FieldGroup
                             id="formControlsEmail"
                             type="email"
                             name="email"
@@ -88,7 +81,7 @@ export default class Login extends Component {
                             onChange={this.handleChange}
                             placeHolder="Enter email"
                         />
-                        <FieldGroup 
+                        <FieldGroup
                             id="formControlsPassword"
                             type="password"
                             name="password"

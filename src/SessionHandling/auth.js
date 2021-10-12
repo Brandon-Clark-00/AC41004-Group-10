@@ -10,8 +10,9 @@ export function isPhysio() {
 
 //delete token from local storage, used in sign out function
 export function deleteTokens(){
-    localStorage.removeItem("email");
-    localStorage.removeItem("user_role");
+    localStorage.removeItem('email');
+    localStorage.removeItem('user_role');
+    localStorage.removeItem('userID');
 }
 
 //if the user is not logged in redirect to pathname (app.js default routed to Login.js component)
@@ -21,5 +22,20 @@ export function requiredAuth(nextState, replace) {
             pathname: '/',
             state: {nextPathname: nextState.location.pathname}
         })
+    }
+}
+
+export function redirectUser(){
+    if(localStorage.getItem('email') !== null && localStorage.getItem('email') !== undefined)
+    {
+        if(localStorage.getItem('user_role') !== '0'){
+            window.location.replace("/physio/clientlist")
+        }
+        else{
+            window.location.replace("/user/home")
+        }
+    }
+    else{
+        window.location.replace("/")
     }
 }

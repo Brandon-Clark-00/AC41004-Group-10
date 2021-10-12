@@ -1,0 +1,2706 @@
+ {
+ "data":[
+ {
+   "time": "2021-09-30T10:27:53.047Z",
+   "Sensor 1": 46,
+   "Sensor 2": 138,
+   "Sensor 3": 52,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:27:53.558Z",
+   "Sensor 1": 68,
+   "Sensor 2": 112,
+   "Sensor 3": 62,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:27:54.581Z",
+   "Sensor 1": 44,
+   "Sensor 2": 106,
+   "Sensor 3": 40,
+   "Sensor 4": 48
+ },
+ {
+   "time": "2021-09-30T10:27:55.711Z",
+   "Sensor 1": 32,
+   "Sensor 2": 114,
+   "Sensor 3": 38,
+   "Sensor 4": 56
+ },
+ {
+   "time": "2021-09-30T10:27:56.221Z",
+   "Sensor 1": 28,
+   "Sensor 2": 126,
+   "Sensor 3": 42,
+   "Sensor 4": 50
+ },
+ {
+   "time": "2021-09-30T10:27:56.628Z",
+   "Sensor 1": 32,
+   "Sensor 2": 120,
+   "Sensor 3": 40,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:27:57.256Z",
+   "Sensor 1": 26,
+   "Sensor 2": 130,
+   "Sensor 3": 36,
+   "Sensor 4": 24
+ },
+ {
+   "time": "2021-09-30T10:27:57.754Z",
+   "Sensor 1": 32,
+   "Sensor 2": 112,
+   "Sensor 3": 56,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:27:58.266Z",
+   "Sensor 1": 18,
+   "Sensor 2": 116,
+   "Sensor 3": 40,
+   "Sensor 4": 24
+ },
+ {
+   "time": "2021-09-30T10:27:58.883Z",
+   "Sensor 1": 24,
+   "Sensor 2": 124,
+   "Sensor 3": 36,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:27:59.290Z",
+   "Sensor 1": 22,
+   "Sensor 2": 140,
+   "Sensor 3": 48,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:28:00.416Z",
+   "Sensor 1": 138,
+   "Sensor 2": 524,
+   "Sensor 3": 50,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:28:00.929Z",
+   "Sensor 1": 472,
+   "Sensor 2": 600,
+   "Sensor 3": 172,
+   "Sensor 4": 36
+ },
+ {
+   "time": "2021-09-30T10:28:01.541Z",
+   "Sensor 1": 1024,
+   "Sensor 2": 322,
+   "Sensor 3": 244,
+   "Sensor 4": 326
+ },
+ {
+   "time": "2021-09-30T10:28:02.052Z",
+   "Sensor 1": 588,
+   "Sensor 2": 160,
+   "Sensor 3": 200,
+   "Sensor 4": 486
+ },
+ {
+   "time": "2021-09-30T10:28:02.564Z",
+   "Sensor 1": 270,
+   "Sensor 2": 436,
+   "Sensor 3": 96,
+   "Sensor 4": 372
+ },
+ {
+   "time": "2021-09-30T10:28:03.586Z",
+   "Sensor 1": 1024,
+   "Sensor 2": 272,
+   "Sensor 3": 336,
+   "Sensor 4": 100
+ },
+ {
+   "time": "2021-09-30T10:28:04.099Z",
+   "Sensor 1": 660,
+   "Sensor 2": 204,
+   "Sensor 3": 242,
+   "Sensor 4": 600
+ },
+ {
+   "time": "2021-09-30T10:28:04.723Z",
+   "Sensor 1": 416,
+   "Sensor 2": 306,
+   "Sensor 3": 138,
+   "Sensor 4": 328
+ },
+ {
+   "time": "2021-09-30T10:28:05.134Z",
+   "Sensor 1": 258,
+   "Sensor 2": 190,
+   "Sensor 3": 228,
+   "Sensor 4": 244
+ },
+ {
+   "time": "2021-09-30T10:28:05.737Z",
+   "Sensor 1": 1024,
+   "Sensor 2": 290,
+   "Sensor 3": 240,
+   "Sensor 4": 598
+ },
+ {
+   "time": "2021-09-30T10:28:06.249Z",
+   "Sensor 1": 1006,
+   "Sensor 2": 114,
+   "Sensor 3": 212,
+   "Sensor 4": 364
+ },
+ {
+   "time": "2021-09-30T10:28:06.658Z",
+   "Sensor 1": 450,
+   "Sensor 2": 210,
+   "Sensor 3": 110,
+   "Sensor 4": 246
+ },
+ {
+   "time": "2021-09-30T10:28:07.271Z",
+   "Sensor 1": 410,
+   "Sensor 2": 200,
+   "Sensor 3": 186,
+   "Sensor 4": 180
+ },
+ {
+   "time": "2021-09-30T10:28:07.908Z",
+   "Sensor 1": 1024,
+   "Sensor 2": 218,
+   "Sensor 3": 314,
+   "Sensor 4": 304
+ },
+ {
+   "time": "2021-09-30T10:28:08.501Z",
+   "Sensor 1": 752,
+   "Sensor 2": 152,
+   "Sensor 3": 218,
+   "Sensor 4": 464
+ },
+ {
+   "time": "2021-09-30T10:28:08.909Z",
+   "Sensor 1": 360,
+   "Sensor 2": 216,
+   "Sensor 3": 156,
+   "Sensor 4": 158
+ },
+ {
+   "time": "2021-09-30T10:28:09.421Z",
+   "Sensor 1": 676,
+   "Sensor 2": 326,
+   "Sensor 3": 90,
+   "Sensor 4": 118
+ },
+ {
+   "time": "2021-09-30T10:28:09.941Z",
+   "Sensor 1": 1024,
+   "Sensor 2": 440,
+   "Sensor 3": 188,
+   "Sensor 4": 230
+ },
+ {
+   "time": "2021-09-30T10:28:10.648Z",
+   "Sensor 1": 728,
+   "Sensor 2": 266,
+   "Sensor 3": 296,
+   "Sensor 4": 344
+ },
+ {
+   "time": "2021-09-30T10:28:11.265Z",
+   "Sensor 1": 468,
+   "Sensor 2": 126,
+   "Sensor 3": 128,
+   "Sensor 4": 420
+ },
+ {
+   "time": "2021-09-30T10:28:11.874Z",
+   "Sensor 1": 96,
+   "Sensor 2": 118,
+   "Sensor 3": 52,
+   "Sensor 4": 46
+ },
+ {
+   "time": "2021-09-30T10:28:12.286Z",
+   "Sensor 1": 32,
+   "Sensor 2": 110,
+   "Sensor 3": 44,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:28:12.899Z",
+   "Sensor 1": 44,
+   "Sensor 2": 114,
+   "Sensor 3": 42,
+   "Sensor 4": 12
+ },
+ {
+   "time": "2021-09-30T10:28:13.312Z",
+   "Sensor 1": 54,
+   "Sensor 2": 104,
+   "Sensor 3": 48,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:28:13.924Z",
+   "Sensor 1": 22,
+   "Sensor 2": 124,
+   "Sensor 3": 44,
+   "Sensor 4": 34
+ },
+ {
+   "time": "2021-09-30T10:28:14.338Z",
+   "Sensor 1": 26,
+   "Sensor 2": 114,
+   "Sensor 3": 90,
+   "Sensor 4": 32
+ },
+ {
+   "time": "2021-09-30T10:28:14.946Z",
+   "Sensor 1": 36,
+   "Sensor 2": 106,
+   "Sensor 3": 44,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:28:15.593Z",
+   "Sensor 1": 30,
+   "Sensor 2": 114,
+   "Sensor 3": 46,
+   "Sensor 4": 32
+ },
+ {
+   "time": "2021-09-30T10:28:16.180Z",
+   "Sensor 1": 28,
+   "Sensor 2": 114,
+   "Sensor 3": 42,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:28:17.143Z",
+   "Sensor 1": 30,
+   "Sensor 2": 122,
+   "Sensor 3": 46,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:28:17.608Z",
+   "Sensor 1": 16,
+   "Sensor 2": 126,
+   "Sensor 3": 52,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:28:18.223Z",
+   "Sensor 1": 12,
+   "Sensor 2": 198,
+   "Sensor 3": 40,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:28:19.258Z",
+   "Sensor 1": 22,
+   "Sensor 2": 114,
+   "Sensor 3": 84,
+   "Sensor 4": 40
+ },
+ {
+   "time": "2021-09-30T10:28:20.271Z",
+   "Sensor 1": 18,
+   "Sensor 2": 118,
+   "Sensor 3": 48,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:28:20.881Z",
+   "Sensor 1": 16,
+   "Sensor 2": 120,
+   "Sensor 3": 44,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:28:21.291Z",
+   "Sensor 1": 22,
+   "Sensor 2": 130,
+   "Sensor 3": 46,
+   "Sensor 4": 232
+ },
+ {
+   "time": "2021-09-30T10:28:21.905Z",
+   "Sensor 1": 56,
+   "Sensor 2": 334,
+   "Sensor 3": 44,
+   "Sensor 4": 396
+ },
+ {
+   "time": "2021-09-30T10:28:22.519Z",
+   "Sensor 1": 16,
+   "Sensor 2": 428,
+   "Sensor 3": 112,
+   "Sensor 4": 312
+ },
+ {
+   "time": "2021-09-30T10:28:22.932Z",
+   "Sensor 1": 300,
+   "Sensor 2": 330,
+   "Sensor 3": 180,
+   "Sensor 4": 368
+ },
+ {
+   "time": "2021-09-30T10:28:23.542Z",
+   "Sensor 1": 1024,
+   "Sensor 2": 268,
+   "Sensor 3": 240,
+   "Sensor 4": 470
+ },
+ {
+   "time": "2021-09-30T10:28:24.162Z",
+   "Sensor 1": 904,
+   "Sensor 2": 296,
+   "Sensor 3": 136,
+   "Sensor 4": 386
+ },
+ {
+   "time": "2021-09-30T10:28:25.182Z",
+   "Sensor 1": 324,
+   "Sensor 2": 380,
+   "Sensor 3": 166,
+   "Sensor 4": 70
+ },
+ {
+   "time": "2021-09-30T10:28:25.589Z",
+   "Sensor 1": 1024,
+   "Sensor 2": 172,
+   "Sensor 3": 294,
+   "Sensor 4": 52
+ },
+ {
+   "time": "2021-09-30T10:28:26.410Z",
+   "Sensor 1": 846,
+   "Sensor 2": 200,
+   "Sensor 3": 138,
+   "Sensor 4": 280
+ },
+ {
+   "time": "2021-09-30T10:28:26.923Z",
+   "Sensor 1": 604,
+   "Sensor 2": 590,
+   "Sensor 3": 336,
+   "Sensor 4": 306
+ },
+ {
+   "time": "2021-09-30T10:28:27.329Z",
+   "Sensor 1": 302,
+   "Sensor 2": 656,
+   "Sensor 3": 190,
+   "Sensor 4": 476
+ },
+ {
+   "time": "2021-09-30T10:28:27.946Z",
+   "Sensor 1": 654,
+   "Sensor 2": 146,
+   "Sensor 3": 120,
+   "Sensor 4": 44
+ },
+ {
+   "time": "2021-09-30T10:28:28.354Z",
+   "Sensor 1": 1024,
+   "Sensor 2": 246,
+   "Sensor 3": 244,
+   "Sensor 4": 830
+ },
+ {
+   "time": "2021-09-30T10:28:28.968Z",
+   "Sensor 1": 302,
+   "Sensor 2": 326,
+   "Sensor 3": 188,
+   "Sensor 4": 380
+ },
+ {
+   "time": "2021-09-30T10:28:29.584Z",
+   "Sensor 1": 262,
+   "Sensor 2": 128,
+   "Sensor 3": 108,
+   "Sensor 4": 96
+ },
+ {
+   "time": "2021-09-30T10:28:30.603Z",
+   "Sensor 1": 1024,
+   "Sensor 2": 228,
+   "Sensor 3": 186,
+   "Sensor 4": 66
+ },
+ {
+   "time": "2021-09-30T10:28:31.017Z",
+   "Sensor 1": 772,
+   "Sensor 2": 300,
+   "Sensor 3": 304,
+   "Sensor 4": 370
+ },
+ {
+   "time": "2021-09-30T10:28:31.627Z",
+   "Sensor 1": 280,
+   "Sensor 2": 284,
+   "Sensor 3": 288,
+   "Sensor 4": 372
+ },
+ {
+   "time": "2021-09-30T10:28:32.239Z",
+   "Sensor 1": 506,
+   "Sensor 2": 126,
+   "Sensor 3": 82,
+   "Sensor 4": 32
+ },
+ {
+   "time": "2021-09-30T10:28:32.650Z",
+   "Sensor 1": 1024,
+   "Sensor 2": 128,
+   "Sensor 3": 48,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:28:33.468Z",
+   "Sensor 1": 902,
+   "Sensor 2": 110,
+   "Sensor 3": 44,
+   "Sensor 4": 32
+ },
+ {
+   "time": "2021-09-30T10:28:34.493Z",
+   "Sensor 1": 86,
+   "Sensor 2": 122,
+   "Sensor 3": 42,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:28:34.904Z",
+   "Sensor 1": 56,
+   "Sensor 2": 102,
+   "Sensor 3": 48,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:28:35.519Z",
+   "Sensor 1": 110,
+   "Sensor 2": 106,
+   "Sensor 3": 50,
+   "Sensor 4": 32
+ },
+ {
+   "time": "2021-09-30T10:28:36.130Z",
+   "Sensor 1": 42,
+   "Sensor 2": 102,
+   "Sensor 3": 46,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:28:37.155Z",
+   "Sensor 1": 18,
+   "Sensor 2": 106,
+   "Sensor 3": 48,
+   "Sensor 4": 48
+ },
+ {
+   "time": "2021-09-30T10:28:38.176Z",
+   "Sensor 1": 24,
+   "Sensor 2": 102,
+   "Sensor 3": 32,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:28:38.690Z",
+   "Sensor 1": 32,
+   "Sensor 2": 108,
+   "Sensor 3": 48,
+   "Sensor 4": 34
+ },
+ {
+   "time": "2021-09-30T10:28:39.203Z",
+   "Sensor 1": 34,
+   "Sensor 2": 104,
+   "Sensor 3": 44,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:28:39.813Z",
+   "Sensor 1": 8,
+   "Sensor 2": 90,
+   "Sensor 3": 46,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:28:40.329Z",
+   "Sensor 1": 24,
+   "Sensor 2": 104,
+   "Sensor 3": 74,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:28:40.837Z",
+   "Sensor 1": 22,
+   "Sensor 2": 100,
+   "Sensor 3": 42,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:28:41.353Z",
+   "Sensor 1": 28,
+   "Sensor 2": 102,
+   "Sensor 3": 48,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:28:41.860Z",
+   "Sensor 1": 38,
+   "Sensor 2": 104,
+   "Sensor 3": 230,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:28:42.279Z",
+   "Sensor 1": 26,
+   "Sensor 2": 104,
+   "Sensor 3": 236,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:28:43.497Z",
+   "Sensor 1": 14,
+   "Sensor 2": 102,
+   "Sensor 3": 312,
+   "Sensor 4": 448
+ },
+ {
+   "time": "2021-09-30T10:28:44.521Z",
+   "Sensor 1": 62,
+   "Sensor 2": 154,
+   "Sensor 3": 92,
+   "Sensor 4": 440
+ },
+ {
+   "time": "2021-09-30T10:28:44.931Z",
+   "Sensor 1": 324,
+   "Sensor 2": 280,
+   "Sensor 3": 216,
+   "Sensor 4": 446
+ },
+ {
+   "time": "2021-09-30T10:28:45.584Z",
+   "Sensor 1": 1024,
+   "Sensor 2": 224,
+   "Sensor 3": 288,
+   "Sensor 4": 94
+ },
+ {
+   "time": "2021-09-30T10:28:46.159Z",
+   "Sensor 1": 862,
+   "Sensor 2": 146,
+   "Sensor 3": 140,
+   "Sensor 4": 130
+ },
+ {
+   "time": "2021-09-30T10:28:46.773Z",
+   "Sensor 1": 438,
+   "Sensor 2": 880,
+   "Sensor 3": 320,
+   "Sensor 4": 456
+ },
+ {
+   "time": "2021-09-30T10:28:47.385Z",
+   "Sensor 1": 274,
+   "Sensor 2": 116,
+   "Sensor 3": 250,
+   "Sensor 4": 122
+ },
+ {
+   "time": "2021-09-30T10:28:48.425Z",
+   "Sensor 1": 968,
+   "Sensor 2": 278,
+   "Sensor 3": 272,
+   "Sensor 4": 394
+ },
+ {
+   "time": "2021-09-30T10:28:49.023Z",
+   "Sensor 1": 346,
+   "Sensor 2": 252,
+   "Sensor 3": 140,
+   "Sensor 4": 634
+ },
+ {
+   "time": "2021-09-30T10:28:50.045Z",
+   "Sensor 1": 990,
+   "Sensor 2": 202,
+   "Sensor 3": 250,
+   "Sensor 4": 158
+ },
+ {
+   "time": "2021-09-30T10:28:51.071Z",
+   "Sensor 1": 602,
+   "Sensor 2": 200,
+   "Sensor 3": 102,
+   "Sensor 4": 68
+ },
+ {
+   "time": "2021-09-30T10:28:52.094Z",
+   "Sensor 1": 460,
+   "Sensor 2": 412,
+   "Sensor 3": 74,
+   "Sensor 4": 290
+ },
+ {
+   "time": "2021-09-30T10:28:53.118Z",
+   "Sensor 1": 802,
+   "Sensor 2": 176,
+   "Sensor 3": 224,
+   "Sensor 4": 462
+ },
+ {
+   "time": "2021-09-30T10:28:53.731Z",
+   "Sensor 1": 474,
+   "Sensor 2": 198,
+   "Sensor 3": 268,
+   "Sensor 4": 66
+ },
+ {
+   "time": "2021-09-30T10:28:54.346Z",
+   "Sensor 1": 398,
+   "Sensor 2": 226,
+   "Sensor 3": 180,
+   "Sensor 4": 286
+ },
+ {
+   "time": "2021-09-30T10:28:54.761Z",
+   "Sensor 1": 552,
+   "Sensor 2": 170,
+   "Sensor 3": 92,
+   "Sensor 4": 488
+ },
+ {
+   "time": "2021-09-30T10:28:55.367Z",
+   "Sensor 1": 1024,
+   "Sensor 2": 250,
+   "Sensor 3": 70,
+   "Sensor 4": 364
+ },
+ {
+   "time": "2021-09-30T10:28:55.793Z",
+   "Sensor 1": 434,
+   "Sensor 2": 126,
+   "Sensor 3": 50,
+   "Sensor 4": 50
+ },
+ {
+   "time": "2021-09-30T10:28:56.390Z",
+   "Sensor 1": 192,
+   "Sensor 2": 144,
+   "Sensor 3": 38,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:28:56.802Z",
+   "Sensor 1": 142,
+   "Sensor 2": 118,
+   "Sensor 3": 44,
+   "Sensor 4": 40
+ },
+ {
+   "time": "2021-09-30T10:28:57.418Z",
+   "Sensor 1": 72,
+   "Sensor 2": 114,
+   "Sensor 3": 50,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:28:58.029Z",
+   "Sensor 1": 28,
+   "Sensor 2": 94,
+   "Sensor 3": 42,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:33:30.031Z",
+   "Sensor 1": 72,
+   "Sensor 2": 94,
+   "Sensor 3": 48,
+   "Sensor 4": 40
+ },
+ {
+   "time": "2021-09-30T10:33:31.057Z",
+   "Sensor 1": 16,
+   "Sensor 2": 82,
+   "Sensor 3": 46,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:33:31.566Z",
+   "Sensor 1": 6,
+   "Sensor 2": 76,
+   "Sensor 3": 52,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:33:32.075Z",
+   "Sensor 1": 22,
+   "Sensor 2": 78,
+   "Sensor 3": 46,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:33:32.590Z",
+   "Sensor 1": 14,
+   "Sensor 2": 82,
+   "Sensor 3": 48,
+   "Sensor 4": 24
+ },
+ {
+   "time": "2021-09-30T10:33:33.200Z",
+   "Sensor 1": 16,
+   "Sensor 2": 86,
+   "Sensor 3": 56,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:33:33.712Z",
+   "Sensor 1": 26,
+   "Sensor 2": 82,
+   "Sensor 3": 58,
+   "Sensor 4": 32
+ },
+ {
+   "time": "2021-09-30T10:33:34.225Z",
+   "Sensor 1": 16,
+   "Sensor 2": 88,
+   "Sensor 3": 42,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:33:34.739Z",
+   "Sensor 1": 12,
+   "Sensor 2": 82,
+   "Sensor 3": 50,
+   "Sensor 4": 42
+ },
+ {
+   "time": "2021-09-30T10:33:35.248Z",
+   "Sensor 1": 24,
+   "Sensor 2": 84,
+   "Sensor 3": 48,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:33:36.280Z",
+   "Sensor 1": 30,
+   "Sensor 2": 84,
+   "Sensor 3": 42,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:33:37.297Z",
+   "Sensor 1": 44,
+   "Sensor 2": 74,
+   "Sensor 3": 48,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:33:37.912Z",
+   "Sensor 1": 22,
+   "Sensor 2": 80,
+   "Sensor 3": 50,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:33:38.424Z",
+   "Sensor 1": 38,
+   "Sensor 2": 82,
+   "Sensor 3": 58,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:33:39.450Z",
+   "Sensor 1": 28,
+   "Sensor 2": 78,
+   "Sensor 3": 50,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:33:39.957Z",
+   "Sensor 1": 24,
+   "Sensor 2": 88,
+   "Sensor 3": 44,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:33:40.469Z",
+   "Sensor 1": 22,
+   "Sensor 2": 84,
+   "Sensor 3": 46,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:33:40.877Z",
+   "Sensor 1": 26,
+   "Sensor 2": 90,
+   "Sensor 3": 42,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:33:41.490Z",
+   "Sensor 1": 30,
+   "Sensor 2": 104,
+   "Sensor 3": 40,
+   "Sensor 4": 68
+ },
+ {
+   "time": "2021-09-30T10:33:41.900Z",
+   "Sensor 1": 18,
+   "Sensor 2": 92,
+   "Sensor 3": 56,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:33:42.515Z",
+   "Sensor 1": 68,
+   "Sensor 2": 78,
+   "Sensor 3": 50,
+   "Sensor 4": 32
+ },
+ {
+   "time": "2021-09-30T10:33:42.924Z",
+   "Sensor 1": 24,
+   "Sensor 2": 92,
+   "Sensor 3": 48,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:33:43.646Z",
+   "Sensor 1": 30,
+   "Sensor 2": 84,
+   "Sensor 3": 46,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:33:44.156Z",
+   "Sensor 1": 14,
+   "Sensor 2": 80,
+   "Sensor 3": 48,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:33:44.560Z",
+   "Sensor 1": 20,
+   "Sensor 2": 88,
+   "Sensor 3": 48,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:33:45.175Z",
+   "Sensor 1": 40,
+   "Sensor 2": 82,
+   "Sensor 3": 54,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:33:46.196Z",
+   "Sensor 1": 26,
+   "Sensor 2": 84,
+   "Sensor 3": 48,
+   "Sensor 4": 24
+ },
+ {
+   "time": "2021-09-30T10:33:46.719Z",
+   "Sensor 1": 14,
+   "Sensor 2": 82,
+   "Sensor 3": 46,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:33:47.126Z",
+   "Sensor 1": 22,
+   "Sensor 2": 86,
+   "Sensor 3": 52,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:33:47.835Z",
+   "Sensor 1": 18,
+   "Sensor 2": 86,
+   "Sensor 3": 46,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:33:48.346Z",
+   "Sensor 1": 26,
+   "Sensor 2": 86,
+   "Sensor 3": 54,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:33:48.756Z",
+   "Sensor 1": 20,
+   "Sensor 2": 84,
+   "Sensor 3": 52,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:33:49.372Z",
+   "Sensor 1": 24,
+   "Sensor 2": 80,
+   "Sensor 3": 50,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:33:49.789Z",
+   "Sensor 1": 36,
+   "Sensor 2": 82,
+   "Sensor 3": 58,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:33:50.393Z",
+   "Sensor 1": 46,
+   "Sensor 2": 136,
+   "Sensor 3": 68,
+   "Sensor 4": 42
+ },
+ {
+   "time": "2021-09-30T10:33:50.803Z",
+   "Sensor 1": 18,
+   "Sensor 2": 84,
+   "Sensor 3": 52,
+   "Sensor 4": 40
+ },
+ {
+   "time": "2021-09-30T10:33:51.416Z",
+   "Sensor 1": 22,
+   "Sensor 2": 86,
+   "Sensor 3": 50,
+   "Sensor 4": 38
+ },
+ {
+   "time": "2021-09-30T10:33:52.045Z",
+   "Sensor 1": 18,
+   "Sensor 2": 84,
+   "Sensor 3": 50,
+   "Sensor 4": 32
+ },
+ {
+   "time": "2021-09-30T10:33:53.057Z",
+   "Sensor 1": 16,
+   "Sensor 2": 82,
+   "Sensor 3": 46,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:33:54.076Z",
+   "Sensor 1": 26,
+   "Sensor 2": 84,
+   "Sensor 3": 50,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:33:55.101Z",
+   "Sensor 1": 14,
+   "Sensor 2": 80,
+   "Sensor 3": 56,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:33:56.124Z",
+   "Sensor 1": 12,
+   "Sensor 2": 84,
+   "Sensor 3": 50,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:33:56.738Z",
+   "Sensor 1": 14,
+   "Sensor 2": 84,
+   "Sensor 3": 46,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:33:57.162Z",
+   "Sensor 1": 12,
+   "Sensor 2": 84,
+   "Sensor 3": 50,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:33:58.375Z",
+   "Sensor 1": 10,
+   "Sensor 2": 92,
+   "Sensor 3": 50,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:33:58.794Z",
+   "Sensor 1": 16,
+   "Sensor 2": 82,
+   "Sensor 3": 48,
+   "Sensor 4": 78
+ },
+ {
+   "time": "2021-09-30T10:33:59.398Z",
+   "Sensor 1": 22,
+   "Sensor 2": 84,
+   "Sensor 3": 46,
+   "Sensor 4": 24
+ },
+ {
+   "time": "2021-09-30T10:33:59.808Z",
+   "Sensor 1": 36,
+   "Sensor 2": 88,
+   "Sensor 3": 48,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:34:00.422Z",
+   "Sensor 1": 38,
+   "Sensor 2": 82,
+   "Sensor 3": 72,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:34:00.831Z",
+   "Sensor 1": 78,
+   "Sensor 2": 84,
+   "Sensor 3": 38,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:34:01.446Z",
+   "Sensor 1": 26,
+   "Sensor 2": 82,
+   "Sensor 3": 40,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:34:02.059Z",
+   "Sensor 1": 46,
+   "Sensor 2": 88,
+   "Sensor 3": 50,
+   "Sensor 4": 32
+ },
+ {
+   "time": "2021-09-30T10:34:03.086Z",
+   "Sensor 1": 20,
+   "Sensor 2": 82,
+   "Sensor 3": 58,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:34:04.106Z",
+   "Sensor 1": 18,
+   "Sensor 2": 84,
+   "Sensor 3": 44,
+   "Sensor 4": 46
+ },
+ {
+   "time": "2021-09-30T10:34:05.028Z",
+   "Sensor 1": 22,
+   "Sensor 2": 86,
+   "Sensor 3": 76,
+   "Sensor 4": 24
+ },
+ {
+   "time": "2021-09-30T10:34:05.648Z",
+   "Sensor 1": 20,
+   "Sensor 2": 86,
+   "Sensor 3": 46,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:34:06.255Z",
+   "Sensor 1": 26,
+   "Sensor 2": 82,
+   "Sensor 3": 44,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:34:07.278Z",
+   "Sensor 1": 12,
+   "Sensor 2": 80,
+   "Sensor 3": 42,
+   "Sensor 4": 46
+ },
+ {
+   "time": "2021-09-30T10:34:08.302Z",
+   "Sensor 1": 12,
+   "Sensor 2": 82,
+   "Sensor 3": 48,
+   "Sensor 4": 24
+ },
+ {
+   "time": "2021-09-30T10:34:08.916Z",
+   "Sensor 1": 10,
+   "Sensor 2": 90,
+   "Sensor 3": 58,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:34:09.326Z",
+   "Sensor 1": 26,
+   "Sensor 2": 96,
+   "Sensor 3": 62,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:34:09.952Z",
+   "Sensor 1": 128,
+   "Sensor 2": 106,
+   "Sensor 3": 80,
+   "Sensor 4": 34
+ },
+ {
+   "time": "2021-09-30T10:34:10.360Z",
+   "Sensor 1": 48,
+   "Sensor 2": 98,
+   "Sensor 3": 78,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:34:10.963Z",
+   "Sensor 1": 72,
+   "Sensor 2": 106,
+   "Sensor 3": 60,
+   "Sensor 4": 32
+ },
+ {
+   "time": "2021-09-30T10:34:11.379Z",
+   "Sensor 1": 38,
+   "Sensor 2": 88,
+   "Sensor 3": 50,
+   "Sensor 4": 20
+ },
+ {
+   "time": "2021-09-30T10:34:12.497Z",
+   "Sensor 1": 162,
+   "Sensor 2": 92,
+   "Sensor 3": 42,
+   "Sensor 4": 32
+ },
+ {
+   "time": "2021-09-30T10:34:12.909Z",
+   "Sensor 1": 64,
+   "Sensor 2": 100,
+   "Sensor 3": 46,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:34:13.525Z",
+   "Sensor 1": 20,
+   "Sensor 2": 116,
+   "Sensor 3": 46,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:34:14.033Z",
+   "Sensor 1": 18,
+   "Sensor 2": 84,
+   "Sensor 3": 50,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:35:03.982Z",
+   "Sensor 1": 18,
+   "Sensor 2": 88,
+   "Sensor 3": 66,
+   "Sensor 4": 22
+ },
+ {
+   "time": "2021-09-30T10:35:04.492Z",
+   "Sensor 1": 14,
+   "Sensor 2": 82,
+   "Sensor 3": 42,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:35:04.995Z",
+   "Sensor 1": 20,
+   "Sensor 2": 94,
+   "Sensor 3": 60,
+   "Sensor 4": 34
+ },
+ {
+   "time": "2021-09-30T10:35:05.610Z",
+   "Sensor 1": 26,
+   "Sensor 2": 144,
+   "Sensor 3": 84,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:35:06.122Z",
+   "Sensor 1": 30,
+   "Sensor 2": 132,
+   "Sensor 3": 252,
+   "Sensor 4": 24
+ },
+ {
+   "time": "2021-09-30T10:35:06.634Z",
+   "Sensor 1": 84,
+   "Sensor 2": 136,
+   "Sensor 3": 246,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:35:07.144Z",
+   "Sensor 1": 358,
+   "Sensor 2": 216,
+   "Sensor 3": 262,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:35:07.666Z",
+   "Sensor 1": 382,
+   "Sensor 2": 142,
+   "Sensor 3": 142,
+   "Sensor 4": 90
+ },
+ {
+   "time": "2021-09-30T10:35:08.170Z",
+   "Sensor 1": 184,
+   "Sensor 2": 122,
+   "Sensor 3": 272,
+   "Sensor 4": 434
+ },
+ {
+   "time": "2021-09-30T10:35:08.686Z",
+   "Sensor 1": 266,
+   "Sensor 2": 160,
+   "Sensor 3": 314,
+   "Sensor 4": 326
+ },
+ {
+   "time": "2021-09-30T10:35:09.191Z",
+   "Sensor 1": 198,
+   "Sensor 2": 112,
+   "Sensor 3": 148,
+   "Sensor 4": 686
+ },
+ {
+   "time": "2021-09-30T10:35:10.217Z",
+   "Sensor 1": 188,
+   "Sensor 2": 144,
+   "Sensor 3": 202,
+   "Sensor 4": 130
+ },
+ {
+   "time": "2021-09-30T10:35:10.828Z",
+   "Sensor 1": 422,
+   "Sensor 2": 228,
+   "Sensor 3": 182,
+   "Sensor 4": 1024
+ },
+ {
+   "time": "2021-09-30T10:35:11.340Z",
+   "Sensor 1": 144,
+   "Sensor 2": 118,
+   "Sensor 3": 144,
+   "Sensor 4": 712
+ },
+ {
+   "time": "2021-09-30T10:35:12.363Z",
+   "Sensor 1": 342,
+   "Sensor 2": 216,
+   "Sensor 3": 376,
+   "Sensor 4": 212
+ },
+ {
+   "time": "2021-09-30T10:35:12.877Z",
+   "Sensor 1": 406,
+   "Sensor 2": 148,
+   "Sensor 3": 434,
+   "Sensor 4": 1024
+ },
+ {
+   "time": "2021-09-30T10:35:13.385Z",
+   "Sensor 1": 234,
+   "Sensor 2": 166,
+   "Sensor 3": 216,
+   "Sensor 4": 1022
+ },
+ {
+   "time": "2021-09-30T10:35:13.898Z",
+   "Sensor 1": 396,
+   "Sensor 2": 140,
+   "Sensor 3": 212,
+   "Sensor 4": 216
+ },
+ {
+   "time": "2021-09-30T10:35:14.512Z",
+   "Sensor 1": 214,
+   "Sensor 2": 152,
+   "Sensor 3": 296,
+   "Sensor 4": 1024
+ },
+ {
+   "time": "2021-09-30T10:35:14.921Z",
+   "Sensor 1": 356,
+   "Sensor 2": 198,
+   "Sensor 3": 890,
+   "Sensor 4": 426
+ },
+ {
+   "time": "2021-09-30T10:35:15.575Z",
+   "Sensor 1": 494,
+   "Sensor 2": 162,
+   "Sensor 3": 256,
+   "Sensor 4": 250
+ },
+ {
+   "time": "2021-09-30T10:35:16.048Z",
+   "Sensor 1": 508,
+   "Sensor 2": 140,
+   "Sensor 3": 138,
+   "Sensor 4": 1024
+ },
+ {
+   "time": "2021-09-30T10:35:16.564Z",
+   "Sensor 1": 252,
+   "Sensor 2": 112,
+   "Sensor 3": 70,
+   "Sensor 4": 418
+ },
+ {
+   "time": "2021-09-30T10:35:17.071Z",
+   "Sensor 1": 296,
+   "Sensor 2": 108,
+   "Sensor 3": 74,
+   "Sensor 4": 566
+ },
+ {
+   "time": "2021-09-30T10:35:18.195Z",
+   "Sensor 1": 148,
+   "Sensor 2": 110,
+   "Sensor 3": 90,
+   "Sensor 4": 92
+ },
+ {
+   "time": "2021-09-30T10:35:19.224Z",
+   "Sensor 1": 38,
+   "Sensor 2": 104,
+   "Sensor 3": 82,
+   "Sensor 4": 60
+ },
+ {
+   "time": "2021-09-30T10:35:19.731Z",
+   "Sensor 1": 28,
+   "Sensor 2": 98,
+   "Sensor 3": 74,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:35:20.250Z",
+   "Sensor 1": 38,
+   "Sensor 2": 86,
+   "Sensor 3": 62,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:35:21.368Z",
+   "Sensor 1": 14,
+   "Sensor 2": 84,
+   "Sensor 3": 60,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:35:21.779Z",
+   "Sensor 1": 18,
+   "Sensor 2": 86,
+   "Sensor 3": 62,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:35:22.391Z",
+   "Sensor 1": 14,
+   "Sensor 2": 78,
+   "Sensor 3": 78,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:35:22.816Z",
+   "Sensor 1": 10,
+   "Sensor 2": 94,
+   "Sensor 3": 58,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:35:23.415Z",
+   "Sensor 1": 12,
+   "Sensor 2": 100,
+   "Sensor 3": 50,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:35:24.028Z",
+   "Sensor 1": 14,
+   "Sensor 2": 94,
+   "Sensor 3": 58,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:35:25.053Z",
+   "Sensor 1": 18,
+   "Sensor 2": 92,
+   "Sensor 3": 44,
+   "Sensor 4": 24
+ },
+ {
+   "time": "2021-09-30T10:35:25.667Z",
+   "Sensor 1": 24,
+   "Sensor 2": 132,
+   "Sensor 3": 252,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:35:26.079Z",
+   "Sensor 1": 22,
+   "Sensor 2": 182,
+   "Sensor 3": 262,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:35:26.688Z",
+   "Sensor 1": 26,
+   "Sensor 2": 184,
+   "Sensor 3": 152,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:35:27.101Z",
+   "Sensor 1": 20,
+   "Sensor 2": 138,
+   "Sensor 3": 212,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:35:28.327Z",
+   "Sensor 1": 668,
+   "Sensor 2": 156,
+   "Sensor 3": 220,
+   "Sensor 4": 424
+ },
+ {
+   "time": "2021-09-30T10:35:28.735Z",
+   "Sensor 1": 470,
+   "Sensor 2": 200,
+   "Sensor 3": 346,
+   "Sensor 4": 720
+ },
+ {
+   "time": "2021-09-30T10:35:29.369Z",
+   "Sensor 1": 524,
+   "Sensor 2": 202,
+   "Sensor 3": 232,
+   "Sensor 4": 242
+ },
+ {
+   "time": "2021-09-30T10:35:29.761Z",
+   "Sensor 1": 204,
+   "Sensor 2": 138,
+   "Sensor 3": 130,
+   "Sensor 4": 282
+ },
+ {
+   "time": "2021-09-30T10:35:30.376Z",
+   "Sensor 1": 392,
+   "Sensor 2": 160,
+   "Sensor 3": 368,
+   "Sensor 4": 1024
+ },
+ {
+   "time": "2021-09-30T10:35:30.783Z",
+   "Sensor 1": 810,
+   "Sensor 2": 138,
+   "Sensor 3": 200,
+   "Sensor 4": 346
+ },
+ {
+   "time": "2021-09-30T10:35:31.396Z",
+   "Sensor 1": 380,
+   "Sensor 2": 196,
+   "Sensor 3": 416,
+   "Sensor 4": 148
+ },
+ {
+   "time": "2021-09-30T10:35:32.010Z",
+   "Sensor 1": 262,
+   "Sensor 2": 176,
+   "Sensor 3": 392,
+   "Sensor 4": 376
+ },
+ {
+   "time": "2021-09-30T10:35:33.033Z",
+   "Sensor 1": 308,
+   "Sensor 2": 178,
+   "Sensor 3": 164,
+   "Sensor 4": 378
+ },
+ {
+   "time": "2021-09-30T10:35:34.072Z",
+   "Sensor 1": 236,
+   "Sensor 2": 222,
+   "Sensor 3": 278,
+   "Sensor 4": 354
+ },
+ {
+   "time": "2021-09-30T10:35:35.081Z",
+   "Sensor 1": 532,
+   "Sensor 2": 200,
+   "Sensor 3": 354,
+   "Sensor 4": 160
+ },
+ {
+   "time": "2021-09-30T10:35:35.693Z",
+   "Sensor 1": 386,
+   "Sensor 2": 182,
+   "Sensor 3": 332,
+   "Sensor 4": 460
+ },
+ {
+   "time": "2021-09-30T10:35:36.103Z",
+   "Sensor 1": 230,
+   "Sensor 2": 224,
+   "Sensor 3": 116,
+   "Sensor 4": 610
+ },
+ {
+   "time": "2021-09-30T10:35:37.131Z",
+   "Sensor 1": 664,
+   "Sensor 2": 116,
+   "Sensor 3": 80,
+   "Sensor 4": 246
+ },
+ {
+   "time": "2021-09-30T10:35:37.744Z",
+   "Sensor 1": 774,
+   "Sensor 2": 98,
+   "Sensor 3": 144,
+   "Sensor 4": 380
+ },
+ {
+   "time": "2021-09-30T10:35:38.150Z",
+   "Sensor 1": 298,
+   "Sensor 2": 106,
+   "Sensor 3": 48,
+   "Sensor 4": 824
+ },
+ {
+   "time": "2021-09-30T10:35:39.377Z",
+   "Sensor 1": 116,
+   "Sensor 2": 88,
+   "Sensor 3": 54,
+   "Sensor 4": 204
+ },
+ {
+   "time": "2021-09-30T10:35:40.405Z",
+   "Sensor 1": 64,
+   "Sensor 2": 84,
+   "Sensor 3": 50,
+   "Sensor 4": 46
+ },
+ {
+   "time": "2021-09-30T10:35:40.811Z",
+   "Sensor 1": 124,
+   "Sensor 2": 98,
+   "Sensor 3": 46,
+   "Sensor 4": 36
+ },
+ {
+   "time": "2021-09-30T10:35:41.427Z",
+   "Sensor 1": 242,
+   "Sensor 2": 88,
+   "Sensor 3": 44,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:35:42.037Z",
+   "Sensor 1": 150,
+   "Sensor 2": 98,
+   "Sensor 3": 42,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:35:43.062Z",
+   "Sensor 1": 62,
+   "Sensor 2": 104,
+   "Sensor 3": 48,
+   "Sensor 4": 34
+ },
+ {
+   "time": "2021-09-30T10:35:43.985Z",
+   "Sensor 1": 28,
+   "Sensor 2": 100,
+   "Sensor 3": 40,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:35:44.597Z",
+   "Sensor 1": 22,
+   "Sensor 2": 90,
+   "Sensor 3": 44,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:35:45.017Z",
+   "Sensor 1": 68,
+   "Sensor 2": 100,
+   "Sensor 3": 84,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:35:46.234Z",
+   "Sensor 1": 20,
+   "Sensor 2": 102,
+   "Sensor 3": 196,
+   "Sensor 4": 22
+ },
+ {
+   "time": "2021-09-30T10:35:46.644Z",
+   "Sensor 1": 16,
+   "Sensor 2": 106,
+   "Sensor 3": 324,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:35:47.259Z",
+   "Sensor 1": 14,
+   "Sensor 2": 96,
+   "Sensor 3": 204,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:35:47.776Z",
+   "Sensor 1": 36,
+   "Sensor 2": 130,
+   "Sensor 3": 236,
+   "Sensor 4": 84
+ },
+ {
+   "time": "2021-09-30T10:35:48.284Z",
+   "Sensor 1": 58,
+   "Sensor 2": 166,
+   "Sensor 3": 314,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:35:48.899Z",
+   "Sensor 1": 584,
+   "Sensor 2": 176,
+   "Sensor 3": 200,
+   "Sensor 4": 54
+ },
+ {
+   "time": "2021-09-30T10:35:49.321Z",
+   "Sensor 1": 740,
+   "Sensor 2": 204,
+   "Sensor 3": 230,
+   "Sensor 4": 336
+ },
+ {
+   "time": "2021-09-30T10:35:50.431Z",
+   "Sensor 1": 744,
+   "Sensor 2": 164,
+   "Sensor 3": 342,
+   "Sensor 4": 412
+ },
+ {
+   "time": "2021-09-30T10:35:51.458Z",
+   "Sensor 1": 836,
+   "Sensor 2": 228,
+   "Sensor 3": 302,
+   "Sensor 4": 392
+ },
+ {
+   "time": "2021-09-30T10:35:52.068Z",
+   "Sensor 1": 638,
+   "Sensor 2": 120,
+   "Sensor 3": 232,
+   "Sensor 4": 414
+ },
+ {
+   "time": "2021-09-30T10:35:53.092Z",
+   "Sensor 1": 284,
+   "Sensor 2": 198,
+   "Sensor 3": 204,
+   "Sensor 4": 664
+ },
+ {
+   "time": "2021-09-30T10:35:53.605Z",
+   "Sensor 1": 508,
+   "Sensor 2": 160,
+   "Sensor 3": 260,
+   "Sensor 4": 1024
+ },
+ {
+   "time": "2021-09-30T10:35:54.118Z",
+   "Sensor 1": 516,
+   "Sensor 2": 150,
+   "Sensor 3": 208,
+   "Sensor 4": 566
+ },
+ {
+   "time": "2021-09-30T10:35:54.727Z",
+   "Sensor 1": 480,
+   "Sensor 2": 150,
+   "Sensor 3": 168,
+   "Sensor 4": 116
+ },
+ {
+   "time": "2021-09-30T10:35:55.141Z",
+   "Sensor 1": 256,
+   "Sensor 2": 196,
+   "Sensor 3": 230,
+   "Sensor 4": 954
+ },
+ {
+   "time": "2021-09-30T10:35:56.163Z",
+   "Sensor 1": 930,
+   "Sensor 2": 164,
+   "Sensor 3": 324,
+   "Sensor 4": 1024
+ },
+ {
+   "time": "2021-09-30T10:35:56.778Z",
+   "Sensor 1": 952,
+   "Sensor 2": 148,
+   "Sensor 3": 292,
+   "Sensor 4": 152
+ },
+ {
+   "time": "2021-09-30T10:35:57.187Z",
+   "Sensor 1": 466,
+   "Sensor 2": 164,
+   "Sensor 3": 90,
+   "Sensor 4": 222
+ },
+ {
+   "time": "2021-09-30T10:35:57.803Z",
+   "Sensor 1": 782,
+   "Sensor 2": 170,
+   "Sensor 3": 80,
+   "Sensor 4": 572
+ },
+ {
+   "time": "2021-09-30T10:35:58.412Z",
+   "Sensor 1": 728,
+   "Sensor 2": 104,
+   "Sensor 3": 78,
+   "Sensor 4": 350
+ },
+ {
+   "time": "2021-09-30T10:35:59.435Z",
+   "Sensor 1": 166,
+   "Sensor 2": 130,
+   "Sensor 3": 46,
+   "Sensor 4": 56
+ },
+ {
+   "time": "2021-09-30T10:35:59.846Z",
+   "Sensor 1": 148,
+   "Sensor 2": 116,
+   "Sensor 3": 54,
+   "Sensor 4": 34
+ },
+ {
+   "time": "2021-09-30T10:36:00.460Z",
+   "Sensor 1": 46,
+   "Sensor 2": 92,
+   "Sensor 3": 56,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:36:01.074Z",
+   "Sensor 1": 400,
+   "Sensor 2": 100,
+   "Sensor 3": 50,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:36:02.095Z",
+   "Sensor 1": 142,
+   "Sensor 2": 102,
+   "Sensor 3": 38,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:36:03.119Z",
+   "Sensor 1": 24,
+   "Sensor 2": 98,
+   "Sensor 3": 42,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:36:04.245Z",
+   "Sensor 1": 22,
+   "Sensor 2": 88,
+   "Sensor 3": 50,
+   "Sensor 4": 24
+ },
+ {
+   "time": "2021-09-30T10:36:04.762Z",
+   "Sensor 1": 92,
+   "Sensor 2": 106,
+   "Sensor 3": 54,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:36:05.371Z",
+   "Sensor 1": 82,
+   "Sensor 2": 84,
+   "Sensor 3": 44,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:36:05.780Z",
+   "Sensor 1": 68,
+   "Sensor 2": 82,
+   "Sensor 3": 42,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:36:06.393Z",
+   "Sensor 1": 104,
+   "Sensor 2": 84,
+   "Sensor 3": 36,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:36:06.806Z",
+   "Sensor 1": 136,
+   "Sensor 2": 86,
+   "Sensor 3": 48,
+   "Sensor 4": 32
+ },
+ {
+   "time": "2021-09-30T10:36:07.418Z",
+   "Sensor 1": 128,
+   "Sensor 2": 84,
+   "Sensor 3": 218,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:36:08.443Z",
+   "Sensor 1": 114,
+   "Sensor 2": 86,
+   "Sensor 3": 254,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:36:09.055Z",
+   "Sensor 1": 120,
+   "Sensor 2": 84,
+   "Sensor 3": 162,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:36:10.082Z",
+   "Sensor 1": 770,
+   "Sensor 2": 106,
+   "Sensor 3": 252,
+   "Sensor 4": 152
+ },
+ {
+   "time": "2021-09-30T10:36:11.104Z",
+   "Sensor 1": 570,
+   "Sensor 2": 162,
+   "Sensor 3": 350,
+   "Sensor 4": 826
+ },
+ {
+   "time": "2021-09-30T10:36:12.129Z",
+   "Sensor 1": 202,
+   "Sensor 2": 232,
+   "Sensor 3": 322,
+   "Sensor 4": 606
+ },
+ {
+   "time": "2021-09-30T10:36:12.742Z",
+   "Sensor 1": 520,
+   "Sensor 2": 132,
+   "Sensor 3": 196,
+   "Sensor 4": 688
+ },
+ {
+   "time": "2021-09-30T10:36:13.153Z",
+   "Sensor 1": 396,
+   "Sensor 2": 114,
+   "Sensor 3": 310,
+   "Sensor 4": 390
+ },
+ {
+   "time": "2021-09-30T10:36:14.174Z",
+   "Sensor 1": 398,
+   "Sensor 2": 212,
+   "Sensor 3": 180,
+   "Sensor 4": 564
+ },
+ {
+   "time": "2021-09-30T10:36:14.786Z",
+   "Sensor 1": 342,
+   "Sensor 2": 164,
+   "Sensor 3": 120,
+   "Sensor 4": 1024
+ },
+ {
+   "time": "2021-09-30T10:36:15.401Z",
+   "Sensor 1": 802,
+   "Sensor 2": 170,
+   "Sensor 3": 172,
+   "Sensor 4": 624
+ },
+ {
+   "time": "2021-09-30T10:36:15.813Z",
+   "Sensor 1": 134,
+   "Sensor 2": 156,
+   "Sensor 3": 306,
+   "Sensor 4": 1024
+ },
+ {
+   "time": "2021-09-30T10:36:16.422Z",
+   "Sensor 1": 222,
+   "Sensor 2": 210,
+   "Sensor 3": 244,
+   "Sensor 4": 170
+ },
+ {
+   "time": "2021-09-30T10:36:16.833Z",
+   "Sensor 1": 638,
+   "Sensor 2": 146,
+   "Sensor 3": 142,
+   "Sensor 4": 146
+ },
+ {
+   "time": "2021-09-30T10:36:17.446Z",
+   "Sensor 1": 1024,
+   "Sensor 2": 212,
+   "Sensor 3": 312,
+   "Sensor 4": 626
+ },
+ {
+   "time": "2021-09-30T10:36:18.061Z",
+   "Sensor 1": 350,
+   "Sensor 2": 164,
+   "Sensor 3": 274,
+   "Sensor 4": 480
+ },
+ {
+   "time": "2021-09-30T10:36:19.089Z",
+   "Sensor 1": 346,
+   "Sensor 2": 162,
+   "Sensor 3": 222,
+   "Sensor 4": 364
+ },
+ {
+   "time": "2021-09-30T10:36:20.108Z",
+   "Sensor 1": 672,
+   "Sensor 2": 216,
+   "Sensor 3": 96,
+   "Sensor 4": 834
+ },
+ {
+   "time": "2021-09-30T10:36:21.134Z",
+   "Sensor 1": 76,
+   "Sensor 2": 192,
+   "Sensor 3": 52,
+   "Sensor 4": 376
+ },
+ {
+   "time": "2021-09-30T10:36:22.154Z",
+   "Sensor 1": 16,
+   "Sensor 2": 162,
+   "Sensor 3": 52,
+   "Sensor 4": 1024
+ },
+ {
+   "time": "2021-09-30T10:36:23.178Z",
+   "Sensor 1": 36,
+   "Sensor 2": 124,
+   "Sensor 3": 64,
+   "Sensor 4": 54
+ },
+ {
+   "time": "2021-09-30T10:40:39.219Z",
+   "Sensor 1": 36,
+   "Sensor 2": 110,
+   "Sensor 3": 64,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:40:40.236Z",
+   "Sensor 1": 10,
+   "Sensor 2": 110,
+   "Sensor 3": 46,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:40:41.261Z",
+   "Sensor 1": 10,
+   "Sensor 2": 82,
+   "Sensor 3": 42,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:40:42.386Z",
+   "Sensor 1": 14,
+   "Sensor 2": 82,
+   "Sensor 3": 42,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:40:43.001Z",
+   "Sensor 1": 4,
+   "Sensor 2": 80,
+   "Sensor 3": 44,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:40:43.512Z",
+   "Sensor 1": 16,
+   "Sensor 2": 104,
+   "Sensor 3": 46,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:40:57.122Z",
+   "Sensor 1": 16,
+   "Sensor 2": 82,
+   "Sensor 3": 46,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:40:58.248Z",
+   "Sensor 1": 10,
+   "Sensor 2": 82,
+   "Sensor 3": 54,
+   "Sensor 4": 38
+ },
+ {
+   "time": "2021-09-30T10:40:59.277Z",
+   "Sensor 1": 12,
+   "Sensor 2": 84,
+   "Sensor 3": 54,
+   "Sensor 4": 40
+ },
+ {
+   "time": "2021-09-30T10:41:00.297Z",
+   "Sensor 1": 16,
+   "Sensor 2": 82,
+   "Sensor 3": 48,
+   "Sensor 4": 40
+ },
+ {
+   "time": "2021-09-30T10:41:01.216Z",
+   "Sensor 1": 10,
+   "Sensor 2": 82,
+   "Sensor 3": 46,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:41:16.363Z",
+   "Sensor 1": 12,
+   "Sensor 2": 82,
+   "Sensor 3": 52,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:41:17.387Z",
+   "Sensor 1": 18,
+   "Sensor 2": 82,
+   "Sensor 3": 44,
+   "Sensor 4": 32
+ },
+ {
+   "time": "2021-09-30T10:41:18.305Z",
+   "Sensor 1": 276,
+   "Sensor 2": 86,
+   "Sensor 3": 166,
+   "Sensor 4": 32
+ },
+ {
+   "time": "2021-09-30T10:41:19.535Z",
+   "Sensor 1": 384,
+   "Sensor 2": 130,
+   "Sensor 3": 202,
+   "Sensor 4": 34
+ },
+ {
+   "time": "2021-09-30T10:41:20.560Z",
+   "Sensor 1": 456,
+   "Sensor 2": 224,
+   "Sensor 3": 194,
+   "Sensor 4": 50
+ },
+ {
+   "time": "2021-09-30T10:41:21.580Z",
+   "Sensor 1": 388,
+   "Sensor 2": 146,
+   "Sensor 3": 174,
+   "Sensor 4": 832
+ },
+ {
+   "time": "2021-09-30T10:41:22.094Z",
+   "Sensor 1": 324,
+   "Sensor 2": 160,
+   "Sensor 3": 218,
+   "Sensor 4": 232
+ },
+ {
+   "time": "2021-09-30T10:41:23.221Z",
+   "Sensor 1": 600,
+   "Sensor 2": 146,
+   "Sensor 3": 208,
+   "Sensor 4": 494
+ },
+ {
+   "time": "2021-09-30T10:41:24.245Z",
+   "Sensor 1": 244,
+   "Sensor 2": 160,
+   "Sensor 3": 212,
+   "Sensor 4": 328
+ },
+ {
+   "time": "2021-09-30T10:41:25.267Z",
+   "Sensor 1": 506,
+   "Sensor 2": 176,
+   "Sensor 3": 246,
+   "Sensor 4": 218
+ },
+ {
+   "time": "2021-09-30T10:41:26.288Z",
+   "Sensor 1": 284,
+   "Sensor 2": 182,
+   "Sensor 3": 198,
+   "Sensor 4": 794
+ },
+ {
+   "time": "2021-09-30T10:41:27.415Z",
+   "Sensor 1": 570,
+   "Sensor 2": 214,
+   "Sensor 3": 250,
+   "Sensor 4": 404
+ },
+ {
+   "time": "2021-09-30T10:41:28.447Z",
+   "Sensor 1": 234,
+   "Sensor 2": 164,
+   "Sensor 3": 234,
+   "Sensor 4": 714
+ },
+ {
+   "time": "2021-09-30T10:41:29.464Z",
+   "Sensor 1": 246,
+   "Sensor 2": 216,
+   "Sensor 3": 68,
+   "Sensor 4": 372
+ },
+ {
+   "time": "2021-09-30T10:41:30.592Z",
+   "Sensor 1": 148,
+   "Sensor 2": 148,
+   "Sensor 3": 64,
+   "Sensor 4": 594
+ },
+ {
+   "time": "2021-09-30T10:41:31.098Z",
+   "Sensor 1": 22,
+   "Sensor 2": 100,
+   "Sensor 3": 78,
+   "Sensor 4": 358
+ },
+ {
+   "time": "2021-09-30T10:41:32.137Z",
+   "Sensor 1": 44,
+   "Sensor 2": 106,
+   "Sensor 3": 74,
+   "Sensor 4": 70
+ },
+ {
+   "time": "2021-09-30T10:41:33.143Z",
+   "Sensor 1": 58,
+   "Sensor 2": 98,
+   "Sensor 3": 66,
+   "Sensor 4": 36
+ },
+ {
+   "time": "2021-09-30T10:41:34.271Z",
+   "Sensor 1": 22,
+   "Sensor 2": 90,
+   "Sensor 3": 54,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:41:35.293Z",
+   "Sensor 1": 24,
+   "Sensor 2": 76,
+   "Sensor 3": 46,
+   "Sensor 4": 32
+ },
+ {
+   "time": "2021-09-30T10:41:36.324Z",
+   "Sensor 1": 20,
+   "Sensor 2": 84,
+   "Sensor 3": 42,
+   "Sensor 4": 20
+ },
+ {
+   "time": "2021-09-30T10:41:37.341Z",
+   "Sensor 1": 18,
+   "Sensor 2": 90,
+   "Sensor 3": 42,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:41:38.370Z",
+   "Sensor 1": 22,
+   "Sensor 2": 88,
+   "Sensor 3": 28,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:41:39.390Z",
+   "Sensor 1": 900,
+   "Sensor 2": 86,
+   "Sensor 3": 162,
+   "Sensor 4": 22
+ },
+ {
+   "time": "2021-09-30T10:41:40.010Z",
+   "Sensor 1": 478,
+   "Sensor 2": 160,
+   "Sensor 3": 232,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:41:40.409Z",
+   "Sensor 1": 408,
+   "Sensor 2": 144,
+   "Sensor 3": 192,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:41:41.024Z",
+   "Sensor 1": 354,
+   "Sensor 2": 230,
+   "Sensor 3": 300,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:41:41.637Z",
+   "Sensor 1": 266,
+   "Sensor 2": 218,
+   "Sensor 3": 296,
+   "Sensor 4": 526
+ },
+ {
+   "time": "2021-09-30T10:41:42.047Z",
+   "Sensor 1": 512,
+   "Sensor 2": 164,
+   "Sensor 3": 226,
+   "Sensor 4": 546
+ },
+ {
+   "time": "2021-09-30T10:41:42.661Z",
+   "Sensor 1": 714,
+   "Sensor 2": 144,
+   "Sensor 3": 210,
+   "Sensor 4": 882
+ },
+ {
+   "time": "2021-09-30T10:41:43.071Z",
+   "Sensor 1": 248,
+   "Sensor 2": 166,
+   "Sensor 3": 296,
+   "Sensor 4": 432
+ },
+ {
+   "time": "2021-09-30T10:41:44.299Z",
+   "Sensor 1": 962,
+   "Sensor 2": 134,
+   "Sensor 3": 230,
+   "Sensor 4": 808
+ },
+ {
+   "time": "2021-09-30T10:41:45.324Z",
+   "Sensor 1": 280,
+   "Sensor 2": 236,
+   "Sensor 3": 286,
+   "Sensor 4": 408
+ },
+ {
+   "time": "2021-09-30T10:41:46.347Z",
+   "Sensor 1": 620,
+   "Sensor 2": 214,
+   "Sensor 3": 322,
+   "Sensor 4": 434
+ },
+ {
+   "time": "2021-09-30T10:41:47.474Z",
+   "Sensor 1": 234,
+   "Sensor 2": 218,
+   "Sensor 3": 222,
+   "Sensor 4": 772
+ },
+ {
+   "time": "2021-09-30T10:41:48.499Z",
+   "Sensor 1": 428,
+   "Sensor 2": 234,
+   "Sensor 3": 236,
+   "Sensor 4": 260
+ },
+ {
+   "time": "2021-09-30T10:41:49.518Z",
+   "Sensor 1": 224,
+   "Sensor 2": 178,
+   "Sensor 3": 224,
+   "Sensor 4": 482
+ },
+ {
+   "time": "2021-09-30T10:41:50.131Z",
+   "Sensor 1": 594,
+   "Sensor 2": 182,
+   "Sensor 3": 126,
+   "Sensor 4": 184
+ },
+ {
+   "time": "2021-09-30T10:41:51.156Z",
+   "Sensor 1": 90,
+   "Sensor 2": 134,
+   "Sensor 3": 80,
+   "Sensor 4": 34
+ },
+ {
+   "time": "2021-09-30T10:41:52.182Z",
+   "Sensor 1": 106,
+   "Sensor 2": 102,
+   "Sensor 3": 62,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:41:53.204Z",
+   "Sensor 1": 40,
+   "Sensor 2": 92,
+   "Sensor 3": 70,
+   "Sensor 4": 48
+ },
+ {
+   "time": "2021-09-30T10:41:54.230Z",
+   "Sensor 1": 14,
+   "Sensor 2": 88,
+   "Sensor 3": 54,
+   "Sensor 4": 14
+ },
+ {
+   "time": "2021-09-30T10:41:55.246Z",
+   "Sensor 1": 14,
+   "Sensor 2": 102,
+   "Sensor 3": 52,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:41:56.476Z",
+   "Sensor 1": 16,
+   "Sensor 2": 88,
+   "Sensor 3": 52,
+   "Sensor 4": 24
+ },
+ {
+   "time": "2021-09-30T10:41:57.500Z",
+   "Sensor 1": 18,
+   "Sensor 2": 94,
+   "Sensor 3": 44,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:41:58.121Z",
+   "Sensor 1": 16,
+   "Sensor 2": 100,
+   "Sensor 3": 48,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:41:59.040Z",
+   "Sensor 1": 16,
+   "Sensor 2": 88,
+   "Sensor 3": 42,
+   "Sensor 4": 24
+ },
+ {
+   "time": "2021-09-30T10:41:59.652Z",
+   "Sensor 1": 14,
+   "Sensor 2": 94,
+   "Sensor 3": 52,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:42:00.273Z",
+   "Sensor 1": 48,
+   "Sensor 2": 104,
+   "Sensor 3": 80,
+   "Sensor 4": 32
+ },
+ {
+   "time": "2021-09-30T10:42:01.286Z",
+   "Sensor 1": 332,
+   "Sensor 2": 208,
+   "Sensor 3": 360,
+   "Sensor 4": 786
+ },
+ {
+   "time": "2021-09-30T10:42:02.317Z",
+   "Sensor 1": 682,
+   "Sensor 2": 178,
+   "Sensor 3": 176,
+   "Sensor 4": 134
+ },
+ {
+   "time": "2021-09-30T10:42:03.334Z",
+   "Sensor 1": 382,
+   "Sensor 2": 176,
+   "Sensor 3": 310,
+   "Sensor 4": 904
+ },
+ {
+   "time": "2021-09-30T10:42:04.357Z",
+   "Sensor 1": 390,
+   "Sensor 2": 252,
+   "Sensor 3": 276,
+   "Sensor 4": 496
+ },
+ {
+   "time": "2021-09-30T10:42:05.398Z",
+   "Sensor 1": 756,
+   "Sensor 2": 148,
+   "Sensor 3": 250,
+   "Sensor 4": 1024
+ },
+ {
+   "time": "2021-09-30T10:42:06.006Z",
+   "Sensor 1": 624,
+   "Sensor 2": 194,
+   "Sensor 3": 236,
+   "Sensor 4": 546
+ },
+ {
+   "time": "2021-09-30T10:42:06.402Z",
+   "Sensor 1": 416,
+   "Sensor 2": 262,
+   "Sensor 3": 234,
+   "Sensor 4": 588
+ },
+ {
+   "time": "2021-09-30T10:42:07.018Z",
+   "Sensor 1": 406,
+   "Sensor 2": 198,
+   "Sensor 3": 160,
+   "Sensor 4": 414
+ },
+ {
+   "time": "2021-09-30T10:42:08.041Z",
+   "Sensor 1": 300,
+   "Sensor 2": 216,
+   "Sensor 3": 216,
+   "Sensor 4": 340
+ },
+ {
+   "time": "2021-09-30T10:42:09.063Z",
+   "Sensor 1": 748,
+   "Sensor 2": 242,
+   "Sensor 3": 324,
+   "Sensor 4": 772
+ },
+ {
+   "time": "2021-09-30T10:42:10.291Z",
+   "Sensor 1": 324,
+   "Sensor 2": 172,
+   "Sensor 3": 340,
+   "Sensor 4": 134
+ },
+ {
+   "time": "2021-09-30T10:42:11.314Z",
+   "Sensor 1": 422,
+   "Sensor 2": 126,
+   "Sensor 3": 294,
+   "Sensor 4": 48
+ },
+ {
+   "time": "2021-09-30T10:42:12.349Z",
+   "Sensor 1": 146,
+   "Sensor 2": 108,
+   "Sensor 3": 54,
+   "Sensor 4": 34
+ },
+ {
+   "time": "2021-09-30T10:42:13.363Z",
+   "Sensor 1": 76,
+   "Sensor 2": 92,
+   "Sensor 3": 62,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:42:14.386Z",
+   "Sensor 1": 36,
+   "Sensor 2": 98,
+   "Sensor 3": 50,
+   "Sensor 4": 26
+ },
+ {
+   "time": "2021-09-30T10:42:15.408Z",
+   "Sensor 1": 20,
+   "Sensor 2": 96,
+   "Sensor 3": 46,
+   "Sensor 4": 38
+ },
+ {
+   "time": "2021-09-30T10:42:16.548Z",
+   "Sensor 1": 16,
+   "Sensor 2": 90,
+   "Sensor 3": 46,
+   "Sensor 4": 30
+ },
+ {
+   "time": "2021-09-30T10:42:17.148Z",
+   "Sensor 1": 24,
+   "Sensor 2": 86,
+   "Sensor 3": 44,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:42:18.068Z",
+   "Sensor 1": 18,
+   "Sensor 2": 110,
+   "Sensor 3": 44,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:42:19.095Z",
+   "Sensor 1": 18,
+   "Sensor 2": 84,
+   "Sensor 3": 42,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:42:20.226Z",
+   "Sensor 1": 14,
+   "Sensor 2": 90,
+   "Sensor 3": 48,
+   "Sensor 4": 28
+ },
+ {
+   "time": "2021-09-30T10:42:21.244Z",
+   "Sensor 1": 86,
+   "Sensor 2": 88,
+   "Sensor 3": 52,
+   "Sensor 4": 936
+ },
+ {
+   "time": "2021-09-30T10:42:22.367Z",
+   "Sensor 1": 334,
+   "Sensor 2": 108,
+   "Sensor 3": 294,
+   "Sensor 4": 308
+ },
+ {
+   "time": "2021-09-30T10:42:23.492Z",
+   "Sensor 1": 868,
+   "Sensor 2": 182,
+   "Sensor 3": 220,
+   "Sensor 4": 704
+ },
+ {
+   "time": "2021-09-30T10:42:24.516Z",
+   "Sensor 1": 602,
+   "Sensor 2": 188,
+   "Sensor 3": 290,
+   "Sensor 4": 1024
+ },
+ {
+   "time": "2021-09-30T10:42:25.032Z",
+   "Sensor 1": 808,
+   "Sensor 2": 254,
+   "Sensor 3": 184,
+   "Sensor 4": 314
+ },
+ {
+   "time": "2021-09-30T10:42:25.654Z",
+   "Sensor 1": 846,
+   "Sensor 2": 160,
+   "Sensor 3": 262,
+   "Sensor 4": 246
+ },
+ {
+   "time": "2021-09-30T10:42:26.052Z",
+   "Sensor 1": 734,
+   "Sensor 2": 128,
+   "Sensor 3": 338,
+   "Sensor 4": 842
+ },
+ {
+   "time": "2021-09-30T10:42:27.111Z",
+   "Sensor 1": 970,
+   "Sensor 2": 182,
+   "Sensor 3": 232,
+   "Sensor 4": 112
+ },
+ {
+   "time": "2021-09-30T10:42:28.202Z",
+   "Sensor 1": 558,
+   "Sensor 2": 192,
+   "Sensor 3": 238,
+   "Sensor 4": 826
+ },
+ {
+   "time": "2021-09-30T10:42:29.226Z",
+   "Sensor 1": 808,
+   "Sensor 2": 192,
+   "Sensor 3": 308,
+   "Sensor 4": 494
+ },
+ {
+   "time": "2021-09-30T10:42:30.247Z",
+   "Sensor 1": 556,
+   "Sensor 2": 214,
+   "Sensor 3": 238,
+   "Sensor 4": 936
+ },
+ {
+   "time": "2021-09-30T10:42:30.863Z",
+   "Sensor 1": 1024,
+   "Sensor 2": 126,
+   "Sensor 3": 282,
+   "Sensor 4": 1006
+ },
+ {
+   "time": "2021-09-30T10:42:31.374Z",
+   "Sensor 1": 310,
+   "Sensor 2": 186,
+   "Sensor 3": 266,
+   "Sensor 4": 686
+ },
+ {
+   "time": "2021-09-30T10:42:32.505Z",
+   "Sensor 1": 862,
+   "Sensor 2": 216,
+   "Sensor 3": 218,
+   "Sensor 4": 122
+ },
+ {
+   "time": "2021-09-30T10:42:33.523Z",
+   "Sensor 1": 82,
+   "Sensor 2": 150,
+   "Sensor 3": 56,
+   "Sensor 4": 84
+ },
+ {
+   "time": "2021-09-30T10:42:34.033Z",
+   "Sensor 1": 26,
+   "Sensor 2": 140,
+   "Sensor 3": 66,
+   "Sensor 4": 46
+ }
+]
+ }
