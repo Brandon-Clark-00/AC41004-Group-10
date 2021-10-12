@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet';
+import { Route } from 'react-router';
 import './ViewClientsList.css';
+import IndividualSession from '../IndividualSession/IndividualSession.js';
 import { ListGroup } from "react-bootstrap";
 import { redirectUser } from '../SessionHandling/auth.js';
 
@@ -19,7 +21,7 @@ export default class ViewClientPage extends Component{
         if(localStorage.getItem('email') == null || localStorage.getItem('email') == undefined){
             redirectUser();
         }
-        
+
 
     }
     // comonentDidMount part of React lifecycle - runs automatically
@@ -58,7 +60,7 @@ export default class ViewClientPage extends Component{
                     <h1>Your Clients</h1>
                     <ListGroup className="mt-5">
                         {this.state.clients.map(function(value, index){
-                            return <ListGroup.Item action href="#link1" key={ index }>{value[6][1]}</ListGroup.Item>;
+                            return <ListGroup.Item action href="/user/session" key={ index }>{value[6][1]}</ListGroup.Item>;
                           })}
                     </ListGroup>
                 </div>

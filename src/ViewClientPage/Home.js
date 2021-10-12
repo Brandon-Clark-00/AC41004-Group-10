@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet';
 import { Route } from 'react-router';
-import SessionList from '../ListOfSessions/SessionList.js'
 import IndividualSession from '../IndividualSession/IndividualSession.js';
 import {  ListGroup } from "react-bootstrap";
 import '../../node_modules/react-vis/dist/style.css';
@@ -46,6 +45,11 @@ export default class ViewClientPage extends Component{
         }
 
     render(){
+      function getUrl(sessionID){
+        return 'user/session/' + sessionID
+      }
+
+
         return(
             <div className="home-sessions-wrapper">
                 <Helmet>
@@ -80,13 +84,10 @@ export default class ViewClientPage extends Component{
               <h1>Your Sessions</h1>
               <ListGroup className="mt-5">
                   {this.state.sessions.map(function(value, index){
-                      return <ListGroup.Item action href="#link1" key={ index }>{value[0][1]}</ListGroup.Item>;
+                      return <ListGroup.Item action href={getUrl(value[2][1])} key={ index }>{value[0][1]}</ListGroup.Item>;
                     })}
               </ListGroup>
-          </div>
-                <div className="session-wrapper">
-                    <Route path ="/user/session" component={IndividualSession} />
-                </div>
+              </div>
             </div>
 
         )

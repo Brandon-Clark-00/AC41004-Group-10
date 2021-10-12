@@ -24,9 +24,6 @@ let home = (props) => {
 export default class ViewClientList extends Component{
   constructor(props){
     super(props);
-      this.state = {
-            clients: []
-        };
           settings = (props) => {
             return(
               <Settings></Settings>

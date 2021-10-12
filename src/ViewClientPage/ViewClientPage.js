@@ -17,12 +17,12 @@ let settings = (props) => {
     return(
       <Settings></Settings>
     )
-}  
+}
 let heatmap = (props) => {
     return(
       <LiveHeatmap></LiveHeatmap>
     )
-}  
+}
  let home = (props) => {
   return(
     <Home></Home>
@@ -57,7 +57,7 @@ export default class ViewClientPage extends Component{
         redirectUser();
     }
     }
-   
+
     render() {
 
         return (
@@ -69,13 +69,13 @@ export default class ViewClientPage extends Component{
                   <div className = "mypage-header">
                     <NavLink to ="/user/home" activeClassName="current" exact>
                       <li>My Home</li>
-                    </NavLink>  
+                    </NavLink>
                     <NavLink to ="/user/heatmap" activeClassName="current" exact>
                       <li>Heatmap</li>
                     </NavLink>
                     <NavLink to ="/user/settings" activeClassName="current" exact>
                       <li>Settings</li>
-                    </NavLink>    
+                    </NavLink>
                     <NavLink to = "/" onClick={() => {deleteTokens(); window.location.replace("/")}} exact>
                       <li>Sign out</li>
                     </NavLink>
@@ -85,8 +85,7 @@ export default class ViewClientPage extends Component{
                     <Route path = "/user/settings" component={Settings} />
                     <Route path = "/user/heatmap" component={LiveHeatmap} />
                   </div>
-                </div>
-
+              </div>
           </Router>
         )
     }
