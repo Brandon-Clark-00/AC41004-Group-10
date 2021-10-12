@@ -36,10 +36,14 @@
 }
 
 
-
+.button{
+  width: 20%;
+  right:0%;
+}
 /* Styles the whole slider */
 .slider{
-    width: 50%;
+    width: 45%;
+    padding-left: 2rem;
     background-color: transparent;
     
     /* Removes some defaults */
@@ -54,8 +58,7 @@
 
 .slider::-webkit-slider-runnable-track {
     background: #000000;
-    height: 10px;
-    width: 500px;
+    height: 0.5rem;
     -webkit-appearance: none;
     
     /* Turns the cursor into the hand pointer icon when hovering over the slider  */
@@ -66,7 +69,7 @@
   .slider::-webkit-slider-thumb {
     width: 1.1rem;
     height: 1.1rem;
-    background: #5500cc;
+    background: #0297a2;
     cursor: pointer;
     -webkit-appearance: none;
     

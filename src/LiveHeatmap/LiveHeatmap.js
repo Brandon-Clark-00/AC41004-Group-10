@@ -22,6 +22,7 @@ let index = 0;
 let paused = false;
 let thisCanvas;
 let scale = 1;
+let previousSize;
 let divBox;
 
 export default class LiveHeatmap extends Component {
@@ -206,15 +207,43 @@ export default class LiveHeatmap extends Component {
   }
 
   draw = p5 => {
+    if (p5.windowWidth < 600 && previousSize >= 600) {
+      scale = 0.5
+      thisCanvas.resize(600 * scale, 510 * scale)
+      p5.loadImage(testImg, img => {
+        this.img = img;
+        // imgTest = this.img;
+        p5.image(img,0,0,600 * scale, 510 * scale)
+      },
+      (event) => {
+        p5.fill("red")
+        p5.text("Error: The image could not be loaded.", 20, 40);
+        console.log(event);
+      });
+      
+    }
+    else if(p5.windowWidth >600 && previousSize <= 600)
+    {
+      scale = 1;
+      thisCanvas.resize(600 * scale, 510 * scale)
+      p5.loadImage(testImg, img => {
+        this.img = img;
+        // imgTest = this.img;
+        p5.image(img,0,0,600 * scale, 510 * scale)
+      },
+      (event) => {
+        p5.fill("red")
+        p5.text("Error: The image could not be loaded.", 20, 40);
+        console.log(event);
+      });
+    }
     this.pauseButton.position(-600 * scale, 0 * scale, "relative").parent(divBox);
+    this.pauseButton.addClass("button")
     this.timeSlider.position(150 * scale, -55 * scale, "relative").parent(divBox);
     this.timeSlider.addClass("slider")
     this.timeSlider.value(index)
     if (!paused)
     {
-    
-    
-    
 
 
     // Timer ellipse and text
@@ -259,6 +288,7 @@ export default class LiveHeatmap extends Component {
     {
       index = index+1;
     }
+    previousSize = p5.windowWidth;
   }
 };
 
