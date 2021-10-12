@@ -22,21 +22,28 @@ export default class ViewClientPage extends Component{
             sessions: []
         };
         }
+        // comonentDidMount part of React lifecycle - runs automatically
         componentDidMount() {
-            //POSTING request with userID
-            const requestOptions = {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ userID: String(localStorage.getItem('userID'))})
-            };
-            fetch('https://theobackend.herokuapp.com/sessions', requestOptions)
-                    // JSON response is handled by a json() promises
-            .then((res) => { return res.json().
+          //POSTING request with userID
+          const requestOptions = {
+              method: 'POST',
+              headers: { 'Content-Type': 'text/html' },
+              body: JSON.stringify({ userID: String(localStorage.getItem('userID'))})
+          };
+          fetch('https://theobackend.herokuapp.com/sessions', requestOptions)
+                  // JSON response is handled by a json() promises
+          .then((res) => { return res.json().
             then((data) => {
-                this.setState({sessions: data});
+              //turn the object recieved into a big array
+              var arrayofSessions = []
+              data.forEach((sesh) => {
+                var objectArray = Object.entries(sesh);
+                arrayofSessions.push(objectArray);
+              });
+              this.setState({sessions: arrayofSessions});
             });
-            });
-          }
+          });
+        }
 
     render(){
         return(
@@ -44,7 +51,7 @@ export default class ViewClientPage extends Component{
                 <Helmet>
                     <title>My Home</title>
                 </Helmet>
-                <XYPlot height={400} width={600}> 
+                <XYPlot height={400} width={600}>
                     <VerticalGridLines/>
                     <HorizontalGridLines/>
                     <XAxis/>
@@ -72,12 +79,9 @@ export default class ViewClientPage extends Component{
                 <div className = "sessionlist-wrapper p-5">
               <h1>Your Sessions</h1>
               <ListGroup className="mt-5">
-                <ListGroup.Item action href="/user/session">
-                  {JSON.stringify(this.state.sessions[0])}
-                </ListGroup.Item>
-                <ListGroup.Item action href="/user/session">
-                  {JSON.stringify(this.state.sessions[0])}
-                </ListGroup.Item>
+                  {this.state.sessions.map(function(value, index){
+                      return <ListGroup.Item action href="#link1" key={ index }>{value[0][1]}</ListGroup.Item>;
+                    })}
               </ListGroup>
           </div>
                 <div className="session-wrapper">
@@ -86,5 +90,5 @@ export default class ViewClientPage extends Component{
             </div>
 
         )
-    } 
+    }
 }
