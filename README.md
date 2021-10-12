@@ -26,7 +26,11 @@ Development tools
 * Development IDEs
   * [Visual studio code] https://code.visualstudio.com/
   * [Atom] https://atom.io/
-* API Testing - [Postman] https://www.postman.com/ 
+* API Testing - [Postman] https://www.postman.com/
+* Database test data population 
+  * [Fake Name generator] https://www.fakenamegenerator.com/
+  * [Generate Data] https://generatedata.com/
+  * [JSON-Generator] https://www.fakenamegenerator.com/
 * Research and notetaking - [Google docs] https://docs.google.com/
 
 
