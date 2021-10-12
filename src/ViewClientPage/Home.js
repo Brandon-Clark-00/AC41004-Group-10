@@ -14,6 +14,14 @@ const data =[
     {x: 1, y: 3},
     {x: 2, y: 10}]
 
+
+  function updateLocalhost(sessionID){
+    return function () {
+     localStorage.setItem("sessionID", sessionID)
+   }
+
+  }
+
 export default class ViewClientPage extends Component{
     constructor(props){
         super(props);
@@ -44,11 +52,8 @@ export default class ViewClientPage extends Component{
           });
         }
 
-    render(){
-      function getUrl(sessionID){
-        return 'user/session/' + sessionID
-      }
 
+    render(){
 
         return(
             <div className="home-sessions-wrapper">
@@ -84,7 +89,9 @@ export default class ViewClientPage extends Component{
               <h1>Your Sessions</h1>
               <ListGroup className="mt-5">
                   {this.state.sessions.map(function(value, index){
-                      return <ListGroup.Item action href={getUrl(value[2][1])} key={ index }>{value[0][1]}</ListGroup.Item>;
+                      console.log("VALUE")
+                      console.log(value)
+                      return <ListGroup.Item action key={ index } onClick={updateLocalhost(value[2][1])}><a style={{color: 'black', textDecoration: 'none'}}href="/user/session">{value[0][1]}</a></ListGroup.Item>;
                     })}
               </ListGroup>
               </div>
