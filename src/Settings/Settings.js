@@ -13,9 +13,9 @@ export default class Settings extends Component{
         return (
             <div className = "settings-wrapper">
                 <Helmet>
-                    <title>User Settings</title>
+                    <title>Theo Health - Settings</title>
                 </Helmet>
-                <h1>Settings page</h1> 
+                <h1>Settings page</h1>
 
             </div>
         )

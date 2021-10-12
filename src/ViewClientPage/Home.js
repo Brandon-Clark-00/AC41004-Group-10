@@ -27,15 +27,15 @@ const data3 =[
     {x: 0.3, y:4},
     {x: 1, y: 5},
     {x: 2, y: 6}]
-        
+
 
     function updateLocalhost(sessionID){
         return function () {
          localStorage.setItem("sessionID", sessionID)
        }
       }
-    
-    
+
+
 export default class ViewClientPage extends Component{
     constructor(props){
         super(props);
@@ -87,7 +87,7 @@ export default class ViewClientPage extends Component{
         return(
             <div className="home-sessions-wrapper">
                 <Helmet>
-                    <title>My Home</title>
+                    <title>Theo Health - Home</title>
                 </Helmet>
                 <div className="comparative-graphs">
                     <Carousel plugins={['infinite', 'arrows',{
@@ -97,7 +97,7 @@ export default class ViewClientPage extends Component{
                         }
                         },
                                 ]}>
-                        <XYPlot height={400} width={600}> 
+                        <XYPlot height={400} width={600}>
                             <VerticalGridLines/>
                             <HorizontalGridLines/>
                             <XAxis/>
@@ -124,7 +124,7 @@ export default class ViewClientPage extends Component{
                         <LineSeries data={data2} curve={'curveMonotoneX'}/>
                         <LineSeries data={data3} curve={'curveMonotoneX'}/>
                         </XYPlot>
-                        <XYPlot height={400} width={600}> 
+                        <XYPlot height={400} width={600}>
                             <VerticalGridLines/>
                             <HorizontalGridLines/>
                             <XAxis/>
@@ -151,7 +151,7 @@ export default class ViewClientPage extends Component{
                             <LineSeries data={data2} curve={'curveMonotoneX'}/>
                             <LineSeries data={data3} curve={'curveMonotoneX'}/>
                         </XYPlot>
-                        <XYPlot height={400} width={600}> 
+                        <XYPlot height={400} width={600}>
                             <VerticalGridLines/>
                             <HorizontalGridLines/>
                             <XAxis/>

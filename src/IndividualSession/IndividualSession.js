@@ -38,7 +38,7 @@ export default class IndividualSession extends Component{
         return (
             <div className = "indivsession-wrapper m-5">
                 <Helmet>
-                    <title>Session</title>
+                    <title>Theo Health - Session</title>
                 </Helmet>
                 <div className ="session-header">
                     <NavLink to ="/user/home" className="sessionlink" exact>

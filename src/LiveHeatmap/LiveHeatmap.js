@@ -27,7 +27,7 @@ let divBox;
 export default class LiveHeatmap extends Component {
   constructor(props){
     super(props);
-    
+
     if(localStorage.getItem('email') !== null && localStorage.getItem('email') !== undefined){
       if(localStorage.getItem('user_role') !== '0'){
           redirectUser();
@@ -50,24 +50,24 @@ export default class LiveHeatmap extends Component {
 
   timeSlider;
   pauseButton;
-  
+
 
   loadData = (p5,parent) => {
-    
-      
+
+
     let sessionTemp = sessionData['data'];
     // console.log("THis is the data");
 
 
     for (let i = 0; i < 386; i++) {
-      
-      
+
+
       let currTime = sessionTemp[i].time
       let currsOne = sessionTemp[i]['Sensor 1'];
       let currsTwo = sessionTemp[i]['Sensor 2'];
       let currsThree = sessionTemp[i]['Sensor 3'];
       let currsFour = sessionTemp[i]['Sensor 4'];
-      
+
 
       sessionInfo.push(new Session(currTime,currsOne,currsTwo,currsThree,currsFour));
     }
@@ -93,7 +93,7 @@ export default class LiveHeatmap extends Component {
      default:
        break;
    }
-  
+
   if (value < 50) {
 
     return '#00FF00';
@@ -109,39 +109,39 @@ export default class LiveHeatmap extends Component {
   }else if (value < 200){
 
     return "#A0D600";
-    
+
   }else if (value < 250){
 
     return "#B6C700";
-    
+
   }else if (value < 300){
 
     return "#C7B700";
-    
+
   }else if (value < 350){
 
     return "#D7A700";
-    
+
   }else if (value < 400){
 
     return "#E39500";
-    
+
   }else if (value < 450){
 
     return "#EE8200";
-    
+
   }else if (value < 500){
 
     return "#F66D00";
-    
+
   }else if (value < 550){
 
     return "#FB5600";
-    
+
   }else if (value < 600){
 
     return "#FE3900";
-    
+
   }else{
 
     return "#FF0000";
@@ -212,9 +212,9 @@ export default class LiveHeatmap extends Component {
     this.timeSlider.value(index)
     if (!paused)
     {
-    
-    
-    
+
+
+
 
 
     // Timer ellipse and text
@@ -266,7 +266,7 @@ render(){
   return(
     <div className="heatmapContainer">
       <Helmet>
-        <title>Heatmap</title>
+        <title>Theo Health - New Session</title>
       </Helmet>
       <Sketch setup={this.setup} draw ={this.draw} />
     </div>
