@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom';
+import Helmet from 'react-helmet';
 import './IndividualSession.css';
 
 export default class IndividualSession extends Component{
@@ -36,6 +38,14 @@ export default class IndividualSession extends Component{
         console.log(this.state.sensors)
         return (
             <div className = "indivsession-wrapper m-5">
+                <Helmet>
+                    <title>Session</title>
+                </Helmet>
+                <div className ="session-header">
+                    <NavLink to ="/user/home" className="sessionlink" exact>
+                        <li>Back to Sessions</li>
+                    </NavLink>    
+                </div>
                 <h1>Session</h1>
                 <ul className="mt-5">
                     {this.state.sensors.map(function(value, index){

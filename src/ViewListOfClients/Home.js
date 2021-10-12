@@ -3,6 +3,8 @@ import Helmet from 'react-helmet';
 import './ViewClientsList.css';
 import { ListGroup } from "react-bootstrap";
 import { redirectUser } from '../SessionHandling/auth.js';
+
+
 export default class ViewClientPage extends Component{
     constructor(props){
         super(props);
@@ -17,6 +19,8 @@ export default class ViewClientPage extends Component{
         if(localStorage.getItem('email') == null || localStorage.getItem('email') == undefined){
             redirectUser();
         }
+        
+
     }
     // comonentDidMount part of React lifecycle - runs automatically
     componentDidMount() {
