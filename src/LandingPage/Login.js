@@ -25,7 +25,7 @@ export default class Login extends Component {
         if(localStorage.getItem('email') !== null & localStorage.getItem('email') !== undefined){
             redirectUser();
         }
-        
+
 
     }
 
