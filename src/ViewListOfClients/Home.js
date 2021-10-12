@@ -56,7 +56,7 @@ export default class ViewClientPage extends Component{
         return(
             <div>
                   <Helmet>
-                    <title>My Home</title>
+                    <title>Theo Health - Home</title>
                   </Helmet>
                   <div className = "clientlist-wrapper-home p-5">
                     <h1>Your Clients</h1>

@@ -64,11 +64,11 @@ export default class ViewClientPage extends Component{
             <Router>
                 <div className = "mypage-wrapper">
                   <Helmet>
-                    <title>Userpage</title>
+                    <title>Theo Health - Home</title>
                   </Helmet>
                   <div className = "mypage-header">
                     <NavLink to ="/user/home" activeClassName="current" exact>
-                      <li>My Home</li>
+                      <li>Sessions</li>
                     </NavLink>
                     <NavLink to ="/user/heatmap" activeClassName="current" exact>
                       <li>Heatmap</li>

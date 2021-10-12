@@ -57,7 +57,7 @@ export default class ClientPage extends Component{
         return(
             <div className="home-sessions-wrapper">
                 <Helmet>
-                    <title>My Home</title>
+                    <title>Theo Health - Client</title>
                 </Helmet>
                 <XYPlot height={400} width={600}>
                     <VerticalGridLines/>
