@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom';
+import Helmet from 'react-helmet';
 import './IndividualSession.css';
 
 export default class IndividualSession extends Component{
@@ -14,7 +16,7 @@ export default class IndividualSession extends Component{
     const requestOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ sessionID: "1"}) //get ID from localhost here
+        body: JSON.stringify({ sessionID: 1}) //get ID from localhost here
     };
     fetch('http://localhost:5000/sensors', requestOptions)
             // JSON response is handled by a json() promises
@@ -29,6 +31,14 @@ export default class IndividualSession extends Component{
         console.log(this.state.sensors)
         return (
             <div className = "indivsession-wrapper m-5">
+                <Helmet>
+                    <title>Session</title>
+                </Helmet>
+                <div className ="session-header">
+                    <NavLink to ="/user/home" className="sessionlink" exact>
+                        <li>Back to Sessions</li>
+                    </NavLink>    
+                </div>
                 <h1>Session</h1>
                 <p style={{fontSize:"0.5em"}}> {JSON.stringify(this.state.sensors[0])} </p>
             </div>

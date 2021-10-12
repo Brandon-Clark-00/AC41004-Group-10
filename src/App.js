@@ -10,9 +10,9 @@ import {
 import Landing from "./LandingPage/Login.js";
 import ViewClientPage from "./ViewClientPage/ViewClientPage.js";
 import ViewListOfClients from "./ViewListOfClients/ViewClientsList.js";
-import IndividualSession from "./IndividualSession/IndividualSession";
 import 'font-awesome/css/font-awesome.min.css';
 import theohealthlogo from './Images/whiteLogo.png';
+import IndividualSession from "./IndividualSession/IndividualSession.js";
 import './App.css';
 // import './App-Propanopia.css';
 
@@ -53,18 +53,6 @@ function App() {
       )
     }
 
-    let IndividualSessionWrapper = (props) => {
-      return(
-        <IndividualSession></IndividualSession>
-      )
-    }
-
-    let Settings = (props) => {
-      return(
-        <Settings></Settings>
-      )
-    }
-
     let ViewListOfClientsWrapper = (props) => {
       return(
         <ViewListOfClients></ViewListOfClients>
@@ -94,7 +82,7 @@ function App() {
               <Route exact path="/" component={LandingWrapper}/>
               <Route exact path="/physio/clientlist" component={ViewListOfClientsWrapper}/>
               <Route exact path="/user/home" component={ViewClientPageWrapper}/>
-              <Route exact path="/session" component={IndividualSession}/>
+              <Route path ="/user/session" component={IndividualSession} />
               <Redirect to ="/"></Redirect>
             </Switch>
             {/* <h1>You've stumbled onto an empty page </h1>

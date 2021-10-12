@@ -32,8 +32,7 @@ let heatmap = (props) => {
 export default class ViewClientPage extends Component{
   constructor(props){
     super(props);
- 
-    settings = (props) => {
+      settings = (props) => {
         return(
           <Settings></Settings>
         )
@@ -48,6 +47,7 @@ export default class ViewClientPage extends Component{
           <Home></Home>
         )
       }
+
       if(localStorage.getItem('email') !== null && localStorage.getItem('email') !== undefined){
         if(localStorage.getItem('user_role') !== '0'){
             redirectUser();
@@ -56,12 +56,8 @@ export default class ViewClientPage extends Component{
     if(localStorage.getItem('email') == null || localStorage.getItem('email') == undefined){
         redirectUser();
     }
-
-    const onClick = () =>{
-      deleteTokens(); 
-      window.location.replace("/")
     }
-  }
+   
     render() {
 
         return (
@@ -80,7 +76,7 @@ export default class ViewClientPage extends Component{
                     <NavLink to ="/user/settings" activeClassName="current" exact>
                       <li>Settings</li>
                     </NavLink>    
-                    <NavLink to = "/" onClick={() => {  deleteTokens(); window.location.replace("/")}} exact>
+                    <NavLink to = "/" onClick={() => {deleteTokens(); window.location.replace("/")}} exact>
                       <li>Sign out</li>
                     </NavLink>
                   </div>
