@@ -219,7 +219,8 @@ export default class LiveHeatmap extends Component {
 
     // Timer ellipse and text
     p5.fill(255);
-    p5.ellipse(285 * scale, 30 * scale, 190 * scale, 40 * scale);
+    //x, y, w, [h], [tl], [tr], [br], [bl]
+    p5.rect(190 * scale, 12 * scale, 190 * scale, 40 * scale, 10, 10, 10, 10);
     p5.textSize(25 * scale);
     p5.fill(p5.color(0));
     let timer = "Time: " + sessionInfo[index].timeStamp.split('T')[1].substring(0,sessionInfo[index].timeStamp.split('T')[1].length-5);
