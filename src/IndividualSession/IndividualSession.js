@@ -7,7 +7,8 @@ export default class IndividualSession extends Component{
   constructor(props){
       super(props);
       this.state = {
-            sensors: []
+            sensors: [],
+            session: []
         };
   }
   // comonentDidMount part of React lifecycle - runs automatically
@@ -31,12 +32,26 @@ export default class IndividualSession extends Component{
         this.setState({sensors: arrayofSensors});
       });
     });
+
+    fetch('http://localhost:5000/session', requestOptions)
+            // JSON response is handled by a json() promises
+    .then((res) => { return res.json().
+      then((data) => {
+        //turn the object recieved into a big array
+        var session = []
+        data.forEach((sesh) => {
+          var objectArray = Object.entries(sesh);
+          session.push(objectArray);
+        });
+        this.setState({session: session});
+      });
+    });
   }
 
 
     render() {
         return (
-            <div className = "indivsession-wrapper m-5">
+            <div className = "indivsession-wrapper">
                 <Helmet>
                     <title>Theo Health - Session</title>
                 </Helmet>
@@ -45,14 +60,16 @@ export default class IndividualSession extends Component{
                         <li>Back to Sessions</li>
                     </NavLink>
                 </div>
-                <h1>Session</h1>
-                <ul className="mt-5">
-                    {this.state.sensors.map(function(value, index){
-                        return <li key={ index }>{value[0]}
+                <div className="p-5">
+                  <h1>{this.state.session}</h1>
+                  <ul className="mt-5">
+                      {this.state.sensors.map(function(value, index){
+                          return <li key={ index }>{value[0]}
 
-                        </li>;
-                      })}
-                </ul>
+                          </li>;
+                        })}
+                  </ul>
+                </div>
             </div>
         )
     }
