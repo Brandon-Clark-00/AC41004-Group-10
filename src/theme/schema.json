@@ -1,0 +1,45 @@
+{
+  "data" : {
+
+    "standard" : {
+      "id": "T_001",
+      "name": "Standard",
+      "colors": {
+        
+        "button": {
+          "text": "#FFFFFF",
+          "background": "#000000"
+        },
+
+        "footHead": {
+          "color": "#F36D21"
+        },
+
+        "link": {
+          "text": "teal",
+          "opacity": 1
+        }
+      }
+    },
+
+
+
+    "seaWave" : {
+      "id": "T_007",
+      "name": "Sea Wave",
+      "colors": {
+        
+        "button": {
+          "text": "#ffffff",
+          "background": "#0d47a1"
+        },
+       
+        "link": {
+          "text": "#0d47a1",
+          "opacity": 0.8
+        }
+      }
+    }
+
+  }
+}

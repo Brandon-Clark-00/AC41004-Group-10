@@ -4,7 +4,6 @@
 
 .site-header {
   overflow: visible;
-  background-color:#F36D21;
   padding: 20px 5%;
   transition: background-color 0.2s linear;
 }
@@ -14,7 +13,6 @@
   display: inline-block;
   width: 240px;
   padding: 10px 10px 10px 10px;
-  background-color: #F36D21;
   ;
 
 }
@@ -58,10 +56,7 @@ html {
 /*---- Footer ----*/
 .site-footer{
 padding: 20px 5%;
-background-color: #F36D21;
-
 text-transform: capitalize;
-color: #F36D21;
 
 
 display: flex;
