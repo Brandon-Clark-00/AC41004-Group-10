@@ -237,9 +237,9 @@ export default class LiveHeatmap extends Component {
         console.log(event);
       });
     }
-    this.pauseButton.position(-600 * scale, 0 * scale, "relative").parent(divBox);
+    this.pauseButton.position(0 * scale, 0 * scale, "relative").parent(divBox);
     this.pauseButton.addClass("button")
-    this.timeSlider.position(150 * scale, -55 * scale, "relative").parent(divBox);
+    this.timeSlider.position(150 * scale, -20 * scale, "relative").parent(divBox);
     this.timeSlider.addClass("slider")
     this.timeSlider.value(index)
     if (!paused)
