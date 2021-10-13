@@ -33,7 +33,7 @@ export default class IndividualSession extends Component{
       });
     });
 
-    fetch('http://localhost:5000/session', requestOptions)
+    fetch('https://theobackend.herokuapp.com/session', requestOptions)
             // JSON response is handled by a json() promises
     .then((res) => { return res.json().
       then((data) => {
