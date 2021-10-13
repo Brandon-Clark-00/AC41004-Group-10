@@ -4,6 +4,8 @@ import {Button} from 'react-bootstrap';
 import Helmet from 'react-helmet';
 import { XYPlot, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, VerticalBarSeries, VerticalBarSeriesCanvas, DiscreteColorLegend } from 'react-vis';
 import './IndividualSession.css';
+import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css'
 
 function moveUser(){
   console.log("hey");
@@ -18,12 +20,39 @@ function moveUser(){
   }
 }
 
+let dataGraphLeftHam = [];
+let dataGraphRightHam = [];
+let dataGraphLeftQuad = [];
+let dataGraphRightQuad = [];
 
-const myData = [
-    {x: 'A', y: 10},
-    {x: 'B', y: 5},
-    {x: 'C', y: 15}
-  ]
+function setData(dataToMap){
+  let arrayToMap = dataToMap;
+  arrayToMap.map(function(value, index){
+    if(value[1][1] == '1'){
+      dataGraphLeftHam.push({x: 0, y: value[5][1]})
+      dataGraphLeftHam.push({x: 1, y: value[4][1]})
+      dataGraphLeftHam.push({x: 2, y: value[3][1]})
+    }
+    if(value[1][1] == '2'){
+      dataGraphRightHam.push({x: 0, y: value[5][1]})
+      dataGraphRightHam.push({x: 1, y: value[4][1]})
+      dataGraphRightHam.push({x: 2, y: value[3][1]})
+    }
+    if(value[1][1] == '3'){
+      dataGraphLeftQuad.push({x: 0, y: value[5][1]})
+      dataGraphLeftQuad.push({x: 1, y: value[4][1]})
+      dataGraphLeftQuad.push({x: 2, y: value[3][1]})
+    }
+    if(value[1][1] == '4'){
+      dataGraphRightQuad.push({x: 0, y: value[5][1]})
+      dataGraphRightQuad.push({x: 1, y: value[4][1]})
+      dataGraphRightQuad.push({x: 2, y: value[3][1]})
+    }
+  })
+  console.log(dataGraphRightQuad);
+}
+
+
 
 export default class IndividualSession extends Component{
   constructor(props){
@@ -52,6 +81,7 @@ export default class IndividualSession extends Component{
           arrayofSensors.push(objectArray);
         });
         this.setState({sensors: arrayofSensors});
+        setData(this.state.sensors);
       });
     });
 
@@ -68,6 +98,7 @@ export default class IndividualSession extends Component{
         this.setState({session: session});
       });
     });
+
   }
 
 
@@ -94,81 +125,67 @@ export default class IndividualSession extends Component{
                   </ul>
                 </div>
                 <div className="chart-container">
-                    <XYPlot className="individual-session-bar-chart"
-                    xType="ordinal"
-                    stackBy="y"
-                    width={300}
-                    height={300}>
-                        <XAxis />
-                        <YAxis />
-                        <VerticalBarSeries 
-                                    cluster="2015"
-                                    color="#79C7E3"
-                                    data={[
-                                      {x: 'Q1', y: 3},
-                                      {x: 'Q2', y: 7},
-                                      {x: 'Q3', y: 2},
-                                      {x: 'Q4', y: 1}
-                                    ]}
-                        />
-                    </XYPlot>
-                    <XYPlot className="individual-session-bar-chart"
-                    xType="ordinal"
-                    stackBy="y"
-                    width={300}
-                    height={300}>
-                        <XAxis />
-                        <YAxis />
-                        <VerticalBarSeries 
-                                    cluster="2015"
-                                    color="#79C7E3"
-                                    data={[
-                                      {x: 'Q1', y: 3},
-                                      {x: 'Q2', y: 7},
-                                      {x: 'Q3', y: 2},
-                                      {x: 'Q4', y: 1}
-                                    ]}
-                        />
-                    </XYPlot>
-                    <XYPlot className="individual-session-bar-chart"
-                    xType="ordinal"
-                    stackBy="y"
-                    width={300}
-                    height={300}>
-                        <XAxis />
-                        <YAxis />
-                        <VerticalBarSeries 
-                                    cluster="2015"
-                                    color="#79C7E3"
-                                    data={[
-                                      {x: 'Q1', y: 3},
-                                      {x: 'Q2', y: 7},
-                                      {x: 'Q3', y: 2},
-                                      {x: 'Q4', y: 1}
-                                    ]}
-                        />
-                    </XYPlot>
-                    <XYPlot className="individual-session-bar-chart"
-                    xType="ordinal"
-                    stackBy="y"
-                    width={300}
-                    height={300}>
-                        <XAxis />
-                        <YAxis />
-                        <VerticalBarSeries 
-                                    cluster="2015"
-                                    color="#79C7E3"
-                                    data={[
-                                      {x: 'Q1', y: 3},
-                                      {x: 'Q2', y: 7},
-                                      {x: 'Q3', y: 2},
-                                      {x: 'Q4', y: 1}
-                                    ]}
-                        />
-                    </XYPlot>
+                <Carousel plugins={['infinite', 'arrows',{
+                        resolve: slidesToShowPlugin,
+                        options: {
+                            numberOfSlides: 2
+                        }
+                        },
+                                ]}>
+                      <XYPlot className="individual-session-bar-chart"
+                      xType="ordinal"
+                      stackBy="y"
+                      width={300}
+                      height={300}>
+                          <XAxis />
+                          <YAxis />
+                          <VerticalBarSeries 
+                                      cluster="2015"
+                                      color="#79C7E3"
+                                      data={dataGraphLeftHam}
+                          />
+                      </XYPlot>
+                      <XYPlot className="individual-session-bar-chart"
+                      xType="ordinal"
+                      stackBy="y"
+                      width={300}
+                      height={300}>
+                          <XAxis />
+                          <YAxis />
+                          <VerticalBarSeries 
+                                      cluster="2015"
+                                      color="#79C7E3"
+                                      data={dataGraphRightHam}
+                          />
+                      </XYPlot>
+                      <XYPlot className="individual-session-bar-chart"
+                      xType="ordinal"
+                      stackBy="y"
+                      width={300}
+                      height={300}>
+                          <XAxis />
+                          <YAxis />
+                          <VerticalBarSeries 
+                                      cluster="2015"
+                                      color="#79C7E3"
+                                      data={dataGraphLeftQuad}
+                          />
+                      </XYPlot>
+                      <XYPlot className="individual-session-bar-chart"
+                      xType="ordinal"
+                      stackBy="y"
+                      width={300}
+                      height={300}>
+                          <XAxis />
+                          <YAxis />
+                          <VerticalBarSeries 
+                                      cluster="2015"
+                                      color="#79C7E3"
+                                      data={dataGraphRightQuad}
+                          />
+                      </XYPlot>
+                    </Carousel>
                 </div>
-                <h1>Session</h1>
-                <p style={{fontSize:"0.5em"}}> {JSON.stringify(this.state.sensors[0])} </p>
             </div>
         )
     }
