@@ -50,6 +50,8 @@ export default class IndividualSession extends Component{
 
 
     render() {
+        let string = String(this.state.session[0]);
+        var sessionDate = string.slice(13, 35)
         return (
             <div className = "indivsession-wrapper">
                 <Helmet>
@@ -61,7 +63,7 @@ export default class IndividualSession extends Component{
                     </NavLink>
                 </div>
                 <div className="p-5">
-                  <h1>{this.state.session}</h1>
+                  <h1>{sessionDate}</h1>
                   <ul className="mt-5">
                       {this.state.sensors.map(function(value, index){
                           return <li key={ index }>{value[0]}
