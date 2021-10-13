@@ -99,7 +99,6 @@ function App() {
                 <a href="https://www.linkedin.com/company/theo-health"><i class="fa fa-linkedin" title = "Theo Health LinkedIn"></i></a>
                 <a href="mailto:jodie@theohealth.com"><i class="fa fa-envelope" title = "Theo Health Email"></i></a>
               </div>
-
             </footer>
       </div>
     </Router>

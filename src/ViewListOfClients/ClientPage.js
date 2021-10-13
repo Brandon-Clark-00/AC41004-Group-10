@@ -88,7 +88,7 @@ export default class ClientPage extends Component{
               <h1>Clients Sessions</h1>
               <ListGroup className="mt-5">
                   {this.state.sessions.map(function(value, index){
-                      return <ListGroup.Item action key={ index } onClick={updateLocalhost(value[2][1])}><a style={{color: 'black', textDecoration: 'none'}}href="/user/session">{value[0][1]}</a></ListGroup.Item>;
+                      return <ListGroup.Item action key={ index } onClick={updateLocalhost(value[2][1])}><a style={{color: 'black', textDecoration: 'none'}}href="/user/session">{String(value[0][1]).slice(5, 22)}</a></ListGroup.Item>;
                     })}
               </ListGroup>
               </div>

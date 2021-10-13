@@ -1,7 +1,22 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom';
+import {Button} from 'react-bootstrap';
 import Helmet from 'react-helmet';
 import './IndividualSession.css';
+
+function moveUser(){
+  console.log("hey");
+  var user_role = localStorage.getItem("user_role");
+  if (user_role ==1 )
+  {
+    //move to client page
+    window.location.replace("/physio/client")
+  }else {
+    //move to user home
+    window.location.replace("/user/home")
+  }
+}
+
 
 export default class IndividualSession extends Component{
   constructor(props){
@@ -50,7 +65,6 @@ export default class IndividualSession extends Component{
 
 
     render() {
-        console.log(this.state.sensors[0])
         let string = String(this.state.session[0]);
         var sessionDate = string.slice(13, 35)
         return (
@@ -59,9 +73,7 @@ export default class IndividualSession extends Component{
                     <title>Theo Health - Session</title>
                 </Helmet>
                 <div className ="session-header">
-                    <NavLink to ="/user/home" className="sessionlink" exact>
-                        <li>Back to Sessions</li>
-                    </NavLink>
+                  <Button variant="outline-secondary" onClick={() => { moveUser() }}>Go Back</Button>
                 </div>
                 <div className="p-5">
                   <h1>{sessionDate}</h1>
