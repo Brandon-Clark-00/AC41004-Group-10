@@ -50,6 +50,7 @@ export default class IndividualSession extends Component{
 
 
     render() {
+        console.log(this.state.sensors[0])
         let string = String(this.state.session[0]);
         var sessionDate = string.slice(13, 35)
         return (
@@ -64,9 +65,10 @@ export default class IndividualSession extends Component{
                 </div>
                 <div className="p-5">
                   <h1>{sessionDate}</h1>
+                  <p> Add graph here </p>
                   <ul className="mt-5">
                       {this.state.sensors.map(function(value, index){
-                          return <li key={ index }>{value[0]}
+                          return <li key={ index }>Sensor: {value[1][1]}, Max Strength: {value[4][1]}, Min Strength: {value[5][1]}, Average: {value[3][1]}
 
                           </li>;
                         })}
