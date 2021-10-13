@@ -8,11 +8,15 @@
         
         "button": {
           "text": "#FFFFFF",
-          "background": "#000000"
+          "background": "#0000FF"
         },
 
         "footHead": {
           "color": "#F36D21"
+        },
+
+        "social": {
+          "color": "#FFFFFF"
         },
 
         "link": {
@@ -24,19 +28,27 @@
 
 
 
-    "seaWave" : {
-      "id": "T_007",
-      "name": "Sea Wave",
+    "blind" : {
+      "id": "T_002",
+      "name": "Blind",
       "colors": {
         
         "button": {
-          "text": "#ffffff",
-          "background": "#0d47a1"
+          "text": "#000000",
+          "background": "#0000FF"
         },
-       
+
+        "footHead": {
+          "color": "#F36D21"
+        },
+
+        "social": {
+          "color": "#FFFFFF"
+        },
+
         "link": {
-          "text": "#0d47a1",
-          "opacity": 0.8
+          "text": "teal",
+          "opacity": 1
         }
       }
     }

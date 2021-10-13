@@ -8,11 +8,6 @@ export const GlobalStyles = createGlobalStyle`
     transition: all 0.50s linear;
   }
 
-  a {
-    color: ${({ theme }) => theme.colors.link.text};
-    cursor: pointer;
-  }
-
   header {
     background-color: ${({ theme }) => theme.colors.footHead.color};
   }
@@ -23,6 +18,22 @@ export const GlobalStyles = createGlobalStyle`
 
   img {
     background-color: ${({ theme }) => theme.colors.footHead.color};
+  }
+
+  .social-media a:nth-child(1) {
+    color: ${({ theme }) => theme.colors.social.color};
+  }
+
+  .social-media a:nth-child(2) {
+    color: ${({ theme }) => theme.colors.social.color};
+  }
+
+  .social-media a:nth-child(3) {
+    color: ${({ theme }) => theme.colors.social.color};
+  }
+
+  .social-media a:nth-child(4) {
+    color: ${({ theme }) => theme.colors.social.color};
   }
 
   button.btn {

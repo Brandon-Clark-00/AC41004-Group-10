@@ -77,7 +77,6 @@ right: 0;
 /*twitter*/
 .social-media a:nth-child(1) i{
   font-size: 40px;
-  color: white;
   /*
   color:rgb(29,161,242)
   */
@@ -86,7 +85,6 @@ right: 0;
 /*instagram*/
 .social-media a:nth-child(2) i{
   font-size: 40px;
-  color: white;
   /* Gradient copied from https://stackoverflow.com/questions/48719337/how-to-give-gradient-color-to-icon/48719471 
   background:-moz-linear-gradient(top, #e72c83 0%, #a742c6 100%); 
   background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%); 
@@ -101,7 +99,6 @@ right: 0;
 /*linkdin*/
 .social-media a:nth-child(3) i{
   font-size: 40px;
-  color: white;
   /*
   color: #0e76a8;
   */
@@ -110,7 +107,6 @@ right: 0;
 /*email*/
 .social-media a:nth-child(4) i{
   font-size: 40px;
-  color: white;
   /*
   color: #00a2ed;
   */
