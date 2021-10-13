@@ -15,7 +15,7 @@ let settings = (props) => {
     return(
       <Settings></Settings>
     )
-    }  
+    }
 let home = (props) => {
       return(
         <Home></Home>
@@ -24,11 +24,8 @@ let home = (props) => {
 export default class ViewClientList extends Component{
   constructor(props){
     super(props);
-      this.state = {
-            clients: []
-        };
           settings = (props) => {
-            return( 
+            return(
               <Settings></Settings>
             )
           }
@@ -52,15 +49,15 @@ export default class ViewClientList extends Component{
         <Router>
           <div className = "clientlist-wrapper">
             <Helmet>
-              <title>Physio Home</title>
+              <title>Theo Health - Home</title>
             </Helmet>
             <div className ="physio-header">
               <NavLink to ="/physio/clientlist" activeClassName="current" exact>
-                <li>My Home</li>
-              </NavLink>  
+                <li>Clients</li>
+              </NavLink>
               <NavLink to ="/physio/settings" activeClassName="current" exact>
                 <li>Settings</li>
-              </NavLink>    
+              </NavLink>
               <NavLink to = "/" onClick={() => {  deleteTokens(); window.location.replace("/")}} exact>
                 <li>Sign out</li>
               </NavLink>

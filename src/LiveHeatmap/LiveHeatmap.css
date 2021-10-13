@@ -6,7 +6,7 @@
     /* Copywrite free image taken from  https://unsplash.com/photos/lrQPTQs7nQQ */
      min-height:100%;
      position: relative;
- 
+
  }
 
  .Heatmap{
@@ -20,23 +20,72 @@
     background-repeat: no-repeat;
     /* background-image: url("../Images/legs3-0.png"); */
 
-    
+
  }
  .heatmapContainer{
-    position: sticky; 
+    position: sticky;
     /* border-style: dotted;
     border-color: red; */
     padding-top: 5%;
+    padding-bottom: 10%;
     width: 50%;
     display:flex;
     justify-content: center;
     left: 25%;
     right: 50%;
 }
- 
+
+
+.button{
+  width: 10vw;
+  font-size: 2vw;
+  right:0%;
+  z-index: 4;
+}
+/* Styles the whole slider */
+.slider{
+
+    width: 45%;
+    padding-left: 2rem;
+
+    background-color: transparent;
+
+    /* Removes some defaults */
+    -webkit-appearance: none;
+  }
+
+  .slider:focus {
+
+    /* Stops the default outline showing up */
+    outline: none;
+  }
+
+.slider::-webkit-slider-runnable-track {
+    background: #000000;
+    height: 0.5rem;
+
+    -webkit-appearance: none;
+
+    /* Turns the cursor into the hand pointer icon when hovering over the slider  */
+    cursor: pointer;
+
+  }
+
+  .slider::-webkit-slider-thumb {
+    width: 1.1rem;
+    height: 1.1rem;
+    background: #0297a2;
+    cursor: pointer;
+    -webkit-appearance: none;
+
+    /* negative top padding moves it up */
+    margin-top: -4px;
+
+
+    /* Border radius gives rounded corners, if they're big enough, you end up with circles */
+    border-radius: 8px;
+
+  }
  canvas{
-    width: 100%;
-    height: 100%;
+
  }
- 
- 

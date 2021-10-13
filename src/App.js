@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 import Landing from "./LandingPage/Login.js";
+import ClientPage from './ViewListOfClients/ClientPage.js';
 import ViewClientPage from "./ViewClientPage/ViewClientPage.js";
 import ViewListOfClients from "./ViewListOfClients/ViewClientsList.js";
 import 'font-awesome/css/font-awesome.min.css';
@@ -83,7 +84,9 @@ function App() {
               <Route exact path="/physio/clientlist" component={ViewListOfClientsWrapper}/>
               <Route exact path="/user/home" component={ViewClientPageWrapper}/>
               <Route path ="/user/session" component={IndividualSession} />
+              <Route path = "/physio/client" component={ClientPage} />
               <Redirect to ="/"></Redirect>
+
             </Switch>
             {/* <h1>You've stumbled onto an empty page </h1>
             <h2>Follow the link to get back to your home page</h2>
@@ -96,7 +99,6 @@ function App() {
                 <a href="https://www.linkedin.com/company/theo-health"><i class="fa fa-linkedin" title = "Theo Health LinkedIn"></i></a>
                 <a href="mailto:jodie@theohealth.com"><i class="fa fa-envelope" title = "Theo Health Email"></i></a>
               </div>
-
             </footer>
       </div>
     </Router>

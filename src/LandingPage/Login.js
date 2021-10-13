@@ -25,7 +25,7 @@ export default class Login extends Component {
         if(localStorage.getItem('email') !== null & localStorage.getItem('email') !== undefined){
             redirectUser();
         }
-        
+
 
     }
 
@@ -69,7 +69,7 @@ export default class Login extends Component {
             return (
                 <div className ="login-wrapper">
                     <Helmet>
-                        <title>Login</title>
+                        <title>Theo Health - Login</title>
                     </Helmet>
                     <form className = "login-form">
                         <FieldGroup

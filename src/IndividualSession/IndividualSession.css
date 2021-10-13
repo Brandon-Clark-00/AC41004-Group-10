@@ -1,7 +1,8 @@
 .session-header{
     padding-top: 10px;
     padding-bottom: 10px;
-    display: flex
+    display: flex;
+    padding-left: 10px;
 
 }
 

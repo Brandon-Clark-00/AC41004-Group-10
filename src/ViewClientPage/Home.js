@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet';
 import { Route } from 'react-router';
-import SessionList from '../ListOfSessions/SessionList.js'
 import IndividualSession from '../IndividualSession/IndividualSession.js';
 import {  ListGroup } from "react-bootstrap";
 import '../../node_modules/react-vis/dist/style.css';
@@ -200,10 +199,11 @@ export default class ViewClientPage extends Component{
 
 
     render(){
+
         return(
             <div className="home-sessions-wrapper">
                 <Helmet>
-                    <title>My Home</title>
+                    <title>Theo Health - Home</title>
                 </Helmet>
                 <div className="comparative-graphs">
                     <Carousel plugins={['infinite', 'arrows',{
@@ -396,12 +396,12 @@ export default class ViewClientPage extends Component{
               <h1>Your Sessions</h1>
               <ListGroup className="mt-5">
                   {this.state.sessions.map(function(value, index){
-                      return <ListGroup.Item action key={ index } onClick={updateLocalhost(value[2][1])}><a style={{color: 'black', textDecoration: 'none'}}href="/user/session">{value[0][1]}</a></ListGroup.Item>;
+                      return <ListGroup.Item action key={ index } onClick={updateLocalhost(value[2][1])}><a style={{color: 'black', textDecoration: 'none'}}href="/user/session">{String(value[0][1]).slice(5, 22)}</a></ListGroup.Item>;
                     })}
               </ListGroup>
                 </div>
             </div>
 
         )
-    } 
+    }
 }
