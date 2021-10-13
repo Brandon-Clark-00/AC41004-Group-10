@@ -16,35 +16,34 @@ export default class IndividualSession extends Component{
     const requestOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'text/html' },
-        body: JSON.stringify({ userID: String(localStorage.getItem('userID'))})
+        body: JSON.stringify({ sessionID: String(localStorage.getItem('sessionID'))})
     };
     fetch('https://theobackend.herokuapp.com/sensors', requestOptions)
             // JSON response is handled by a json() promises
     .then((res) => { return res.json().
       then((data) => {
         //turn the object recieved into a big array
-        var arrayofSessions = []
+        var arrayofSensors = []
         data.forEach((sesh) => {
           var objectArray = Object.entries(sesh);
-          arrayofSessions.push(objectArray);
+          arrayofSensors.push(objectArray);
         });
-        this.setState({sensors: arrayofSessions});
+        this.setState({sensors: arrayofSensors});
       });
     });
   }
 
 
     render() {
-        console.log(this.state.sensors)
         return (
             <div className = "indivsession-wrapper m-5">
                 <Helmet>
-                    <title>Session</title>
+                    <title>Theo Health - Session</title>
                 </Helmet>
                 <div className ="session-header">
                     <NavLink to ="/user/home" className="sessionlink" exact>
                         <li>Back to Sessions</li>
-                    </NavLink>    
+                    </NavLink>
                 </div>
                 <h1>Session</h1>
                 <ul className="mt-5">

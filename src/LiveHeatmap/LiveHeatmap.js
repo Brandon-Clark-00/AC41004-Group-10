@@ -28,7 +28,7 @@ let divBox;
 export default class LiveHeatmap extends Component {
   constructor(props){
     super(props);
-    
+
     if(localStorage.getItem('email') !== null && localStorage.getItem('email') !== undefined){
       if(localStorage.getItem('user_role') !== '0'){
           redirectUser();
@@ -51,24 +51,24 @@ export default class LiveHeatmap extends Component {
 
   timeSlider;
   pauseButton;
-  
+
 
   loadData = (p5,parent) => {
-    
-      
+
+
     let sessionTemp = sessionData['data'];
     // console.log("THis is the data");
 
 
     for (let i = 0; i < 386; i++) {
-      
-      
+
+
       let currTime = sessionTemp[i].time
       let currsOne = sessionTemp[i]['Sensor 1'];
       let currsTwo = sessionTemp[i]['Sensor 2'];
       let currsThree = sessionTemp[i]['Sensor 3'];
       let currsFour = sessionTemp[i]['Sensor 4'];
-      
+
 
       sessionInfo.push(new Session(currTime,currsOne,currsTwo,currsThree,currsFour));
     }
@@ -94,7 +94,7 @@ export default class LiveHeatmap extends Component {
      default:
        break;
    }
-  
+
   if (value < 50) {
 
     return '#00FF00';
@@ -110,39 +110,39 @@ export default class LiveHeatmap extends Component {
   }else if (value < 200){
 
     return "#A0D600";
-    
+
   }else if (value < 250){
 
     return "#B6C700";
-    
+
   }else if (value < 300){
 
     return "#C7B700";
-    
+
   }else if (value < 350){
 
     return "#D7A700";
-    
+
   }else if (value < 400){
 
     return "#E39500";
-    
+
   }else if (value < 450){
 
     return "#EE8200";
-    
+
   }else if (value < 500){
 
     return "#F66D00";
-    
+
   }else if (value < 550){
 
     return "#FB5600";
-    
+
   }else if (value < 600){
 
     return "#FE3900";
-    
+
   }else{
 
     return "#FF0000";
@@ -248,7 +248,8 @@ export default class LiveHeatmap extends Component {
 
     // Timer ellipse and text
     p5.fill(255);
-    p5.ellipse(285 * scale, 30 * scale, 190 * scale, 40 * scale);
+    //x, y, w, [h], [tl], [tr], [br], [bl]
+    p5.rect(190 * scale, 12 * scale, 190 * scale, 40 * scale, 10, 10, 10, 10);
     p5.textSize(25 * scale);
     p5.fill(p5.color(0));
     let timer = "Time: " + sessionInfo[index].timeStamp.split('T')[1].substring(0,sessionInfo[index].timeStamp.split('T')[1].length-5);
@@ -296,7 +297,7 @@ render(){
   return(
     <div className="heatmapContainer">
       <Helmet>
-        <title>Heatmap</title>
+        <title>Theo Health - New Session</title>
       </Helmet>
       <Sketch setup={this.setup} draw ={this.draw} />
     </div>
