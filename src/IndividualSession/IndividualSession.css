@@ -26,7 +26,7 @@ li {
 
 .chart-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .hamstring-container{
     display: flex;
@@ -35,25 +35,26 @@ li {
 .quad-container{
     display: flex;
     flex-direction: row;
+    padding-top: 1vw;
 }
 .individual-session-bar-chart-leftHam{
-    padding-right: 5vw;
-    padding-left: 5vw;
-    padding-top: 5vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    padding-top: 1vw;
 }
 .individual-session-bar-chart-rightHam{
-    padding-right: 5vw;
-    padding-left: 5vw;
-    padding-top: 5vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    padding-top: 1vw;
 }
 .individual-session-bar-chart-leftQuad{
-    padding-right: 5vw;
-    padding-left: 5vw;
-    padding-top: 5vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    padding-top: 1vw;
 }
 .individual-session-bar-chart-rightQuad{
-    padding-right: 5vw;
-    padding-left: 5vw;
-    padding-top: 5vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    padding-top: 1vw;
 }
 
