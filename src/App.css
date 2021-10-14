@@ -4,6 +4,7 @@
 
 .site-header {
   overflow: visible;
+  background-color:#F36D21;
   padding: 20px 5%;
   transition: background-color 0.2s linear;
 }
@@ -13,6 +14,7 @@
   display: inline-block;
   width: 240px;
   padding: 10px 10px 10px 10px;
+  background-color: #F36D21;
   ;
 
 }
@@ -56,21 +58,16 @@ html {
 /*---- Footer ----*/
 .site-footer{
 padding: 20px 5%;
+background-color: #F36D21;
+
 text-transform: capitalize;
+color: #F36D21;
 
 
 display: flex;
 left: 0;
 bottom: 0;
 right: 0;
-}
-
-.switchTheme{
-  margin-left: 0; 
-  margin-right: auto;  
-  margin-bottom: 10px;
-  margin-top: 10px;
-  text-align: center;
 }
 
 .social-media{
@@ -85,6 +82,7 @@ right: 0;
 /*twitter*/
 .social-media a:nth-child(1) i{
   font-size: 40px;
+  color: white;
   /*
   color:rgb(29,161,242)
   */
@@ -93,6 +91,7 @@ right: 0;
 /*instagram*/
 .social-media a:nth-child(2) i{
   font-size: 40px;
+  color: white;
   /* Gradient copied from https://stackoverflow.com/questions/48719337/how-to-give-gradient-color-to-icon/48719471 
   background:-moz-linear-gradient(top, #e72c83 0%, #a742c6 100%); 
   background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%); 
@@ -107,6 +106,7 @@ right: 0;
 /*linkdin*/
 .social-media a:nth-child(3) i{
   font-size: 40px;
+  color: white;
   /*
   color: #0e76a8;
   */
@@ -115,6 +115,7 @@ right: 0;
 /*email*/
 .social-media a:nth-child(4) i{
   font-size: 40px;
+  color: white;
   /*
   color: #00a2ed;
   */
