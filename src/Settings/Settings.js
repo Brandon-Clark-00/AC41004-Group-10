@@ -108,7 +108,7 @@ export default class Settings extends Component {
                    </Row>
                </Form>
                 <Form.Group >
-                    <Button onClick={() => { this.updateClient() }} variant="success">
+                    <Button onClick={() => { this.updateClient() }} variant="secondary">
                         Update
                     </Button>
                     {/* <Button onClick={handleDeleteUser} variant="danger">
