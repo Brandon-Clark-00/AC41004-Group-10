@@ -65,6 +65,7 @@ function App() {
   return (
 
     <Router>
+      <>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
@@ -74,19 +75,11 @@ function App() {
       { 
       themeLoaded && <ThemeProvider theme={ selectedTheme }>
               <GlobalStyles/>
-            <div className='page-container' style = {{fontFamily: selectedTheme.font}}></div>
 
       <div className='page-container'>
-        {/*
-        <div> {getMessage.status === 200 ?
-            <h3>{getMessage.data.message}</h3> :
-            <h3>Loading</h3>}
-        </div> */}
           <header id="site-header" className="site-header">
             <img className="theohealthlogo" src={theohealthlogo} alt="Brand Logo"/>
             </header>
-
-
 
                 <div className="main">
 
@@ -113,7 +106,9 @@ function App() {
             </div>
           </ThemeProvider>
         }
+        </>
       </Router>
+      
   );
 }
 
