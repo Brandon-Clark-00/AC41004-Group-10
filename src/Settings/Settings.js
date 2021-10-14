@@ -40,33 +40,35 @@ export default class Settings extends Component {
                 <Helmet>
                     <title>Theo Health - Settings</title>
                 </Helmet>
+              
+                
                 <Form>
                     <Form.Group>
                         <Form.Label>Full Name</Form.Label>
-                        <Form.Control type="Text" placeholder={this.state.currUser[0]} />
+                        <Form.Control type="Text" value={String(this.state.currUser[0]).split(",")[14]} />
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Date of Birth</Form.Label>
-                        <Form.Control type="Text" placeholder="Date of birth" />
+                        <Form.Control type="Text" value={String(this.state.currUser[0]).split(",")[6]} />
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Email</Form.Label>
-                        <Form.Control type="email" placeholder="Email@email.email" />
+                        <Form.Control type="email" value={String(this.state.currUser[0]).split(",")[8]} />
                     </Form.Group>
                     <Row className="mb-3">
                         <Form.Group as={Col} controlId="formAddress1">
                             <Form.Label>Address</Form.Label>
-                            <Form.Control type="textArea" placeholder="1 road lane" />
+                            <Form.Control type="textArea" value={String(this.state.currUser[0]).split(",")[1]} />
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="formAddress2">
                             <Form.Label>City</Form.Label>
-                            <Form.Control type="Text" placeholder="City" />
+                            <Form.Control type="Text" value={String(this.state.currUser[0]).split(",")[3]} />
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="Postcode">
                             <Form.Label>Postcode</Form.Label>
-                            <Form.Control type="Text" placeholder="Postcode lottery woo hoo" />
+                            <Form.Control type="Text" value={String(this.state.currUser[0]).split(",")[20]} />
                         </Form.Group>
                     </Row>
                 </Form>
