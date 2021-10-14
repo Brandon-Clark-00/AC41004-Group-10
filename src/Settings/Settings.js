@@ -35,10 +35,10 @@ export default class Settings extends Component {
     }
 
     updateClient(name, dob, email, address1, address2, postcode) {
-      console.log('updating')
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'text/html' },
+            //placeholder values for now
             body: JSON.stringify({ userID: String(localStorage.getItem('userID')), name: "John", dob: "17-08-1998", email: "John@john.com", address1: "Address street 1", address2: "Dundee", postcode: "DD1123"})
         };
         fetch('https://theobackend.herokuapp.com/updateClient', requestOptions)
@@ -67,30 +67,30 @@ export default class Settings extends Component {
                 <Form>
                    <Form.Group>
                        <Form.Label>Full Name</Form.Label>
-                       <Form.Control type="Text" value={String(this.state.currUser[0]).split(",")[14]} />
+                       <Form.Control type="Text" placeholder={String(this.state.currUser[0]).split(",")[14]} />
                    </Form.Group>
                    <Form.Group>
                        <Form.Label>Date of Birth</Form.Label>
-                       <Form.Control type="Text" value={String(this.state.currUser[0]).split(",")[6]} />
+                       <Form.Control type="Text" placeholder={String(this.state.currUser[0]).split(",")[6]} />
                    </Form.Group>
                    <Form.Group>
                        <Form.Label>Email</Form.Label>
-                       <Form.Control type="email" value={String(this.state.currUser[0]).split(",")[8]} />
+                       <Form.Control type="email" placeholder={String(this.state.currUser[0]).split(",")[8]} />
                    </Form.Group>
                    <Row className="mb-3">
                        <Form.Group as={Col} controlId="formAddress1">
                            <Form.Label>Address</Form.Label>
-                           <Form.Control type="textArea" value={String(this.state.currUser[0]).split(",")[1]} />
+                           <Form.Control type="textArea" placeholder={String(this.state.currUser[0]).split(",")[1]} />
                        </Form.Group>
 
                        <Form.Group as={Col} controlId="formAddress2">
                            <Form.Label>City</Form.Label>
-                           <Form.Control type="Text" value={String(this.state.currUser[0]).split(",")[3]} />
+                           <Form.Control type="Text" placeholder={String(this.state.currUser[0]).split(",")[3]} />
                        </Form.Group>
 
                        <Form.Group as={Col} controlId="Postcode">
                            <Form.Label>Postcode</Form.Label>
-                           <Form.Control type="Text" value={String(this.state.currUser[0]).split(",")[20]} />
+                           <Form.Control type="Text" placeholder={String(this.state.currUser[0]).split(",")[20]} />
                        </Form.Group>
                    </Row>
                </Form>
