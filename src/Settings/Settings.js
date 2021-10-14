@@ -41,7 +41,7 @@ export default class Settings extends Component {
             headers: { 'Content-Type': 'text/html' },
             body: JSON.stringify({ userID: String(localStorage.getItem('userID')), name: "John", dob: "17-08-1998", email: "John@john.com", address1: "Address street 1", address2: "Dundee", postcode: "DD1123"})
         };
-        fetch('http://localhost:5000/updateClient', requestOptions)
+        fetch('https://theobackend.herokuapp.com/updateClient', requestOptions)
         .then((res) => { return res.json().
           then((data) => {
             //turn the object recieved into a big array
