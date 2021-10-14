@@ -132,6 +132,7 @@ export default class IndividualSession extends Component{
                   </ul> */}
                 </div>
                 <div className="chart-container">
+                  <div className="hamstring-container">
                       <XYPlot className="individual-session-bar-chart-leftHam"
                       xType="ordinal"
                       stackBy="y"
@@ -149,6 +150,7 @@ export default class IndividualSession extends Component{
                             labelAnchorX="middle"
                             labelAnchorY="text-after-edge"/>
                       </XYPlot>
+                      Left Hamstring
                       <XYPlot className="individual-session-bar-chart-rightHam"
                       xType="ordinal"
                       stackBy="y"
@@ -166,6 +168,9 @@ export default class IndividualSession extends Component{
                             labelAnchorX="middle"
                             labelAnchorY="text-after-edge"/>
                       </XYPlot>
+                      Right Hamstring
+                      </div>
+                      <div className="quad-container">
                       <XYPlot className="individual-session-bar-chart-leftQuad"
                       xType="ordinal"
                       stackBy="y"
@@ -183,6 +188,7 @@ export default class IndividualSession extends Component{
                             labelAnchorX="middle"
                             labelAnchorY="text-after-edge"/>
                       </XYPlot>
+                      Left Quad
                       <XYPlot className="individual-session-bar-chart-rightQuad"
                       xType="ordinal"
                       stackBy="y"
@@ -200,6 +206,8 @@ export default class IndividualSession extends Component{
                             labelAnchorX="middle"
                             labelAnchorY="text-after-edge"/>
                       </XYPlot>
+                      Right Quad
+                      </div>
                 </div>
             </div>
         )
