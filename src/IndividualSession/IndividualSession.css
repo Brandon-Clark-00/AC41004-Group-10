@@ -37,49 +37,23 @@ li {
     flex-direction: row;
 }
 .individual-session-bar-chart-leftHam{
-    padding-right: 100px;
-    padding-left: 300px;
-    padding-top: 200px;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    padding-top: 5vw;
 }
 .individual-session-bar-chart-rightHam{
-    padding-right: 100px;
-    padding-left: 300px;
-    padding-top: 200px;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    padding-top: 5vw;
 }
 .individual-session-bar-chart-leftQuad{
-    padding-right: 100px;
-    padding-left: 300px;
-    padding-top: 200px;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    padding-top: 5vw;
 }
 .individual-session-bar-chart-rightQuad{
-    padding-right: 100px;
-    padding-left: 300px;
-    padding-top: 200px;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    padding-top: 5vw;
 }
 
-@media screen and (max-width:1500px) {
-    .chart-container{
-        display: flex;
-        flex-direction: column;
-    }
-    .individual-session-bar-chart-leftHam{
-        padding-right: 100px;
-        padding-left: 300px;
-        padding-top: 100px
-    }
-    .individual-session-bar-chart-rightHam{
-        padding-right: 100px;
-        padding-left: 300px;
-        padding-top: 100px;
-    }
-    .individual-session-bar-chart-leftQuad{
-        padding-right: 100px;
-        padding-left: 300px;
-        padding-top: 100px;
-    }
-    .individual-session-bar-chart-rightQuad{
-        padding-right: 100px;
-        padding-left: 300px;
-        padding-top: 100px;
-    }
-}
