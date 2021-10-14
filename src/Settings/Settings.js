@@ -16,8 +16,8 @@ export default class Settings extends Component {
             name: "",
             email: "",
             dob: "",
-            add1: "",
-            add2: "",
+            address1: "",
+            address2: "",
             postcode: ""
         }
         this.handleChange = this.handleChange.bind(this);
@@ -39,7 +39,7 @@ export default class Settings extends Component {
             headers: { 'Content-Type': 'text/html' },
             body: JSON.stringify({ userID: String(localStorage.getItem('userID')) })
         };
-        fetch('http://localhost:5000/client', requestOptions)
+        fetch('https://theobackend.herokuapp.com/client', requestOptions)
         .then((res) => { return res.json().
           then((data) => {
             //turn the object recieved into a big array
@@ -54,30 +54,21 @@ export default class Settings extends Component {
     }
 
     updateClient(){
-        console.log("updating");
         //POSTING login request
         let data = this.state;
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'text/html' },
             //placeholder values for now
-            body: JSON.stringify({ userID: String(localStorage.getItem('userID')), name: String(data.name), dob: String(data.dob), email: String(data.email), address1: String(data.add1), address2: String(data.add2), postcode: String(data.postcode)})
+            body: JSON.stringify({ userID: String(localStorage.getItem('userID')), name: String(data.name), dob: String(data.dob), email: String(data.email), address1: String(data.address1), address2: String(data.address2), postcode: String(data.postcode)})
         };
-        fetch('http://localhost:5000/updateClient', requestOptions)
+        fetch('https://theobackend.herokuapp.com/updateClient', requestOptions)
         .then((res) => { return res.json().
           then((data) => {
-            //turn the object recieved into a big array
-            var userArray = []
-            data.forEach((sesh) => {
-              var objectArray = Object.entries(sesh);
-              userArray.push(objectArray);
-            });
-            this.setState({currUser: userArray});
+            console.log("Sent");
           });
         });
     }
-
-
 
     render() {
         return (
@@ -89,30 +80,30 @@ export default class Settings extends Component {
                 <Form>
                    <Form.Group >
                        <Form.Label>Full Name</Form.Label>
-                       <Form.Control onChange={this.handleChange} type="Text" placeholder={String(this.state.currUser[0]).split(",")[14]} />
+                       <Form.Control controlId="formControlsName" name="name" onChange={this.handleChange} type="Text" placeholder={String(this.state.currUser[0]).split(",")[14]} />
                    </Form.Group>
                    <Form.Group>
                        <Form.Label>Date of Birth</Form.Label>
-                       <Form.Control type="Text" onChange={this.handleChange} placeholder={String(this.state.currUser[0]).split(",")[6]} />
+                       <Form.Control type="Text" controlId="formControlsDoB" name="dob" onChange={this.handleChange} placeholder={String(this.state.currUser[0]).split(",")[6]} />
                    </Form.Group>
                    <Form.Group>
                        <Form.Label>Email</Form.Label>
-                       <Form.Control type="email" onChange={this.handleChange} placeholder={String(this.state.currUser[0]).split(",")[8]} />
+                       <Form.Control type="email" controlId="formControlsEmail" name="email" onChange={this.handleChange} placeholder={String(this.state.currUser[0]).split(",")[8]} />
                    </Form.Group>
                    <Row className="mb-3">
-                       <Form.Group as={Col} controlId="formAddress1">
+                       <Form.Group as={Col}>
                            <Form.Label>Address</Form.Label>
-                           <Form.Control type="textArea" onChange={this.handleChange} placeholder={String(this.state.currUser[0]).split(",")[1]} />
+                           <Form.Control type="textArea" controlId="formControlsAdd1" name="address1" onChange={this.handleChange} placeholder={String(this.state.currUser[0]).split(",")[1]} />
                        </Form.Group>
 
-                       <Form.Group as={Col} controlId="formAddress2">
+                       <Form.Group as={Col}>
                            <Form.Label>City</Form.Label>
-                           <Form.Control type="Text" onChange={this.handleChange} placeholder={String(this.state.currUser[0]).split(",")[3]} />
+                           <Form.Control type="Text" controlId="formControlsAdd2" name="address2" onChange={this.handleChange} placeholder={String(this.state.currUser[0]).split(",")[3]} />
                        </Form.Group>
 
                        <Form.Group as={Col} controlId="postcode">
                            <Form.Label>Postcode</Form.Label>
-                           <Form.Control type="Text" onChange={this.handleChange} placeholder={String(this.state.currUser[0]).split(",")[20]} />
+                           <Form.Control type="Text" controlId="postcode" name="postcode" onChange={this.handleChange} placeholder={String(this.state.currUser[0]).split(",")[20]} />
                        </Form.Group>
                    </Row>
                </Form>
