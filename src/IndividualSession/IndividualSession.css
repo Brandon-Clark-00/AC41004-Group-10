@@ -21,3 +21,29 @@ li {
 .sessionlink li {
       border-bottom: 2px solid #0297a2;
   }
+
+.chart-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.individual-session-bar-chart-leftHam{
+    padding-right: 300px;
+    padding-left: 300px;
+    padding-top: 100px
+}
+.individual-session-bar-chart-rightHam{
+    padding-right: 300px;
+    padding-left: 300px;
+    padding-top: 100px;
+}
+.individual-session-bar-chart-leftQuad{
+    padding-right: 300px;
+    padding-left: 300px;
+    padding-top: 100px;
+}
+.individual-session-bar-chart-rightQuad{
+    padding-right: 300px;
+    padding-left: 300px;
+    padding-top: 100px;
+}
