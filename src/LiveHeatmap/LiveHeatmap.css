@@ -38,8 +38,8 @@
 
 .button{
   width: 10vw;
-  font-size: 2vw;
-  right:0%;
+  font-size: 1vw;
+  right:1%;
   z-index: 4;
 }
 /* Styles the whole slider */
