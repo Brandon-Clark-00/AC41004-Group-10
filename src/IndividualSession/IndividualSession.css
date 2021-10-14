@@ -21,3 +21,65 @@ li {
 .sessionlink li {
       border-bottom: 2px solid #0297a2;
   }
+
+
+
+.chart-container{
+    display: flex;
+    flex-direction: row;
+}
+.hamstring-container{
+    display: flex;
+    flex-direction: row;
+}
+.quad-container{
+    display: flex;
+    flex-direction: row;
+}
+.individual-session-bar-chart-leftHam{
+    padding-right: 100px;
+    padding-left: 300px;
+    padding-top: 200px;
+}
+.individual-session-bar-chart-rightHam{
+    padding-right: 100px;
+    padding-left: 300px;
+    padding-top: 200px;
+}
+.individual-session-bar-chart-leftQuad{
+    padding-right: 100px;
+    padding-left: 300px;
+    padding-top: 200px;
+}
+.individual-session-bar-chart-rightQuad{
+    padding-right: 100px;
+    padding-left: 300px;
+    padding-top: 200px;
+}
+
+@media screen and (max-width:1500px) {
+    .chart-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .individual-session-bar-chart-leftHam{
+        padding-right: 100px;
+        padding-left: 300px;
+        padding-top: 100px
+    }
+    .individual-session-bar-chart-rightHam{
+        padding-right: 100px;
+        padding-left: 300px;
+        padding-top: 100px;
+    }
+    .individual-session-bar-chart-leftQuad{
+        padding-right: 100px;
+        padding-left: 300px;
+        padding-top: 100px;
+    }
+    .individual-session-bar-chart-rightQuad{
+        padding-right: 100px;
+        padding-left: 300px;
+        padding-top: 100px;
+    }
+}
