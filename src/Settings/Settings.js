@@ -59,44 +59,41 @@ export default class Settings extends Component {
 
     render() {
         return (
-            <div className="settings-wrapper">
+            <div className="settings-wrapper p-5">
                 <Helmet>
                     <title>Theo Health - Settings</title>
-                </Helmet>        
-                
+                </Helmet>
+
                 <Form>
-                    <Form.Group>
-                        <Form.Label>Full Name</Form.Label>
-                        <Form.Control type="Text" value={String(this.state.currUser[0]).split(",")[14]} />
-                    <Form.Group>
-                        <Form.Label>Full Name</Form.Label>
-                        <Form.Control type="Text" placeholder={this.state.currUser[0]} />
-                    </Form.Group>
-                    <Form.Group>
-                        <Form.Label>Date of Birth</Form.Label>
-                        <Form.Control type="Text" value={String(this.state.currUser[0]).split(",")[6]} />
-                    </Form.Group>
-                    <Form.Group>
-                        <Form.Label>Email</Form.Label>
-                        <Form.Control type="email" value={String(this.state.currUser[0]).split(",")[8]} />
-                    </Form.Group>
-                    <Row className="mb-3">
-                        <Form.Group as={Col} controlId="formAddress1">
-                            <Form.Label>Address</Form.Label>
-                            <Form.Control type="textArea" value={String(this.state.currUser[0]).split(",")[1]} />
-                        </Form.Group>
+                   <Form.Group>
+                       <Form.Label>Full Name</Form.Label>
+                       <Form.Control type="Text" value={String(this.state.currUser[0]).split(",")[14]} />
+                   </Form.Group>
+                   <Form.Group>
+                       <Form.Label>Date of Birth</Form.Label>
+                       <Form.Control type="Text" value={String(this.state.currUser[0]).split(",")[6]} />
+                   </Form.Group>
+                   <Form.Group>
+                       <Form.Label>Email</Form.Label>
+                       <Form.Control type="email" value={String(this.state.currUser[0]).split(",")[8]} />
+                   </Form.Group>
+                   <Row className="mb-3">
+                       <Form.Group as={Col} controlId="formAddress1">
+                           <Form.Label>Address</Form.Label>
+                           <Form.Control type="textArea" value={String(this.state.currUser[0]).split(",")[1]} />
+                       </Form.Group>
 
-                        <Form.Group as={Col} controlId="formAddress2">
-                            <Form.Label>City</Form.Label>
-                            <Form.Control type="Text" value={String(this.state.currUser[0]).split(",")[3]} />
-                        </Form.Group>
+                       <Form.Group as={Col} controlId="formAddress2">
+                           <Form.Label>City</Form.Label>
+                           <Form.Control type="Text" value={String(this.state.currUser[0]).split(",")[3]} />
+                       </Form.Group>
 
-                        <Form.Group as={Col} controlId="Postcode">
-                            <Form.Label>Postcode</Form.Label>
-                            <Form.Control type="Text" value={String(this.state.currUser[0]).split(",")[20]} />
-                        </Form.Group>
-                    </Row>
-                </Form>
+                       <Form.Group as={Col} controlId="Postcode">
+                           <Form.Label>Postcode</Form.Label>
+                           <Form.Control type="Text" value={String(this.state.currUser[0]).split(",")[20]} />
+                       </Form.Group>
+                   </Row>
+               </Form>
                 <Form.Group >
                     <Button onClick={() => { this.updateClient() }} variant="success">
                         Update
