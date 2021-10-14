@@ -19,6 +19,8 @@ import './App.css';
 import styled, { ThemeProvider } from "styled-components";
 import { GlobalStyles } from './theme/GlobalStyles';
 import {useTheme} from './theme/useTheme';
+import ThemeSelector from './ThemeSelector';
+import * as themes from './theme/schema.json';
 
 function App() {
 
@@ -70,37 +72,45 @@ function App() {
           crossorigin="anonymous"
         />
         {
-            themeLoaded && <ThemeProvider theme={ selectedTheme }>
-            <GlobalStyles/>
-          <div className='page-container' style = {{fontFamily: selectedTheme.font}}>
+          themeLoaded && <ThemeProvider theme={ selectedTheme }>
+              <GlobalStyles/>
+            <div className='page-container' style = {{fontFamily: selectedTheme.font}}>
 
-              <header id="site-header" className="site-header">
-                <img className="theohealthlogo" src={theohealthlogo} alt="Brand Logo"/>
-              </header>
+                <header id="site-header" className="site-header">
+                  <img className="theohealthlogo" src={theohealthlogo} alt="Brand Logo"/>
+                </header>
 
-              <div className="main">
+                <div className="main">
 
-                <Switch>
-                  <Route exact path="/" component={LandingWrapper}/>
-                  <Route exact path="/physio/clientlist" component={ViewListOfClientsWrapper}/>
-                  <Route exact path="/user/home" component={ViewClientPageWrapper}/>
-                  <Route path ="/user/session" component={IndividualSession}/>
-                  <Redirect to ="/"></Redirect>
-                </Switch>
+                  <Switch>
+                    <Route exact path="/" component={LandingWrapper}/>
+                    <Route exact path="/physio/clientlist" component={ViewListOfClientsWrapper}/>
+                    <Route exact path="/user/home" component={ViewClientPageWrapper}/>
+                    <Route path ="/user/session" component={IndividualSession}/>
+                    <Redirect to ="/"></Redirect>
+                  </Switch>
 
-              </div>
-
-              <footer className="site-footer">
-                <div className="social-media">
-                  <a href="https://twitter.com/theoHealth"><i class="fa fa-twitter" title = "Theo Health Twitter"></i></a>
-                  <a href="https://www.instagram.com/theo_health/"><i class="fa fa-instagram" title = "Theo Health Instagram"></i></a>
-                  <a href="https://www.linkedin.com/company/theo-health"><i class="fa fa-linkedin" title = "Theo Health LinkedIn"></i></a>
-                  <a href="mailto:jodie@theohealth.com"><i class="fa fa-envelope" title = "Theo Health Email"></i></a>
                 </div>
-              </footer>
-          </div>
-        </ThemeProvider>
-      }
+
+                <footer className="site-footer">
+
+               {/* <button className="switchTheme">
+                {
+                  
+                }
+              </button>*/}
+                
+                  <div className="social-media">
+                    <a href="https://twitter.com/theoHealth"><i class="fa fa-twitter" title = "Theo Health Twitter"></i></a>
+                    <a href="https://www.instagram.com/theo_health/"><i class="fa fa-instagram" title = "Theo Health Instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/theo-health"><i class="fa fa-linkedin" title = "Theo Health LinkedIn"></i></a>
+                    <a href="mailto:jodie@theohealth.com"><i class="fa fa-envelope" title = "Theo Health Email"></i></a>
+                  </div>
+
+                </footer>
+            </div>
+          </ThemeProvider>
+        }
       </Router>
     </>        
   );
