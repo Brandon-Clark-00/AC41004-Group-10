@@ -63,18 +63,18 @@ function App() {
 
   return (
     <Router>
+      <>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
       />
+      { 
+      themeLoaded && <ThemeProvider theme={ selectedTheme }>
+              <GlobalStyles/>
+
       <div className='page-container'>
-        {/*
-        <div> {getMessage.status === 200 ?
-            <h3>{getMessage.data.message}</h3> :
-            <h3>Loading</h3>}
-        </div> */}
           <header id="site-header" className="site-header">
             <img className="theohealthlogo" src={theohealthlogo} alt="Brand Logo"/>
             </header>
@@ -87,22 +87,34 @@ function App() {
               <Route path = "/physio/client" component={ClientPage} />
               <Redirect to ="/"></Redirect>
 
-            </Switch>
-            {/* <h1>You've stumbled onto an empty page </h1>
-            <h2>Follow the link to get back to your home page</h2>
-            <Link to ="/">Home</Link>   */}
-            </div>
-            <footer className="site-footer">
-              <div className="social-media">
-                <a href="https://twitter.com/theoHealth"><i class="fa fa-twitter" title = "Theo Health Twitter"></i></a>
-                <a href="https://www.instagram.com/theo_health/"><i class="fa fa-instagram" title = "Theo Health Instagram"></i></a>
-                <a href="https://www.linkedin.com/company/theo-health"><i class="fa fa-linkedin" title = "Theo Health LinkedIn"></i></a>
-                <a href="mailto:jodie@theohealth.com"><i class="fa fa-envelope" title = "Theo Health Email"></i></a>
-              </div>
-            </footer>
-      </div>
-    </Router>
+                <div className="main">
 
+                  <Switch>
+                    <Route exact path="/" component={LandingWrapper}/>
+                    <Route exact path="/physio/clientlist" component={ViewListOfClientsWrapper}/>
+                    <Route exact path="/user/home" component={ViewClientPageWrapper}/>
+                    <Route path ="/user/session" component={IndividualSession}/>
+                    <Redirect to ="/"></Redirect>
+                  </Switch>
+
+                </div>
+
+                <footer className="site-footer">
+
+                  <div className="social-media">
+                    <a href="https://twitter.com/theoHealth"><i class="fa fa-twitter" title = "Theo Health Twitter"></i></a>
+                    <a href="https://www.instagram.com/theo_health/"><i class="fa fa-instagram" title = "Theo Health Instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/theo-health"><i class="fa fa-linkedin" title = "Theo Health LinkedIn"></i></a>
+                    <a href="mailto:jodie@theohealth.com"><i class="fa fa-envelope" title = "Theo Health Email"></i></a>
+                  </div>
+
+                </footer>
+            </div>
+          </ThemeProvider>
+        }
+        </>
+      </Router>
+      
   );
 }
 
