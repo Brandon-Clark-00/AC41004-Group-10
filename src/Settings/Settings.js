@@ -34,18 +34,43 @@ export default class Settings extends Component {
         });
     }
 
+    updateClient(name, dob, email, address1, address2, postcode) {
+      console.log('updating')
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/html' },
+            body: JSON.stringify({ userID: String(localStorage.getItem('userID')), name: "John", dob: "17-08-1998", email: "John@john.com", address1: "Address street 1", address2: "Dundee", postcode: "DD1123"})
+        };
+        fetch('https://theobackend.herokuapp.com/updateClient', requestOptions)
+        .then((res) => { return res.json().
+          then((data) => {
+            //turn the object recieved into a big array
+            var userArray = []
+            data.forEach((sesh) => {
+              var objectArray = Object.entries(sesh);
+              userArray.push(objectArray);
+            });
+            this.setState({currUser: userArray});
+          });
+        });
+    }
+
+
+
     render() {
         return (
             <div className="settings-wrapper">
                 <Helmet>
                     <title>Theo Health - Settings</title>
-                </Helmet>
-              
+                </Helmet>        
                 
                 <Form>
                     <Form.Group>
                         <Form.Label>Full Name</Form.Label>
                         <Form.Control type="Text" value={String(this.state.currUser[0]).split(",")[14]} />
+                    <Form.Group>
+                        <Form.Label>Full Name</Form.Label>
+                        <Form.Control type="Text" placeholder={this.state.currUser[0]} />
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Date of Birth</Form.Label>
@@ -73,7 +98,7 @@ export default class Settings extends Component {
                     </Row>
                 </Form>
                 <Form.Group >
-                    <Button  /* onClick={} */ variant="success">
+                    <Button onClick={() => { this.updateClient() }} variant="success">
                         Update
                     </Button>
                     {/* <Button onClick={handleDeleteUser} variant="danger">

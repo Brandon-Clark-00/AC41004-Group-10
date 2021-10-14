@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet';
 import { Route } from 'react-router';
 import IndividualSession from '../IndividualSession/IndividualSession.js';
-import {  ListGroup } from "react-bootstrap";
+import {  ListGroup, Button } from "react-bootstrap";
 import '../../node_modules/react-vis/dist/style.css';
 import { ChartLabel, HorizontalGridLines, LineSeries, VerticalGridLines, XAxis, XYPlot, YAxis } from 'react-vis';
 import './ViewClientsList.css';
@@ -59,6 +59,10 @@ export default class ClientPage extends Component{
                 <Helmet>
                     <title>Theo Health - Client</title>
                 </Helmet>
+                <div className ="physio-header">
+                  <Button variant="outline-secondary" onClick={() => {   //move to client page
+                    window.location.replace("/physio/clientlist") }}>Back to Clients</Button>
+                </div>
                 <XYPlot height={400} width={600}>
                     <VerticalGridLines/>
                     <HorizontalGridLines/>
