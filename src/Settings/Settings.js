@@ -10,7 +10,7 @@ export default class Settings extends Component {
             redirectUser();
         }
         this.state = {
-            currUser: {}
+            currUser: []
         }
     }
 
@@ -18,18 +18,44 @@ export default class Settings extends Component {
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'text/html' },
-            body: JSON.stringify({ email: String(localStorage.getItem('email')) })
+            body: JSON.stringify({ userID: String(localStorage.getItem('userID')) })
         };
-        console.log(requestOptions.body)
         fetch('https://theobackend.herokuapp.com/client', requestOptions)
-            .then((res) => {
-                
-                return res.json().
-                    then((data) => {
-                        this.setState({ currUser: data });
-                    });
+        .then((res) => { return res.json().
+          then((data) => {
+            //turn the object recieved into a big array
+            var userArray = []
+            data.forEach((sesh) => {
+              var objectArray = Object.entries(sesh);
+              userArray.push(objectArray);
             });
+            this.setState({currUser: userArray});
+          });
+        });
     }
+
+    updateClient(name, dob, email, address1, address2, postcode) {
+      console.log('updating')
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/html' },
+            body: JSON.stringify({ userID: String(localStorage.getItem('userID')), name: "John", dob: "17-08-1998", email: "John@john.com", address1: "Address street 1", address2: "Dundee", postcode: "DD1123"})
+        };
+        fetch('http://localhost:5000/updateClient', requestOptions)
+        .then((res) => { return res.json().
+          then((data) => {
+            //turn the object recieved into a big array
+            var userArray = []
+            data.forEach((sesh) => {
+              var objectArray = Object.entries(sesh);
+              userArray.push(objectArray);
+            });
+            this.setState({currUser: userArray});
+          });
+        });
+    }
+
+
 
     render() {
         return (
@@ -37,12 +63,10 @@ export default class Settings extends Component {
                 <Helmet>
                     <title>Theo Health - Settings</title>
                 </Helmet>
-                <h1>Settings page</h1>
-                <pre>{JSON.stringify(this.currUser, null,2)}</pre>
                 <Form>
                     <Form.Group>
                         <Form.Label>Full Name</Form.Label>
-                        <Form.Control type="Text" placeholder="Fullname" />
+                        <Form.Control type="Text" placeholder={this.state.currUser[0]} />
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Date of Birth</Form.Label>
@@ -70,7 +94,7 @@ export default class Settings extends Component {
                     </Row>
                 </Form>
                 <Form.Group >
-                    <Button  /* onClick={} */ variant="success">
+                    <Button onClick={() => { this.updateClient() }} variant="success">
                         Update
                     </Button>
                     {/* <Button onClick={handleDeleteUser} variant="danger">
