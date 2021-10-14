@@ -88,6 +88,7 @@ function App() {
             <Switch>
             <Route exact path="/" component={LandingWrapper}/>
             <Route exact path="/physio/clientlist" component={ViewListOfClientsWrapper}/>
+            <Route exact path="/physio/client" component={ClientPage}/>
             <Route exact path="/user/home" component={ViewClientPageWrapper}/>
             <Route path ="/user/session" component={IndividualSession}/>
             <Redirect to ="/"></Redirect>
