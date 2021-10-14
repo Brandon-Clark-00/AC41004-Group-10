@@ -10,7 +10,7 @@ export default class Settings extends Component {
             redirectUser();
         }
         this.state = {
-            currUser: {}
+            currUser: []
         }
     }
 
@@ -18,17 +18,20 @@ export default class Settings extends Component {
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'text/html' },
-            body: JSON.stringify({ email: String(localStorage.getItem('email')) })
+            body: JSON.stringify({ userID: String(localStorage.getItem('userID')) })
         };
-        console.log(requestOptions.body)
         fetch('https://theobackend.herokuapp.com/client', requestOptions)
-            .then((res) => {
-                
-                return res.json().
-                    then((data) => {
-                        this.setState({ currUser: data });
-                    });
+        .then((res) => { return res.json().
+          then((data) => {
+            //turn the object recieved into a big array
+            var userArray = []
+            data.forEach((sesh) => {
+              var objectArray = Object.entries(sesh);
+              userArray.push(objectArray);
             });
+            this.setState({currUser: userArray});
+          });
+        });
     }
 
     render() {
@@ -37,12 +40,10 @@ export default class Settings extends Component {
                 <Helmet>
                     <title>Theo Health - Settings</title>
                 </Helmet>
-                <h1>Settings page</h1>
-                <pre>{JSON.stringify(this.currUser, null,2)}</pre>
                 <Form>
                     <Form.Group>
                         <Form.Label>Full Name</Form.Label>
-                        <Form.Control type="Text" placeholder="Fullname" />
+                        <Form.Control type="Text" placeholder={this.state.currUser[0]} />
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Date of Birth</Form.Label>
