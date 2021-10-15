@@ -39,5 +39,21 @@ export const GlobalStyles = createGlobalStyle`
   button.btn {
     background-color: ${({ theme }) => theme.colors.button.background};
     color: ${({ theme }) => theme.colors.button.text};
+    outline: ${({ theme }) => theme.colors.button.hText};
   }
+
+  .login-button:hover.btn {
+    background-color: ${({ theme }) => theme.colors.button.hBackground};
+    color: ${({ theme }) => theme.colors.button.hText};
+    outline: ${({ theme }) => theme.colors.button.hText};
+  }
+
+  .page-container {
+    color: ${({ theme }) => theme.colors.button.text};
+  }
+
+  li {
+    color: ${({ theme }) => theme.colors.head.text};
+  }
+
 `;
