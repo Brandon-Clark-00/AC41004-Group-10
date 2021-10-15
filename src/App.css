@@ -36,7 +36,6 @@ html {
     overflow: auto;
     min-height: 100%;
     position: relative; 
-    color: #0297a2;
     /*new*/
     height: 100vh;
     display: flex; 
@@ -123,5 +122,4 @@ right: 0;
 .social-media a{
   text-decoration: none;
   margin-left: 40px;
-  color: black;
 }
