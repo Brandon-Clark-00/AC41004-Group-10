@@ -237,7 +237,7 @@ export default class LiveHeatmap extends Component {
         console.log(event);
       });
     }
-    this.pauseButton.position(0 * scale, 0 * scale, "relative").parent(divBox);
+    this.pauseButton.position(-615 * scale, 30 * scale, "relative").parent(divBox);
     this.pauseButton.addClass("button")
     this.timeSlider.position(150 * scale, -20 * scale, "relative").parent(divBox);
     this.timeSlider.addClass("slider")
@@ -258,25 +258,25 @@ export default class LiveHeatmap extends Component {
     //Legs
 
     // Front left
-    let c = p5.color(this.calculateValue(this.p5,this.parent,1));
+    let c = p5.color(this.calculateValue(this.p5,this.parent,4));
     p5.fill(c)
     p5.ellipse(110 * scale, this.frontY * scale, this.frontCircleW * scale, this.frontCircleH * scale);
 
 
     // Front right
-    c = p5.color(this.calculateValue(this.p5,this.parent,2));
+    c = p5.color(this.calculateValue(this.p5,this.parent,3));
     p5.fill(c)
     p5.ellipse(175 * scale, this.frontY * scale, this.frontCircleW * scale, this.frontCircleH * scale);
 
 
     // Back left
-    c = p5.color(this.calculateValue(this.p5,this.parent,3));
+    c = p5.color(this.calculateValue(this.p5,this.parent,1));
     p5.fill(c)
     p5.ellipse(425 * scale, this.backY * scale, this.backCircleW * scale, this.backCircleH * scale);
 
 
     // Back right
-    c = p5.color(this.calculateValue(this.p5,this.parent,4));
+    c = p5.color(this.calculateValue(this.p5,this.parent,2));
     p5.fill(c)
     p5.ellipse(490 * scale, this.backY * scale, this.backCircleW * scale, this.backCircleH * scale);
 

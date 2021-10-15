@@ -36,6 +36,18 @@ import './ViewClientPage.css';
       }
 
     function setData(arrayOfSenorsToPass){
+        dataLeftHamMin =[]
+        dataLeftHamMax =[]
+        dataLeftHamAvg =[]
+        dataRightHamMin =[]
+        dataRightHamMax =[]
+        dataRightHamAvg =[]
+        dataLeftQuadMin =[]
+        dataLeftQuadMax =[]
+        dataLeftQuadAvg =[]
+        dataRightQuadMin =[]
+        dataRightQuadMax =[]
+        dataRightQuadAvg =[]  
         //set local variable to sensor array
         let arrayOfSensors = arrayOfSenorsToPass;
         //arrays to store sensor data for each muscle 
@@ -151,6 +163,7 @@ export default class ViewClientPage extends Component{
         this.state = {
             sessions: [],
             sensors: []
+            
         };
         }
         // comonentDidMount part of React lifecycle - runs automatically

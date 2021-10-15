@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet';
 import { Route } from 'react-router';
 import IndividualSession from '../IndividualSession/IndividualSession.js';
-import {  ListGroup } from "react-bootstrap";
+import {  ListGroup, Button } from "react-bootstrap";
 import '../../node_modules/react-vis/dist/style.css';
 import './ViewClientsList.css';
 import { ChartLabel, DiscreteColorLegend, HorizontalGridLines, LineSeries, VerticalGridLines, XAxis, XYPlot, YAxis } from 'react-vis';
@@ -405,6 +405,7 @@ export default class ClientPage extends Component{
                         
                     </Carousel>
                   </div>
+
                 <div className = "sessionlist-wrapper p-5">
               <h1>Clients Sessions</h1>
               <ListGroup className="mt-5">

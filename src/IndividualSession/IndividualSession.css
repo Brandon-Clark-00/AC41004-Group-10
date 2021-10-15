@@ -32,6 +32,7 @@ li {
     display: flex;
     flex-direction: row;
     font-size: 25px;
+
 }
 .hamstring-container{
     display: flex;
@@ -59,31 +60,6 @@ li {
 .individual-session-bar-chart-rightQuad{
     padding-right: 0.5vw;
     padding-left: 0.5vw;
+
 }
 
-@media screen and (max-width:1500px) {
-    .chart-container{
-        display: flex;
-        flex-direction: column;
-    }
-    .individual-session-bar-chart-leftHam{
-        padding-right: 100px;
-        padding-left: 300px;
-        padding-top: 100px
-    }
-    .individual-session-bar-chart-rightHam{
-        padding-right: 100px;
-        padding-left: 300px;
-        padding-top: 100px;
-    }
-    .individual-session-bar-chart-leftQuad{
-        padding-right: 100px;
-        padding-left: 300px;
-        padding-top: 100px;
-    }
-    .individual-session-bar-chart-rightQuad{
-        padding-right: 100px;
-        padding-left: 300px;
-        padding-top: 100px;
-    }
-}
