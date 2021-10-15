@@ -7,6 +7,14 @@ import {
   Switch
 } from "react-router-dom";
 
+
+import styled, { ThemeProvider } from "styled-components";
+import { GlobalStyles } from './theme/GlobalStyles';
+import {useTheme} from './theme/useTheme';
+import ThemeSelector from './ThemeSelector';
+import * as themes from './theme/schema.json';
+
+
 import Landing from "./LandingPage/Login.js";
 import ClientPage from './ViewListOfClients/ClientPage.js';
 import ViewClientPage from "./ViewClientPage/ViewClientPage.js";
@@ -16,6 +24,7 @@ import theohealthlogo from './Images/whiteLogo.png';
 import IndividualSession from "./IndividualSession/IndividualSession.js";
 import './App.css';
 // import './App-Propanopia.css';
+
 
 import styled, { ThemeProvider } from "styled-components";
 import WebFont from 'webfontloader';
@@ -34,22 +43,12 @@ function App() {
     positionStateStart = Cookies.get('access_token').split("#")[2]
   }
 
-{/*
-  const[getMessage, setGetMessage] = useState({})
-  useEffect(()=>{
-    Axios.get('https://theobackend.herokuapp.com/users').then(response => {
-      console.log("SUCCESS", response)
-      setGetMessage(response)
-    }).catch(error => {
-      console.log("Something is wrong", error)
-    })
-  }, [])
-*/}
-  const [user, setUser] = useState({user: userStateStart, id: idStateStart, position: positionStateStart})
-  console.log(user);
+
+  const [user, setUser] = useState({ user: userStateStart, id: idStateStart, position: positionStateStart })
 
   const {theme, themeLoaded, getFonts} = useTheme();
   const [selectedTheme, setSelectedTheme] = useState(theme);
+
 
     let LandingWrapper = (props) => {
       return(
@@ -57,17 +56,18 @@ function App() {
       )
     }
 
-    let ViewClientPageWrapper = (props) => {
-      return(
-        <ViewClientPage></ViewClientPage>
-      )
-    }
 
-    let ViewListOfClientsWrapper = (props) => {
-      return(
-        <ViewListOfClients></ViewListOfClients>
-      )
-    }
+  let ViewClientPageWrapper = (props) => {
+    return (
+      <ViewClientPage></ViewClientPage>
+    )
+  }
+
+  let ViewListOfClientsWrapper = (props) => {
+    return (
+      <ViewListOfClients></ViewListOfClients>
+    )
+  }
 
 
   return (
@@ -115,6 +115,7 @@ function App() {
         </>
       </Router>
       
+
   );
 }
 

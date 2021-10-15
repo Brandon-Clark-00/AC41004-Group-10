@@ -13,7 +13,6 @@
   display: inline-block;
   width: 240px;
   padding: 10px 10px 10px 10px;
-  ;
 
 }
 
@@ -56,8 +55,6 @@ html {
 .site-footer{
 padding: 20px 5%;
 text-transform: capitalize;
-
-
 display: flex;
 left: 0;
 bottom: 0;
