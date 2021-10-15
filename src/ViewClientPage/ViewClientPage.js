@@ -13,6 +13,8 @@ import Settings from "../Settings/Settings.js";
 import LiveHeatmap from "../LiveHeatmap/LiveHeatmap.js";
 import Home from './Home.js'
 
+
+
 let settings = (props) => {
     return(
       <Settings></Settings>
@@ -81,7 +83,7 @@ export default class ViewClientPage extends Component{
                     </NavLink>
                   </div>
                   <div className ="mypage-body">
-                    <Route path = "/user/home" component={Home} />
+                    <Route exact path = "/user/home" component={Home} />
                     <Route path = "/user/settings" component={Settings} />
                     <Route path = "/user/heatmap" component={LiveHeatmap} />
                   </div>

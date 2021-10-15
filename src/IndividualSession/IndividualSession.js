@@ -137,8 +137,9 @@ export default class IndividualSession extends Component{
                       xType="ordinal"
                       stackBy="y"
                       yDomain={[0, MaxBarXY]}
-                      width={300}
-                      height={300}>
+                      width={200}
+                      height={200}>
+
                           <XAxis />
                           <YAxis />
                           <VerticalBarSeries 
@@ -155,8 +156,9 @@ export default class IndividualSession extends Component{
                       xType="ordinal"
                       stackBy="y"
                       yDomain={[0, MaxBarXY]}
-                      width={300}
-                      height={300}>
+                      width={200}
+                      height={200}>
+
                           <XAxis />
                           <YAxis />
                           <VerticalBarSeries 
@@ -175,8 +177,9 @@ export default class IndividualSession extends Component{
                       xType="ordinal"
                       stackBy="y"
                       yDomain={[0, MaxBarXY]}
-                      width={300}
-                      height={300}>
+                      width={200}
+                      height={200}>
+
                           <XAxis />
                           <YAxis />
                           <VerticalBarSeries 
@@ -193,8 +196,9 @@ export default class IndividualSession extends Component{
                       xType="ordinal"
                       stackBy="y"
                       yDomain={[0, MaxBarXY]}
-                      width={300}
-                      height={300}>
+                      width={200}
+                      height={200}>
+
                           <XAxis />
                           <YAxis />
                           <VerticalBarSeries 

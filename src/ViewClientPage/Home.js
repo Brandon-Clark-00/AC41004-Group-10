@@ -168,7 +168,7 @@ export default class ViewClientPage extends Component{
         }
         // comonentDidMount part of React lifecycle - runs automatically
         componentDidMount() {
- //POSTING request with userID
+        //POSTING request with userID
             const requestOptions = {
                 method: 'POST',
                 headers: { 'Content-Type': 'text/html' },
@@ -200,7 +200,6 @@ export default class ViewClientPage extends Component{
                 arrayofSensors.push(objectArray);
                 });
                 this.setState({sensors: arrayofSensors});
-                console.log(this.state.sensors);
                 setData(this.state.sensors);
                 });
                 });
