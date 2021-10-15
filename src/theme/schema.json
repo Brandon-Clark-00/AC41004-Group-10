@@ -1,0 +1,68 @@
+{
+  "data" : {
+
+    "standard" : {
+      "id": "T_001",
+      "name": "Standard",
+      "colors": {
+        
+        "button": {
+          "text": "#FFFFFF",
+          "background": "#0000FF",
+          "hText": "#0000FF",
+          "hBackground": "#FFFFFF"
+        },
+
+        "head": {
+          "text": "#0297A2"
+        },
+
+        "footHead": {
+          "color": "#F36D21"
+        },
+
+        "social": {
+          "color": "#FFFFFF"
+        },
+
+        "link": {
+          "text": "teal",
+          "opacity": 1
+        }
+      }
+    },
+
+    "achromatsopia" : {
+      "id": "T_002",
+      "name": "Achromatsopia",
+      "colors": {
+        
+        "button": {
+          "text": "#000000",
+          "background": "#727272",
+          "hText": "#727272",
+          "hBackground": "#000000"
+        },
+
+        "head": {
+          "text": "#000000"
+        },
+
+        "footHead": {
+          "color": "#8C8C8C"
+        },
+
+        "social": {
+          "color": "#000000"
+        },
+
+        "link": {
+          "text": "#000000",
+          "opacity": 1
+
+        }
+      }
+  
+    }
+  }
+}

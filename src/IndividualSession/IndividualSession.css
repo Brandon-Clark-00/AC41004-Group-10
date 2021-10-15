@@ -6,6 +6,10 @@
 
 }
 
+.indivsession-wrapper{
+    min-height: 100%;
+}
+
 .session-header a{
    text-decoration: none;
 }
@@ -27,34 +31,34 @@ li {
 .chart-container{
     display: flex;
     flex-direction: row;
+    font-size: 25px;
 }
 .hamstring-container{
     display: flex;
     flex-direction: row;
+    padding-bottom: 1vw;
 }
 .quad-container{
     display: flex;
     flex-direction: row;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
 }
 .individual-session-bar-chart-leftHam{
-    padding-right: 100px;
-    padding-left: 300px;
-    padding-top: 200px;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
 }
 .individual-session-bar-chart-rightHam{
-    padding-right: 100px;
-    padding-left: 300px;
-    padding-top: 200px;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
 }
 .individual-session-bar-chart-leftQuad{
-    padding-right: 100px;
-    padding-left: 300px;
-    padding-top: 200px;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
 }
 .individual-session-bar-chart-rightQuad{
-    padding-right: 100px;
-    padding-left: 300px;
-    padding-top: 200px;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
 }
 
 @media screen and (max-width:1500px) {
