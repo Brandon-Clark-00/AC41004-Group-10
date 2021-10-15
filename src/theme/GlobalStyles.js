@@ -49,7 +49,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .page-container {
-    color: ${({ theme }) => theme.colors.button.text};
+    color: ${({ theme }) => theme.colors.head.text};
   }
 
   li {
