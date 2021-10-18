@@ -6,6 +6,13 @@ The prototype will show an image of the human body with a heatmap superimposed o
 
 The user base of the project will be primarily recovering athletes and their physiotherapists. Athletes will have access to their own sessions and all stats related to said sessions whereas physiotherapists will have access to all data stored on their clients, of which each  physiotherapist will have multiple.
 
+
+
+
+
+## Link to site
+[Theohealthsite] https://theohealthsite.herokuapp.com/
+
 ## Technologies used
 
 Deployment
@@ -13,7 +20,7 @@ Deployment
 * API - [Python Flask] https://flask.palletsprojects.com/en/2.0.x/
 * Database - [MySQL] https://www.mysql.com/
 * Webpage Deployment - [Heroku] https://dashboard.heroku.com/
-* Database Deployment - [Azure] https://azure.microsoft.com/
+* Database Deployment - [AWS[] https://aws.amazon.com/
 
 Development tools
 * Wireframes - [Miro] https://miro.com/
